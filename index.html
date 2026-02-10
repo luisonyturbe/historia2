@@ -516,6 +516,53 @@ body {
   font-weight: 600;
 }
 
+/* ========== TTS READER ========== */
+.tts-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  color: var(--ink);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.tts-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(201,168,76,0.3);
+}
+
+.tts-btn.playing {
+  background: linear-gradient(135deg, var(--red-accent), #c0392b);
+  color: var(--parchment);
+}
+
+.tts-speed {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(245,240,232,0.6);
+}
+
+.tts-speed select {
+  background: rgba(245,240,232,0.1);
+  color: var(--parchment);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 0.3rem 0.4rem;
+  font-size: 0.8rem;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
@@ -578,6 +625,11 @@ body {
     <div class="video-label">▶ Video del tema</div>
     <div class="video-container">
       <iframe src="https://drive.google.com/file/d/1HwiCkPyM4cQyiUvbAXHqdJAXJbF5vLuR/preview" allow="autoplay" allowfullscreen></iframe>
+    </div>
+
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section1">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
     <h3>Los Mayas</h3>
@@ -673,6 +725,11 @@ body {
       <iframe src="https://drive.google.com/file/d/1qqWHcSlFXZnevnYlHqvE_fsw2MqSXIHp/preview" allow="autoplay" allowfullscreen></iframe>
     </div>
 
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section2">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
     <h3>Contexto Político y Económico Español</h3>
 
     <p>España buscaba expandir su imperio, compitiendo con Portugal, Inglaterra y Francia. Los expedicionarios querían enriquecerse y ganar prestigio social (mercantilismo). En Yucatán, descubrieron sociedades con alto desarrollo cultural y grandes riquezas.</p>
@@ -731,6 +788,11 @@ body {
     <div class="video-label">▶ Video del tema</div>
     <div class="video-container">
       <iframe src="https://drive.google.com/file/d/1LUm10OL2mVzApqGtX_OUmlqfKf2dkfdk/preview" allow="autoplay" allowfullscreen></iframe>
+    </div>
+
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section3">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
     <h3>¿Cómo inicia la Conquista?</h3>
@@ -814,6 +876,11 @@ body {
       <iframe src="https://drive.google.com/file/d/1ewc16fXXWUYpZyizzD79-AtDg1IaEehV/preview" allow="autoplay" allowfullscreen></iframe>
     </div>
 
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section4">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
     <h3>Las Órdenes Religiosas</h3>
     <p>Tras la caída de Tenochtitlán, llegaron frailes cuya misión era la <strong>evangelización</strong>: enseñar el cristianismo y borrar las antiguas religiones.</p>
     <table class="data-table">
@@ -892,6 +959,11 @@ body {
       <iframe src="https://drive.google.com/file/d/1dTZGcFPkCpsmpdjs_fJgHtF8ET0Kzma0/preview" allow="autoplay" allowfullscreen></iframe>
     </div>
 
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section5">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
     <h3>¿Qué era el Comercio Triangular?</h3>
     <p>Un sistema de comercio entre tres continentes que funcionaba así:</p>
 
@@ -937,6 +1009,11 @@ body {
     <div class="video-label">▶ Video del tema</div>
     <div class="video-container">
       <iframe src="https://drive.google.com/file/d/1VCAMjVBgZLT03rTEwD99UbR4v5Uk5b3q/preview" allow="autoplay" allowfullscreen></iframe>
+    </div>
+
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section6">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
     <h3>Causas</h3>
@@ -1180,6 +1257,108 @@ function closeQuiz() {
 // Close quiz on overlay click (outside box)
 document.getElementById('quizOverlay').addEventListener('click', function(e) {
   if (e.target === this) closeQuiz();
+});
+
+// ========== TEXT-TO-SPEECH ==========
+let currentUtterance = null;
+let currentBtn = null;
+let ttsSpeed = 1;
+
+function setSpeed(val) {
+  ttsSpeed = parseFloat(val);
+  // If currently playing, restart with new speed
+  if (currentUtterance && speechSynthesis.speaking) {
+    const btn = currentBtn;
+    stopTTS();
+    setTimeout(() => toggleTTS(btn), 100);
+  }
+}
+
+function getTextFromSection(sectionId) {
+  const sectionEl = document.getElementById(sectionId);
+  if (!sectionEl) return '';
+  const content = sectionEl.querySelector('.section-content');
+  if (!content) return '';
+  // Get all text from p, li, td, th elements (skip buttons, selects, iframes)
+  const elements = content.querySelectorAll('h3, h4, p, li, td, th');
+  let text = '';
+  elements.forEach(el => {
+    const t = el.innerText.trim();
+    if (t && t !== 'Escuchar' && t !== '⏹ Detener') {
+      text += t + '. ';
+    }
+  });
+  return text;
+}
+
+function stopTTS() {
+  speechSynthesis.cancel();
+  if (currentBtn) {
+    currentBtn.textContent = '🔊 Escuchar';
+    currentBtn.classList.remove('playing');
+  }
+  currentUtterance = null;
+  currentBtn = null;
+}
+
+function toggleTTS(btn) {
+  // If this button is already playing, stop
+  if (currentBtn === btn && speechSynthesis.speaking) {
+    stopTTS();
+    return;
+  }
+  // Stop any other playing
+  stopTTS();
+
+  const sectionId = btn.getAttribute('data-section');
+  const text = getTextFromSection(sectionId);
+  if (!text) return;
+
+  // Split text into chunks (speechSynthesis has limits on long text)
+  const chunks = [];
+  const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+  let chunk = '';
+  sentences.forEach(s => {
+    if ((chunk + s).length > 200) {
+      if (chunk) chunks.push(chunk.trim());
+      chunk = s;
+    } else {
+      chunk += s;
+    }
+  });
+  if (chunk) chunks.push(chunk.trim());
+
+  currentBtn = btn;
+  btn.textContent = '⏹ Detener';
+  btn.classList.add('playing');
+
+  let chunkIndex = 0;
+
+  function speakNext() {
+    if (chunkIndex >= chunks.length) {
+      stopTTS();
+      return;
+    }
+    const utter = new SpeechSynthesisUtterance(chunks[chunkIndex]);
+    utter.lang = 'es-MX';
+    utter.rate = ttsSpeed;
+    utter.onend = () => {
+      chunkIndex++;
+      speakNext();
+    };
+    utter.onerror = () => {
+      stopTTS();
+    };
+    currentUtterance = utter;
+    speechSynthesis.speak(utter);
+  }
+
+  speakNext();
+}
+
+// Stop TTS when navigating away
+document.querySelectorAll('.back-btn').forEach(btn => {
+  btn.addEventListener('click', stopTTS);
 });
 </script>
 
