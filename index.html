@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de Estudio: Historia</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --parchment: #f5f0e8;
+  --ink: #1a1410;
+  --gold: #c9a84c;
+  --gold-dark: #a07d2e;
+  --red-accent: #8b2500;
+  --blue-deep: #1b2a4a;
+  --green-moss: #3a5a40;
+  --brown-warm: #6b4226;
+  --bg-dark: #0f0f0f;
+  --card-bg: rgba(245,240,232,0.04);
+  --border-subtle: rgba(201,168,76,0.2);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: var(--bg-dark);
+  color: var(--parchment);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ========== LANDING PAGE ========== */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(139,37,0,0.06) 0%, transparent 50%),
+    linear-gradient(180deg, #0f0f0f 0%, #1a1410 100%);
+}
+
+.landing::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(201,168,76,0.03) 50px, rgba(201,168,76,0.03) 51px),
+    repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(201,168,76,0.03) 50px, rgba(201,168,76,0.03) 51px);
+  pointer-events: none;
+}
+
+.landing-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeDown 0.8s ease forwards;
+}
+
+.landing h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fadeDown 0.8s ease 0.15s forwards;
+}
+
+.landing .subtitle {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: rgba(245,240,232,0.5);
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeDown 0.8s ease 0.3s forwards;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 1rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.5s forwards;
+}
+
+.topic-card {
+  background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(201,168,76,0.02));
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.topic-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px; height: 100%;
+  background: var(--gold);
+  transform: scaleY(0);
+  transition: transform 0.35s ease;
+  transform-origin: top;
+}
+
+.topic-card:hover {
+  background: linear-gradient(135deg, rgba(201,168,76,0.12), rgba(201,168,76,0.04));
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(201,168,76,0.1);
+}
+
+.topic-card:hover::before { transform: scaleY(1); }
+
+.topic-card .number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--gold);
+  opacity: 0.3;
+  line-height: 1;
+}
+
+.topic-card .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--parchment);
+  margin-top: 0.5rem;
+}
+
+.topic-card .desc {
+  font-size: 0.85rem;
+  color: rgba(245,240,232,0.45);
+  margin-top: 0.3rem;
+}
+
+.general-quiz-btn {
+  margin-top: 2.5rem;
+  padding: 1rem 2.5rem;
+  background: var(--gold);
+  color: var(--ink);
+  border: none;
+  border-radius: 8px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.7s forwards;
+  letter-spacing: 0.03em;
+}
+
+.general-quiz-btn:hover {
+  background: #dbb85c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(201,168,76,0.3);
+}
+
+/* ========== SECTION PAGES ========== */
+.section {
+  display: none;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.section.active { display: block; }
+.landing.hidden { display: none; }
+
+.section-hero {
+  padding: 4rem 2rem 3rem;
+  background: linear-gradient(180deg, rgba(201,168,76,0.08) 0%, transparent 60%);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--border-subtle);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.back-btn:hover {
+  background: rgba(201,168,76,0.1);
+  border-color: var(--gold);
+}
+
+.section-hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1.15;
+}
+
+.section-hero .section-desc {
+  font-size: 1.05rem;
+  color: rgba(245,240,232,0.5);
+  margin-top: 0.5rem;
+  max-width: 600px;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.section-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.section-content h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--parchment);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.section-content p {
+  color: rgba(245,240,232,0.8);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.section-content ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  color: rgba(245,240,232,0.75);
+}
+
+.section-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.section-content strong {
+  color: var(--parchment);
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.03));
+  border-left: 3px solid var(--gold);
+  padding: 1.2rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+.highlight-box p { color: rgba(245,240,232,0.85); margin: 0; }
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.data-table th {
+  background: rgba(201,168,76,0.15);
+  color: var(--gold);
+  text-align: left;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--gold-dark);
+}
+
+.data-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid rgba(201,168,76,0.1);
+  color: rgba(245,240,232,0.75);
+}
+
+.data-table tr:hover td {
+  background: rgba(201,168,76,0.05);
+}
+
+/* ========== QUIZ ========== */
+.quiz-trigger {
+  display: block;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+}
+
+.quiz-trigger:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.quiz-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.quiz-overlay.active { display: flex; }
+
+.quiz-box {
+  background: #1a1a1a;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.quiz-box h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.quiz-progress {
+  font-size: 0.85rem;
+  color: rgba(245,240,232,0.4);
+  margin-bottom: 1.5rem;
+}
+
+.quiz-question {
+  font-size: 1.1rem;
+  color: var(--parchment);
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.quiz-options { list-style: none; }
+
+.quiz-options li {
+  background: rgba(245,240,232,0.04);
+  border: 1px solid rgba(245,240,232,0.1);
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  color: rgba(245,240,232,0.8);
+  font-size: 0.95rem;
+}
+
+.quiz-options li:hover {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.08);
+}
+
+.quiz-options li.correct {
+  border-color: #4caf50;
+  background: rgba(76,175,80,0.15);
+  color: #a5d6a7;
+}
+
+.quiz-options li.incorrect {
+  border-color: #e53935;
+  background: rgba(229,57,53,0.15);
+  color: #ef9a9a;
+}
+
+.quiz-options li.disabled { pointer-events: none; }
+
+.quiz-next-btn {
+  display: none;
+  margin-top: 1.2rem;
+  padding: 0.8rem 2rem;
+  background: var(--gold);
+  color: var(--ink);
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.quiz-next-btn:hover { background: #dbb85c; }
+
+.quiz-result {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.quiz-result .score {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--gold);
+}
+
+.quiz-result .score-label {
+  color: rgba(245,240,232,0.5);
+  margin-bottom: 1rem;
+}
+
+.quiz-close-btn {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Source Sans 3', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.quiz-close-btn:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.quiz-feedback {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: rgba(245,240,232,0.6);
+  font-style: italic;
+  display: none;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeDown {
+  from { opacity:0; transform:translateY(-20px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(20px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .topic-grid { grid-template-columns: 1fr; }
+  .section-content { padding: 1.5rem 1rem 3rem; }
+  .quiz-box { padding: 1.5rem; }
+}
+
+/* ========== VIDEO ========== */
+.video-container {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #000;
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.video-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- ==================== LANDING ==================== -->
+<div class="landing" id="landing">
+  <div class="landing-icon">🏛️</div>
+  <h1>Guía de Estudio<br>Historia</h1>
+  <p class="subtitle">De Mesoamérica a la Independencia de las 13 Colonias</p>
+
+  <div class="topic-grid">
+    <div class="topic-card" onclick="showSection('s1')">
+      <div class="number">01</div>
+      <div class="name">Las Culturas Mesoamericanas</div>
+      <div class="desc">Mayas y Aztecas — organización, religión y legado</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s2')">
+      <div class="number">02</div>
+      <div class="name">Diferencias entre Indígenas y Españoles</div>
+      <div class="desc">Política, religión, tecnología y urbanismo</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s3')">
+      <div class="number">03</div>
+      <div class="name">La Conquista de México</div>
+      <div class="desc">Expediciones, alianzas y la caída de Tenochtitlán</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s4')">
+      <div class="number">04</div>
+      <div class="name">La Conquista Espiritual</div>
+      <div class="desc">Evangelización, órdenes religiosas y sincretismo</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s5')">
+      <div class="number">05</div>
+      <div class="name">El Triángulo Comercial</div>
+      <div class="desc">Comercio triangular, esclavitud y mestizaje</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s6')">
+      <div class="number">06</div>
+      <div class="name">Independencia de las 13 Colonias</div>
+      <div class="desc">Causas, batallas y la Declaración de Independencia</div>
+    </div>
+  </div>
+
+  <button class="general-quiz-btn" onclick="startQuiz('general')">Realizar QUIZ General (18 Preguntas)</button>
+</div>
+
+<!-- ==================== SECTION 1: CULTURAS MESOAMERICANAS ==================== -->
+<div class="section" id="s1">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>Las Culturas Mesoamericanas</h2>
+    <p class="section-desc">Mayas y Aztecas: dos civilizaciones que marcaron la historia de América.</p>
+  </div>
+  <div class="section-content">
+
+    <div class="video-label">▶ Video del tema</div>
+    <div class="video-container">
+      <video controls playsinline preload="metadata" poster="">
+        <source src="videos/mayas_y_aztecas.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+    <h3>Los Mayas</h3>
+    <h4>Datos Generales</h4>
+    <ul>
+      <li><strong>Periodo:</strong> 1200 a.C. a 1541 d.C.</li>
+      <li><strong>Ubicación:</strong> Península de Yucatán, Tabasco, Chiapas, Belice, Guatemala, Salvador y Honduras.</li>
+      <li><strong>Gobierno / Religión:</strong> Teocrática / Politeísta.</li>
+    </ul>
+
+    <h4>Centros Ceremoniales</h4>
+    <p>En Yucatán: Chichén Itzá, Uxmal, Dzibilchaltún. También Palenque (Chiapas) y Copán (Honduras).</p>
+
+    <h4>Deidades Mayas</h4>
+    <ul>
+      <li><strong>Kukulcán:</strong> El hombre que se hizo dios</li>
+      <li><strong>Ixchel:</strong> Diosa de la Fertilidad, agrícola y femenina</li>
+      <li><strong>Ah Puch:</strong> Dios del Infierno</li>
+      <li><strong>Chaac:</strong> Dios de la lluvia</li>
+      <li><strong>Itzimná:</strong> Dios del Cielo</li>
+      <li><strong>Hunab Ku:</strong> Dios Creador</li>
+    </ul>
+
+    <h4>Estructura Social</h4>
+    <table class="data-table">
+      <tr><th>Nivel</th><th>Grupos</th></tr>
+      <tr><td>Nobleza</td><td>Ahkinoob (sacerdotes), Alhemehenoob (reyes)</td></tr>
+      <tr><td>Mercaderes</td><td>Ah ppolom yoc</td></tr>
+      <tr><td>Pueblo</td><td>Ah chembal uinicoob (hombres inferiores), Yalba uinicoob (plebeyos), Ppencatoob (esclavos)</td></tr>
+    </table>
+
+    <h4>Aportaciones</h4>
+    <ul>
+      <li>Fueron astrónomos</li>
+      <li>Escritura ideográfica</li>
+      <li>Numeración de 3 dígitos (punto, raya y el cero)</li>
+      <li>Dos calendarios: Tzolkin (260 días, sagrado) y Haab (365 días, civil)</li>
+      <li>Arquitectos, escultores, pintores; practicaban sacrificios humanos</li>
+    </ul>
+
+    <h3>Los Aztecas (Mexicas)</h3>
+    <h4>Datos Generales</h4>
+    <ul>
+      <li><strong>Periodo:</strong> 1200 – 1521 d.C.</li>
+      <li><strong>Ubicación:</strong> Tenochtitlán, en el Lago Texcoco, Meseta de Anáhuac, Centro de México.</li>
+    </ul>
+
+    <h4>La Triple Alianza</h4>
+    <div class="highlight-box">
+      <p>Los aztecas se aliaron con los señoríos de <strong>Tlacopan (Tacuba) y Texcoco</strong>, formando la "Triple Alianza". Esto les permitió formar un gran imperio, imponiendo su hegemonía, recibiendo tributos y obligando a otros pueblos a participar en guerras y construcciones.</p>
+    </div>
+
+    <h4>Pueblos Independientes</h4>
+    <p>Varios señoríos se opusieron a los Aztecas: <strong>Tototépec, Teloloapan, Yopitzingo, Purépechas y Tlaxcaltecas.</strong> Estos jugaron un papel clave al llegar los españoles, aliándose con ellos para derrocar a los Aztecas.</p>
+
+    <h4>Economía Azteca (3 Formas)</h4>
+    <ul>
+      <li><strong>Trueque y pago en especie:</strong> Usaban cacao, oro y plumas de aves preciosas.</li>
+      <li><strong>Agricultura:</strong> Uso de chinampas (tierras de cultivo flotantes). Cultivaban maíz, chile, frijol, calabaza, nopal, maguey, amaranto, tomate y chayote.</li>
+      <li><strong>Guerra:</strong> Acrecentaban territorio, obtenían recursos y obligaban a pagar tributos.</li>
+    </ul>
+
+    <h4>División de Clases Sociales</h4>
+    <table class="data-table">
+      <tr><th>Clase</th><th>Integrantes</th></tr>
+      <tr><td>Alta</td><td>Señores, sacerdotes, jueces, funcionarios</td></tr>
+      <tr><td>Media</td><td>Comerciantes, campesinos, artesanos (Macahuales)</td></tr>
+      <tr><td>Baja</td><td>Siervos y esclavos</td></tr>
+    </table>
+    <p>Las dos primeras clases podían decidir sobre la elección del gobernante por medio del gran consejo.</p>
+
+    <h4>Educación de los Aztecas</h4>
+    <ul>
+      <li><strong>Calmécac:</strong> Escuela de nobles. Se preparaban para ser guerreros, sacerdotes o dirigentes. Se enseñaba historia, escritura pictográfica y náhuatl.</li>
+      <li><strong>Telpochcalli:</strong> Escuela para la gente común. Había una en cada barrio. Se enseñaban técnicas agrícolas, uso de armas y oficios.</li>
+    </ul>
+
+    <button class="quiz-trigger" onclick="startQuiz('s1')">Iniciar Quiz — Culturas Mesoamericanas (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 2: DIFERENCIAS ==================== -->
+<div class="section" id="s2">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>Diferencias entre Indígenas y Españoles</h2>
+    <p class="section-desc">Política, religión, tecnología y visión del mundo.</p>
+  </div>
+  <div class="section-content">
+
+    <div class="video-label">▶ Video del tema</div>
+    <div class="video-container">
+      <video controls playsinline preload="metadata">
+        <source src="videos/diferencias.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+    <h3>Contexto Político y Económico Español</h3>
+
+    <p>España buscaba expandir su imperio, compitiendo con Portugal, Inglaterra y Francia. Los expedicionarios querían enriquecerse y ganar prestigio social (mercantilismo). En Yucatán, descubrieron sociedades con alto desarrollo cultural y grandes riquezas.</p>
+
+    <h3>Organización Social Mesoamericana</h3>
+    <p>La base social mexica era el <strong>calpulli</strong>, la unidad territorial donde residía la mayoría de la población, organizada por familias o parentesco.</p>
+    <ul>
+      <li><strong>Gobierno:</strong> El tlatoani, el tlatocan y funcionarios ejercían estricto control.</li>
+      <li><strong>Registro Poblacional:</strong> Cada calpulli llevaba registro del número de habitantes y tareas por familia.</li>
+      <li><strong>Movilidad Social:</strong> Se ascendía por desempeño en milicia, comercio y sacerdocio, no por riqueza personal.</li>
+    </ul>
+
+    <h3>Diferencias Ideológicas y Religiosas</h3>
+    <h4>Presagios y Creencias Indígenas</h4>
+    <p>Algunas sociedades prehispánicas interpretaron fenómenos naturales (terremotos, cometas) como presagios de que algo terrible vendría. Moctezuma estaba imbuido de pesimismo.</p>
+
+    <h4>El Retorno de Quetzalcóatl</h4>
+    <p>Existía la creencia de que el dios Quetzalcóatl regresaría un día desde el mar. Los indígenas inicialmente confundieron a los españoles con dioses, creyendo incluso que caballo y jinete eran un solo ser.</p>
+
+    <h4>La Perspectiva Católica</h4>
+    <p>Los españoles se horrorizaron ante rituales indígenas y justificaron el sometimiento con la idea de enseñar la "verdadera fe". Carlos V ordenó a Cortés la evangelización.</p>
+
+    <h3>La Polémica sobre la Humanidad de los Indígenas</h3>
+    <ul>
+      <li><strong>Defensores:</strong> Frailes evangelizadores y filósofos que defendían a los indígenas.</li>
+      <li><strong>Justificadores del dominio:</strong> Buscaban un trato discriminatorio basado en la supuesta superioridad europea.</li>
+    </ul>
+
+    <h3>Superioridad Tecnológica y Militar</h3>
+    <p>Los europeos usaban tecnología más avanzada: la rueda, brújula, cuadrante, sextante, pólvora (arcabuces, cañones), armaduras de hierro, caballos y perros de guerra.</p>
+
+    <h4>Armas Nativas vs. Españolas</h4>
+    <table class="data-table">
+      <tr><th>Armas Nativas</th><th>Armas Españolas</th></tr>
+      <tr><td>Arcos, flechas, escudos, lanzas, hondas</td><td>Arcabuces, cañones, ballestas, espadas, lanzas</td></tr>
+      <tr><td>Objetivo: capturar vivos para sacrificio</td><td>Objetivo: matar al mayor número posible</td></tr>
+      <tr><td>Escudos de madera y cuero, ichcahuipil (algodón acolchado)</td><td>Armaduras y escudos de hierro</td></tr>
+    </table>
+
+    <h3>Diferencias Urbanas</h3>
+    <p>Las ciudades europeas medievales eran espontáneas y amuralladas. Las ciudades mesoamericanas como Tenochtitlán tenían planificación simétrica y ordenada que asombró a los españoles.</p>
+
+    <button class="quiz-trigger" onclick="startQuiz('s2')">Iniciar Quiz — Diferencias (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 3: CONQUISTA DE MEXICO ==================== -->
+<div class="section" id="s3">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>La Conquista de México</h2>
+    <p class="section-desc">De las primeras expediciones a la caída de Tenochtitlán.</p>
+  </div>
+  <div class="section-content">
+
+    <div class="video-label">▶ Video del tema</div>
+    <div class="video-container">
+      <video controls playsinline preload="metadata">
+        <source src="videos/conquista_mexico.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+    <h3>¿Cómo inicia la Conquista?</h3>
+    <p>Tras la conquista de Constantinopla y la necesidad de nuevas rutas comerciales hacia Asia. El gobernador de Cuba, <strong>Diego de Velázquez</strong>, organizó 3 expediciones:</p>
+
+    <h4>Las 3 Expediciones</h4>
+    <table class="data-table">
+      <tr><th>Expedición</th><th>Año</th><th>Líder</th></tr>
+      <tr><td>1era</td><td>1517</td><td>Francisco Hernández de Córdoba — llega a Isla Mujeres, rodea Yucatán hasta Champotón</td></tr>
+      <tr><td>2da</td><td>1518</td><td>Juan de Grijalva — llega a Cozumel, Catoche, Tabasco, Veracruz. Le informan del Imperio Azteca</td></tr>
+      <tr><td>3era</td><td>1519</td><td>Hernán Cortés — 11 navíos y ~600 hombres</td></tr>
+    </table>
+
+    <h3>Expedición de Hernán Cortés</h3>
+    <ul>
+      <li>En Cozumel encuentra a <strong>Jerónimo de Aguilar</strong> (intérprete) y se entera de <strong>Gonzalo Guerrero</strong> (padre del mestizaje).</li>
+      <li>En el río Grijalva, gana una batalla. Los indígenas le regalan oro y 20 esclavos, entre ellos la <strong>Malinche</strong> (hablaba maya y náhuatl).</li>
+    </ul>
+
+    <h4>La Villa Rica de Vera Cruz</h4>
+    <p>Fue el primer ayuntamiento de la historia colonial. Cortés desconoce el tratado con Diego de Velázquez y conquista las tierras a su nombre y al nombre del rey de España.</p>
+
+    <h3>Cortés y sus Aliados</h3>
+    <div class="highlight-box">
+      <p>Cortés se unió con los enemigos de los Aztecas. Los <strong>tlaxcaltecas</strong> vieron la oportunidad de eliminar a los Aztecas y le dieron información sobre el territorio, costumbres y estrategias militares.</p>
+    </div>
+
+    <h3>La Matanza de Cholula</h3>
+    <p>Los españoles llegan a Cholula y son recibidos (sin dejar entrar a los tlaxcaltecas). Era una trampa. Cortés nota el sabotaje, manda matar a los jefes y masacra al poblado.</p>
+
+    <h3>Moctezuma y Cortés</h3>
+    <ul>
+      <li>El 8 de noviembre de 1519, Moctezuma II recibe a Cortés en la Calzada de Ixtapalapa.</li>
+      <li>Lo hospeda en un palacio, pero Cortés hizo expediciones buscando oro y plata.</li>
+      <li>Cortés toma prisionero a Moctezuma para controlar a los Aztecas.</li>
+    </ul>
+
+    <h3>Cortés contra Pánfilo Narváez</h3>
+    <p>Diego de Velázquez manda a Narváez (19 navíos, 1,400 hombres, 80 caballos) para capturar a Cortés. Cortés lo derrota cerca de Zempoala con solo 300 hombres y convence a los soldados de Narváez de unirse a él.</p>
+
+    <h3>La Matanza del Templo Mayor</h3>
+    <p>Mientras Cortés combatía a Narváez, <strong>Pedro Alvarado</strong> queda al mando. Durante un festejo azteca, Alvarado cree que es un motín y masacra a los indígenas. El pueblo se levanta en armas. Cortés regresa pero es tarde: los Aztecas quieren matar a los españoles. Moctezuma intenta calmar a su pueblo pero lo apedrean y muere.</p>
+
+    <h3>La Noche Triste</h3>
+    <ul>
+      <li><strong>Cuitláhuac</strong> toma el mando de Tenochtitlán.</li>
+      <li>Los españoles huyen a medianoche, pero los aztecas los descubren y atacan.</li>
+      <li>Muchos españoles mueren. Cortés se sienta bajo un árbol de ahuehuete y llora.</li>
+    </ul>
+
+    <h3>La Caída de Tenochtitlán</h3>
+    <h4>Antecedentes</h4>
+    <ul>
+      <li>Cortés prepara un ataque conjunto con los tlaxcaltecas.</li>
+      <li>Una epidemia de viruela mata miles de aztecas, incluyendo a Cuitláhuac.</li>
+      <li><strong>Cuauhtémoc</strong> es nombrado nuevo Tlatoani.</li>
+    </ul>
+    <h4>La Batalla Final</h4>
+    <ul>
+      <li>Cortés trae cañones y construye barcos para los lagos de Tenochtitlán.</li>
+      <li>Divide su ejército en 3 secciones, rodea la ciudad y corta el agua.</li>
+      <li>La batalla termina con la captura y tortura de Cuauhtémoc.</li>
+      <li><strong>Tenochtitlán cae el 13 de agosto de 1521.</strong></li>
+    </ul>
+
+    <button class="quiz-trigger" onclick="startQuiz('s3')">Iniciar Quiz — La Conquista (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 4: CONQUISTA ESPIRITUAL ==================== -->
+<div class="section" id="s4">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>La Conquista Espiritual</h2>
+    <p class="section-desc">Cómo cambió la forma de pensar, creer y vivir de México hace 500 años.</p>
+  </div>
+  <div class="section-content">
+
+    <div class="video-label">▶ Video del tema</div>
+    <div class="video-container">
+      <video controls playsinline preload="metadata">
+        <source src="videos/conquista_espiritual.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+    <h3>Las Órdenes Religiosas</h3>
+    <p>Tras la caída de Tenochtitlán, llegaron frailes cuya misión era la <strong>evangelización</strong>: enseñar el cristianismo y borrar las antiguas religiones.</p>
+    <table class="data-table">
+      <tr><th>Orden</th><th>Año</th><th>Zona</th></tr>
+      <tr><td>Franciscanos</td><td>1524</td><td>Centro de México, Puebla, Tlaxcala, Michoacán, Jalisco, Yucatán, Zacatecas</td></tr>
+      <tr><td>Dominicos</td><td>1526</td><td>Sur: Oaxaca y Guatemala</td></tr>
+      <tr><td>Agustinos</td><td>1533</td><td>Occidente y Guerrero</td></tr>
+      <tr><td>Jesuitas</td><td>1572</td><td>Norte: colegios y misiones</td></tr>
+    </table>
+
+    <div class="highlight-box">
+      <p><strong>¿Sabías qué?</strong> A fray Toribio de Benavente lo llamaban "Motolinía" (en náhuatl = "pobre"), porque los indígenas se asombraron de verlo caminar descalzo y con ropa rota.</p>
+    </div>
+
+    <h3>Métodos de Evangelización</h3>
+    <p>Los españoles destruyeron templos y códices. Pero los frailes usaron creatividad:</p>
+    <ul>
+      <li><strong>Aprendieron las lenguas:</strong> Estudiaron náhuatl, otomí y maya para poder predicar.</li>
+      <li><strong>Estudiaron los Códices:</strong> Para entender la mente indígena.</li>
+      <li><strong>Teatro y Danza:</strong> Usaron obras bíblicas y danzas, algo que los indígenas disfrutaban.</li>
+      <li><strong>Dibujos:</strong> Crearon oraciones con dibujos al estilo indígena (tipo cómic).</li>
+      <li><strong>Nuevos Pueblos:</strong> Reunieron a la gente en pueblos alrededor de una iglesia para vigilarlos.</li>
+    </ul>
+
+    <h3>Choque de Creencias</h3>
+    <h4>¿Por qué los indígenas aceptaron la nueva fe?</h4>
+    <p>No siempre fue por la fuerza. Los indígenas eran politeístas. Para ellos, aceptar a Cristo o a los Santos no significaba dejar a sus dioses, sino agregar nuevos dioses a su colección.</p>
+    <ul>
+      <li>Calificaron a los dioses antiguos como demonios.</li>
+      <li>Introdujeron la idea del Infierno (castigo eterno que no existía en la mente indígena).</li>
+      <li>La religión se visualizó como castigo divino si se pecaba.</li>
+    </ul>
+
+    <h3>Occidentalización (Cambio de Vida)</h3>
+    <p>La conversión no fue solo rezar, fue cambiar todo el estilo de vida:</p>
+    <ul>
+      <li>Se impuso el matrimonio cristiano (una sola esposa).</li>
+      <li>Se les obligó a cubrirse más el cuerpo.</li>
+      <li>Aprendieron a usar el arado, animales de tiro, carpintería y herrería.</li>
+      <li>Aprendieron a fabricar guitarras y órganos, y a cantar en latín.</li>
+    </ul>
+
+    <h3>Los Rostros de la Evangelización</h3>
+    <p>Hubo frailes que defendieron a los indígenas contra los abusos de los soldados:</p>
+    <ul>
+      <li><strong>Fray Bartolomé de las Casas:</strong> El gran abogado de los derechos indígenas.</li>
+      <li><strong>Fray Juan de Zumárraga:</strong> Primer obispo y promotor de la educación.</li>
+    </ul>
+
+    <h3>El Sincretismo</h3>
+    <div class="highlight-box">
+      <p><strong>El sincretismo</strong> es la mezcla de tradiciones indígenas con la religión católica, creando el "Cristianismo Indígena" — una forma de fe única en el mundo.</p>
+    </div>
+    <ul>
+      <li>Buscaron parecidos entre sus dioses y los santos cristianos para seguir adorándolos sin ser descubiertos.</li>
+      <li>Si antes pedían lluvia a Tláloc, ahora la pedían a San Isidro Labrador.</li>
+      <li>Las fiestas prehispánicas se ajustaron al calendario católico (como el Día de Muertos).</li>
+      <li>Construyeron iglesias justo encima de los templos antiguos (como en Cholula).</li>
+    </ul>
+
+    <button class="quiz-trigger" onclick="startQuiz('s4')">Iniciar Quiz — Conquista Espiritual (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 5: TRIANGULO COMERCIAL ==================== -->
+<div class="section" id="s5">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>El Triángulo Comercial</h2>
+    <p class="section-desc">El comercio triangular y el nacimiento de una nueva identidad.</p>
+  </div>
+  <div class="section-content">
+
+    <div class="video-label">▶ Video del tema</div>
+    <div class="video-container">
+      <video controls playsinline preload="metadata">
+        <source src="videos/triangulo_comercial.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+    <h3>¿Qué era el Comercio Triangular?</h3>
+    <p>Un sistema de comercio entre tres continentes que funcionaba así:</p>
+
+    <h4>Los 3 Vértices</h4>
+    <table class="data-table">
+      <tr><th>Vértice</th><th>Ruta</th><th>Producto</th></tr>
+      <tr><td>1. Europa → África</td><td>Puertos europeos a costas de África Occidental</td><td>Textiles, armas de fuego, herramientas de hierro, alcohol</td></tr>
+      <tr><td>2. África → América</td><td>El "Pasaje Medio" cruzando el Atlántico</td><td>Personas esclavizadas</td></tr>
+      <tr><td>3. América → Europa</td><td>Colonias americanas a puertos europeos</td><td>Azúcar, tabaco, algodón, cacao, oro, plata</td></tr>
+    </table>
+
+    <h3>El Pasaje Medio</h3>
+    <p>La etapa más cruel del viaje. Las personas capturadas eran encadenadas en las bodegas de los barcos en espacios reducidos. El hambre, las enfermedades y el maltrato eran la norma. Millones no sobrevivieron la travesía.</p>
+
+    <h3>En las Colonias Americanas</h3>
+    <p>Las personas esclavizadas eran vendidas en subastas en las plazas públicas para trabajar en minas y haciendas. Este sistema estableció una jerarquía social donde el color de la piel determinaba el valor de una persona.</p>
+
+    <h3>El Mestizaje y el Sistema de Castas</h3>
+    <p>La convivencia forzada dio lugar a una transformación social profunda. El mestizaje no fue solo biológico, sino el resultado de un <strong>sistema de castas</strong> complejo creado por la Corona para mantener el control.</p>
+    <ul>
+      <li>Los <strong>mestizos, mulatos y zambos</strong> ocupaban lugares intermedios en la escala social.</li>
+      <li>Siempre bajo la sombra de los <strong>peninsulares y criollos</strong>.</li>
+      <li>La clasificación determinaba derechos: poseer tierras, educación, impuestos.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>El sistema de castas buscaba dividir, pero el contacto diario entre europeos, africanos e indígenas estaba creando algo que las leyes no podían contener por completo: <strong>una cultura compartida</strong>.</p>
+    </div>
+
+    <button class="quiz-trigger" onclick="startQuiz('s5')">Iniciar Quiz — Triángulo Comercial (3 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 6: INDEPENDENCIA 13 COLONIAS ==================== -->
+<div class="section" id="s6">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>Independencia de las 13 Colonias</h2>
+    <p class="section-desc">El nacimiento de Estados Unidos de América.</p>
+  </div>
+  <div class="section-content">
+
+    <div class="video-label">▶ Video del tema</div>
+    <div class="video-container">
+      <video controls playsinline preload="metadata">
+        <source src="videos/independencia.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+    <h3>Causas</h3>
+    <p>Los colonos se molestaron con Gran Bretaña por varias razones: participaron en la Guerra de los Siete Años sin beneficios, Londres impuso impuestos a productos como el té sin darles representación en el Parlamento.</p>
+    <ul>
+      <li><strong>Masacre de Boston (1770):</strong> Soldados británicos mataron a colonos que protestaban.</li>
+      <li><strong>Boston Tea Party (1773):</strong> Colonos arrojaron cargamentos de té al mar. Gran Bretaña cerró el puerto de Boston y prohibió reuniones públicas.</li>
+    </ul>
+
+    <h3>La Rebelión de Bacon (1676)</h3>
+    <p>La primera gran insurrección en la América colonial, liderada por Nathaniel Bacon. Un grupo diverso de sirvientes blancos, negros y esclavos africanos se enfrentaron al gobernador William Berkeley, exigiendo más autonomía colonial.</p>
+
+    <h3>Otras Rebeliones</h3>
+    <ul>
+      <li>18 levantamientos destinados a derrocar gobiernos coloniales.</li>
+      <li>6 rebeliones negras, desde Carolina del Sur hasta Nueva York.</li>
+      <li>40 disturbios de diversos orígenes.</li>
+    </ul>
+
+    <h3>Las Leyes de Townshend (1767)</h3>
+    <p>Legislación del Parlamento británico que gravaba impuestos e imponía regulaciones sobre el comercio en las colonias: derechos de importación sobre vidrio, pintura, papel y té.</p>
+
+    <h3>Comités de Correspondencia</h3>
+    <p>Grupos designados por las 13 colonias para proporcionar liderazgo y cooperación intercolonial. Impulsados por <strong>Samuel Adams</strong> en Boston (1772). En 1773, la Cámara de Burgueses de Virginia organizó comités permanentes con Thomas Jefferson y Patrick Henry.</p>
+
+    <h3>El "Common Sense" de Thomas Paine (1776)</h3>
+    <p>Folleto que atacaba el derecho divino de los reyes, describía la monarquía británica como injusta, y apeló al resentimiento de los colonos por las guerras que Inglaterra les había impuesto.</p>
+
+    <h3>Principales Batallas</h3>
+    <table class="data-table">
+      <tr><th>Batalla</th><th>Año</th><th>Resultado</th></tr>
+      <tr><td>Trenton</td><td>1776</td><td>Victoria E.E.U.U.</td></tr>
+      <tr><td>Long Island</td><td>1776</td><td>Victoria británica</td></tr>
+      <tr><td>Princeton</td><td>1777</td><td>Victoria E.E.U.U.</td></tr>
+      <tr><td>Saratoga</td><td>1777</td><td>Victoria E.E.U.U.</td></tr>
+      <tr><td>Monmouth</td><td>1778</td><td>Incierto</td></tr>
+      <tr><td>Lago Pontchartrain</td><td>1779</td><td>Victoria hispano-estadounidense</td></tr>
+      <tr><td>Kings Mountain</td><td>1780</td><td>Victoria E.E.U.U.</td></tr>
+      <tr><td>Chesapeake</td><td>1781</td><td>Victoria franco-estadounidense</td></tr>
+      <tr><td>Yorktown</td><td>1781</td><td>Victoria E.E.U.U. (decisiva)</td></tr>
+    </table>
+
+    <h3>Declaración de Independencia (4 de julio de 1776)</h3>
+    <p>Escrita por <strong>Thomas Jefferson</strong>. Establecía:</p>
+    <ul>
+      <li>Libertad política sin Gran Bretaña</li>
+      <li>Igualdad de los hombres</li>
+      <li>Vida, libertad y búsqueda de la felicidad</li>
+      <li>Derechos de propiedad y libertad</li>
+    </ul>
+
+    <h3>Consecuencias</h3>
+    <ul>
+      <li>Debilitamiento de Gran Bretaña (búsqueda de tierras en África).</li>
+      <li>Constitución de 1787: gobierno republicano, representativo y federal con 3 poderes (ejecutivo, legislativo, judicial).</li>
+      <li>Derechos elementales inspirados en la Ilustración: libertad de expresión, de prensa, de reunión, derecho a posesión de armas. <strong>Pero ninguno de estos derechos regía para los esclavos.</strong></li>
+    </ul>
+
+    <button class="quiz-trigger" onclick="startQuiz('s6')">Iniciar Quiz — Independencia (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== QUIZ OVERLAY ==================== -->
+<div class="quiz-overlay" id="quizOverlay">
+  <div class="quiz-box">
+    <h3 id="quizTitle">Quiz</h3>
+    <div class="quiz-progress" id="quizProgress"></div>
+    <div id="quizBody">
+      <p class="quiz-question" id="quizQuestion"></p>
+      <ul class="quiz-options" id="quizOptions"></ul>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <button class="quiz-next-btn" id="quizNext" onclick="nextQuestion()">Siguiente →</button>
+    </div>
+    <div class="quiz-result" id="quizResult" style="display:none;">
+      <div class="score" id="quizScore">0/0</div>
+      <p class="score-label">respuestas correctas</p>
+      <div id="quizWrongList" style="text-align:left; margin-top:1rem;"></div>
+      <button class="quiz-close-btn" onclick="closeQuiz()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ========== NAVIGATION ========== */
+function showSection(id) {
+  document.getElementById('landing').classList.add('hidden');
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function goHome() {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById('landing').classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+
+/* ========== QUIZ DATA ========== */
+const quizzes = {
+  s1: [
+    { q: "¿Cuál era la forma de gobierno de los Mayas?", o: ["Democrática","Teocrática","Monárquica","República"], a: 1 },
+    { q: "¿Qué era la Triple Alianza?", o: ["Alianza entre Mayas, Aztecas y Olmecas","Alianza entre Tenochtitlán, Tlacopan y Texcoco","Alianza entre España, Portugal y Francia","Alianza entre 3 dioses"], a: 1 },
+    { q: "¿Qué era el Calmécac?", o: ["Un templo maya","La escuela para gente común","La escuela de nobles aztecas","Un centro ceremonial"], a: 2 },
+    { q: "¿Cuál era el dios maya de la lluvia?", o: ["Kukulcán","Hunab Ku","Chaac","Ah Puch"], a: 2 },
+    { q: "¿Qué eran las chinampas?", o: ["Armas aztecas","Tierras de cultivo flotantes en lagos","Templos ceremoniales","Escuelas para nobles"], a: 1 },
+  ],
+  s2: [
+    { q: "¿Qué era el calpulli?", o: ["Un arma azteca","La unidad territorial base de la sociedad mexica","Un dios maya","Una escuela"], a: 1 },
+    { q: "¿A qué dios confundieron los indígenas con los españoles?", o: ["Huitzilopochtli","Tláloc","Quetzalcóatl","Chaac"], a: 2 },
+    { q: "¿Cuál era el principal objetivo de guerra de los mesoamericanos?", o: ["Matar al enemigo","Capturar vivos para sacrificio","Conquistar tierras","Robar oro"], a: 1 },
+    { q: "¿Qué impresionó a los españoles de las ciudades mesoamericanas?", o: ["Su desorden","Su planificación simétrica y ordenada","Que eran muy pequeñas","Sus murallas"], a: 1 },
+    { q: "¿Qué buscaban los soldados españoles al venir a América?", o: ["Aventura","Enriquecerse y ganar prestigio social","Conocer nuevas culturas","Escapar de Europa"], a: 1 },
+  ],
+  s3: [
+    { q: "¿Quién lideró la primera expedición a México en 1517?", o: ["Hernán Cortés","Juan de Grijalva","Francisco Hernández de Córdoba","Pedro de Alvarado"], a: 2 },
+    { q: "¿Quién era la Malinche?", o: ["La esposa de Moctezuma","Una esclava que hablaba maya y náhuatl","La primera monja de México","Una diosa azteca"], a: 1 },
+    { q: "¿Qué fue la Noche Triste?", o: ["La muerte de Moctezuma","La noche que los españoles huyeron de Tenochtitlán y fueron atacados","La caída de Tenochtitlán","La matanza de Cholula"], a: 1 },
+    { q: "¿Quién fue el último Tlatoani azteca?", o: ["Moctezuma","Cuitláhuac","Cuauhtémoc","Cortés"], a: 2 },
+    { q: "¿En qué fecha cayó Tenochtitlán?", o: ["13 de agosto de 1521","12 de octubre de 1492","4 de julio de 1776","15 de septiembre de 1810"], a: 0 },
+  ],
+  s4: [
+    { q: "¿Cuál fue la primera orden religiosa en llegar a México?", o: ["Dominicos","Jesuitas","Agustinos","Franciscanos"], a: 3 },
+    { q: "¿Qué significa 'Motolinía' en náhuatl?", o: ["Sabio","Pobre","Valiente","Santo"], a: 1 },
+    { q: "¿Qué es el sincretismo religioso?", o: ["Destruir todas las religiones","La mezcla de tradiciones indígenas con la religión católica","Solo rezar en latín","Prohibir todas las fiestas"], a: 1 },
+    { q: "¿Quién fue el gran defensor de los derechos indígenas?", o: ["Hernán Cortés","Fray Bartolomé de las Casas","Pedro de Alvarado","Diego de Velázquez"], a: 1 },
+    { q: "¿Qué hicieron los frailes con los templos prehispánicos?", o: ["Los conservaron como museos","Construyeron iglesias encima de ellos","Los destruyeron sin reemplazarlos","Los convirtieron en mercados"], a: 1 },
+  ],
+  s5: [
+    { q: "¿Cuáles eran los 3 continentes del comercio triangular?", o: ["Asia, África, América","Europa, África, América","Europa, Asia, África","América, Europa, Asia"], a: 1 },
+    { q: "¿Qué era el 'Pasaje Medio'?", o: ["La ruta de Europa a África","El viaje de personas esclavizadas de África a América","La ruta comercial de América a Europa","Un camino terrestre en México"], a: 1 },
+    { q: "¿Qué determinaba los derechos de una persona en el sistema de castas?", o: ["Su educación","Su riqueza","Su linaje / color de piel","Su trabajo"], a: 2 },
+  ],
+  s6: [
+    { q: "¿Qué evento de 1773 enfureció a Gran Bretaña contra los colonos?", o: ["La Masacre de Boston","El Boston Tea Party","La Rebelión de Bacon","La batalla de Yorktown"], a: 1 },
+    { q: "¿Quién escribió la Declaración de Independencia?", o: ["George Washington","Benjamin Franklin","Thomas Jefferson","Samuel Adams"], a: 2 },
+    { q: "¿Qué estableció la Constitución de 1787?", o: ["Una monarquía","Gobierno republicano con 3 poderes","Una dictadura militar","Un gobierno colonial"], a: 1 },
+    { q: "¿Quién escribió 'Common Sense' (Sentido Común)?", o: ["Thomas Jefferson","Samuel Adams","Thomas Paine","Patrick Henry"], a: 2 },
+    { q: "¿Cuál fue la batalla decisiva de la independencia?", o: ["Trenton","Saratoga","Long Island","Yorktown"], a: 3 },
+  ],
+};
+
+// General quiz = 3 random from each section
+quizzes.general = [];
+Object.keys(quizzes).forEach(k => {
+  if (k === 'general') return;
+  const pool = [...quizzes[k]];
+  // shuffle
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i+1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  quizzes.general.push(...pool.slice(0, 3));
+});
+
+/* ========== QUIZ ENGINE ========== */
+let currentQuiz = [];
+let currentIdx = 0;
+let score = 0;
+let wrongAnswers = [];
+
+function startQuiz(key) {
+  currentQuiz = [...quizzes[key]];
+  // shuffle for general
+  if (key === 'general') {
+    for (let i = currentQuiz.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i+1));
+      [currentQuiz[i], currentQuiz[j]] = [currentQuiz[j], currentQuiz[i]];
+    }
+  }
+  currentIdx = 0;
+  score = 0;
+  wrongAnswers = [];
+  document.getElementById('quizResult').style.display = 'none';
+  document.getElementById('quizBody').style.display = 'block';
+  document.getElementById('quizOverlay').classList.add('active');
+  document.getElementById('quizTitle').textContent = key === 'general' ? 'Quiz General' : 'Quiz del Tema';
+  showQuestion();
+}
+
+function showQuestion() {
+  const q = currentQuiz[currentIdx];
+  document.getElementById('quizProgress').textContent = `Pregunta ${currentIdx+1} de ${currentQuiz.length}`;
+  document.getElementById('quizQuestion').textContent = q.q;
+  document.getElementById('quizFeedback').style.display = 'none';
+  document.getElementById('quizNext').style.display = 'none';
+  const ol = document.getElementById('quizOptions');
+  ol.innerHTML = '';
+  q.o.forEach((opt, i) => {
+    const li = document.createElement('li');
+    li.textContent = opt;
+    li.onclick = () => selectAnswer(i);
+    ol.appendChild(li);
+  });
+}
+
+function selectAnswer(idx) {
+  const q = currentQuiz[currentIdx];
+  const lis = document.querySelectorAll('#quizOptions li');
+  lis.forEach(li => li.classList.add('disabled'));
+  if (idx === q.a) {
+    lis[idx].classList.add('correct');
+    score++;
+  } else {
+    lis[idx].classList.add('incorrect');
+    lis[q.a].classList.add('correct');
+    wrongAnswers.push({ q: q.q, yours: q.o[idx], correct: q.o[q.a] });
+    const fb = document.getElementById('quizFeedback');
+    fb.textContent = `Respuesta correcta: ${q.o[q.a]}`;
+    fb.style.display = 'block';
+  }
+  document.getElementById('quizNext').style.display = 'inline-block';
+  document.getElementById('quizNext').textContent = currentIdx < currentQuiz.length - 1 ? 'Siguiente →' : 'Ver Resultados';
+}
+
+function nextQuestion() {
+  currentIdx++;
+  if (currentIdx < currentQuiz.length) {
+    showQuestion();
+  } else {
+    document.getElementById('quizBody').style.display = 'none';
+    document.getElementById('quizResult').style.display = 'block';
+    document.getElementById('quizScore').textContent = `${score}/${currentQuiz.length}`;
+    const wl = document.getElementById('quizWrongList');
+    if (wrongAnswers.length > 0) {
+      wl.innerHTML = '<p style="color:var(--gold);font-weight:600;margin-bottom:0.8rem;">Respuestas incorrectas:</p>' +
+        wrongAnswers.map(w => `<div style="background:rgba(229,57,53,0.08);border-left:3px solid #e53935;padding:0.8rem 1rem;border-radius:0 6px 6px 0;margin-bottom:0.5rem;font-size:0.9rem;">
+          <div style="color:var(--parchment);margin-bottom:0.3rem;">${w.q}</div>
+          <div style="color:#ef9a9a;">Tu respuesta: ${w.yours}</div>
+          <div style="color:#a5d6a7;">Correcta: ${w.correct}</div>
+        </div>`).join('');
+    } else {
+      wl.innerHTML = '<p style="color:#a5d6a7;font-size:1.1rem;margin-top:1rem;">🎉 ¡Perfecto! Todas correctas.</p>';
+    }
+  }
+}
+
+function closeQuiz() {
+  document.getElementById('quizOverlay').classList.remove('active');
+}
+
+// Close quiz on overlay click (outside box)
+document.getElementById('quizOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeQuiz();
+});
+</script>
+
+</body>
+</html>
