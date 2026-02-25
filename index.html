@@ -1557,37 +1557,80 @@ function goHome() {
 /* ========== QUIZ DATA ========== */
 const quizzes = {
   n1: [
-    { q: "¿Cuál fue el logro más importante de Fernando de Magallanes?", o: ["Llegar a la India por mar","Descubrir América","Su expedición fue la primera en circunnavegar el globo","Rodear el extremo sur de África"
+    { q: "¿Cuál fue el logro más importante de Fernando de Magallanes?", o: ["Llegar a la India por mar","Descubrir América","Su expedición fue la primera en circunnavegar el globo","Rodear el extremo sur de África"], a: 2 },
+    { q: "¿Qué logró Vasco de Gama en 1498?", o: ["Circunnavegar el globo","Llegar a Calicut (India) abriendo la primera ruta marítima europea directa a Asia","Descubrir el continente americano","Cruzar el Estrecho de Magallanes"], a: 1 },
+    { q: "¿Por qué el continente americano lleva el nombre de Américo Vespucio?", o: ["Fue el primero en llegar a América","Descubrió Brasil","Fue uno de los primeros en sugerir que las tierras de Colón eran un nuevo continente, no Asia","Financió el viaje de Colón"], a: 2 },
+    { q: "¿Cómo rebautizó el rey portugués el Cabo de las Tormentas?", o: ["Cabo de Hornos","Cabo Verde","Cabo de Buena Esperanza","Cabo Magallanes"], a: 2 },
+    { q: "¿Qué país patrocinó el viaje de Cristóbal Colón en 1492?", o: ["Portugal","Italia","Francia","España (Reyes Católicos)"], a: 3 },
   ],
   n2: [
-    { q: "¿Para qué servía la Brújula en navegación?", o: ["Medir la profundidad del mar","Determinar el rumbo de la embarcación","Calcular la velocidad del barco","Medir el tiempo de viaje"
+    { q: "¿Para qué servía la Brújula en navegación?", o: ["Medir la profundidad del mar","Determinar el rumbo de la embarcación","Calcular la velocidad del barco","Medir el tiempo de viaje"], a: 1 },
+    { q: "¿Qué instrumento permitía determinar la latitud (posición) del barco?", o: ["Reloj de arena","Cartas Portulanas","Sextante","Esfera Armilar"], a: 2 },
+    { q: "¿Cuál era la función de la Sonda Marítima?", o: ["Medir la hora nocturna","Calcular la velocidad","Medir la profundidad del agua","Determinar el rumbo"], a: 2 },
+    { q: "¿Qué son las Cartas Portulanas?", o: ["Instrumentos para medir ángulos","Mapas gráficos de las costas para planificar rutas entre puertos","Relojes usados de noche","Esferas que muestran el movimiento de los astros"], a: 1 },
+    { q: "¿Para qué servía el Noctrulabio?", o: ["Medir la latitud durante el día","Calcular la profundidad del mar","Determinar la hora durante la noche","Medir la velocidad del barco"], a: 2 },
   ],
   n3: [
-    { q: "¿Qué fue el Cisma de Occidente?", o: ["Una guerra entre España y Portugal","Un periodo donde hubo 2 o 3 Papas compitiendo por el poder","La separación entre católicos y ortodoxos","Un concilio religioso"
+    { q: "¿Qué fue el Cisma de Occidente?", o: ["Una guerra entre España y Portugal","Un periodo donde hubo 2 o 3 Papas compitiendo por el poder","La separación entre católicos y ortodoxos","Un concilio religioso"], a: 1 },
+    { q: "¿Cuántas tesis clavó Lutero en la puerta de la iglesia de Wittenberg?", o: ["50","75","95","100"], a: 2 },
+    { q: "¿Qué son las indulgencias que criticó Lutero?", o: ["Oraciones especiales","Pagos para obtener el perdón de los pecados","Libros sagrados","Ceremonias religiosas"], a: 1 },
+    { q: "¿Qué fue el Concilio de Trento?", o: ["Una guerra religiosa","La respuesta de la Iglesia Católica para reformarse internamente","El juicio a Lutero","Un tratado de paz entre protestantes y católicos"], a: 1 },
+    { q: "¿Cuál fue la principal consecuencia de la Reforma Protestante?", o: ["El fortalecimiento del Papa","La unión de todas las religiones","La división del cristianismo en católicos y protestantes","La desaparición del protestantismo"], a: 2 },
   ],
   n4: [
-    { q: "¿Cuál era el lema de los Jesuitas?", o: ["Solo por la fe","Para la mayor gloria de Dios","La Biblia es la única autoridad","Paz y bien"
+    { q: "¿Cuál era el lema de los Jesuitas?", o: ["Solo por la fe","Para la mayor gloria de Dios","La Biblia es la única autoridad","Paz y bien"], a: 1 },
+    { q: "¿Qué orden fundó San Ignacio de Loyola?", o: ["Los Franciscanos","Los Dominicos","Los Jesuitas","Los Agustinos"], a: 2 },
+    { q: "¿Cómo llamó Santa Teresa de Jesús a su reforma del Carmelo?", o: ["Jesuitas","Carmelitas Descalzos","Dominicos","Franciscanos Reformados"], a: 1 },
+    { q: "¿Por qué obra es famoso San Juan de la Cruz?", o: ["La Suma Teológica","El Libro de la Vida","Noche Oscura del Alma","Las Confesiones"], a: 2 },
+    { q: "¿Qué buscaban los Santos Renovadores?", o: ["Separarse de la Iglesia Católica","Reformar la Iglesia desde adentro con espiritualidad y educación","Fundar nuevas religiones","Unirse a los protestantes"], a: 1 },
   ],
   n5: [
-    { q: "¿Cuál era la forma de gobierno de los Mayas?", o: ["Democrática","Teocrática","Monárquica","República"
+    { q: "¿Cuál era la forma de gobierno de los Mayas?", o: ["Democrática","Teocrática","Monárquica","República"], a: 1 },
+    { q: "¿Qué era la Triple Alianza?", o: ["Alianza entre Mayas, Aztecas y Olmecas","Alianza entre Tenochtitlán, Tlacopan y Texcoco","Alianza entre España, Portugal y Francia","Alianza entre 3 dioses"], a: 1 },
+    { q: "¿Qué era el Calmécac?", o: ["Un templo maya","La escuela para gente común","La escuela de nobles aztecas","Un centro ceremonial"], a: 2 },
+    { q: "¿Cuál era el dios maya de la lluvia?", o: ["Kukulcán","Hunab Ku","Chaac","Ah Puch"], a: 2 },
+    { q: "¿Qué eran las chinampas?", o: ["Armas aztecas","Tierras de cultivo flotantes en lagos","Templos ceremoniales","Escuelas para nobles"], a: 1 },
   ],
   n6: [
-    { q: "¿Quién lideró la primera expedición a México en 1517?", o: ["Hernán Cortés","Juan de Grijalva","Francisco Hernández de Córdoba","Pedro de Alvarado"
+    { q: "¿Quién lideró la primera expedición a México en 1517?", o: ["Hernán Cortés","Juan de Grijalva","Francisco Hernández de Córdoba","Pedro de Alvarado"], a: 2 },
+    { q: "¿Quién era la Malinche?", o: ["La esposa de Moctezuma","Una esclava que hablaba maya y náhuatl","La primera monja de México","Una diosa azteca"], a: 1 },
+    { q: "¿Qué fue la Noche Triste?", o: ["La muerte de Moctezuma","La noche que los españoles huyeron de Tenochtitlán y fueron atacados","La caída de Tenochtitlán","La matanza de Cholula"], a: 1 },
+    { q: "¿Quién fue el último Tlatoani azteca?", o: ["Moctezuma","Cuitláhuac","Cuauhtémoc","Cortés"], a: 2 },
+    { q: "¿En qué fecha cayó Tenochtitlán?", o: ["13 de agosto de 1521","12 de octubre de 1492","4 de julio de 1776","15 de septiembre de 1810"], a: 0 },
   ],
   n7: [
-    { q: "¿Cuál fue la primera orden religiosa en llegar a México?", o: ["Dominicos","Jesuitas","Agustinos","Franciscanos"
+    { q: "¿Cuál fue la primera orden religiosa en llegar a México?", o: ["Dominicos","Jesuitas","Agustinos","Franciscanos"], a: 3 },
+    { q: "¿Qué método usaban los franciscanos para evangelizar?", o: ["Violencia y castigos","Aprendizaje de lenguas indígenas y uso del arte","Solo predicación en español","Destrucción de todos los ídolos"], a: 1 },
+    { q: "¿Qué fue el sincretismo religioso?", o: ["La eliminación total de la religión indígena","La mezcla de elementos católicos con creencias indígenas","La conversión forzada de todos los indígenas","La creación de una nueva religión"], a: 1 },
+    { q: "¿Qué institución vigilaba la pureza de la fe católica en la colonia?", o: ["El Cabildo","La Inquisición","Los Corregidores","El Consejo de Indias"], a: 1 },
+    { q: "¿Cuál fue el papel de los frailes en la Conquista Espiritual?", o: ["Solo construir iglesias","Evangelizar, educar y defender a los indígenas ante abusos","Gobernar las colonias","Cobrar impuestos"], a: 1 },
   ],
   n8: [
-    { q: "¿Cuáles eran los 3 continentes del comercio triangular?", o: ["Asia, África, América","Europa, África, América","Europa, Asia, África","América, Europa, Asia"
+    { q: "¿Cuáles eran los 3 continentes del comercio triangular?", o: ["Asia, África, América","Europa, África, América","Europa, Asia, África","América, Europa, Asia"], a: 1 },
+    { q: "¿Qué llevaban los barcos de Europa a África?", o: ["Esclavos","Oro y plata","Manufacturas y armas","Especias"], a: 2 },
+    { q: "¿Qué se transportaba de África a América?", o: ["Manufacturas","Esclavos","Materias primas","Alimentos"], a: 1 },
+    { q: "¿Cuál fue la consecuencia más grave del comercio triangular para África?", o: ["La pérdida de territorios","El despoblamiento por la esclavitud","La destrucción de su cultura","La falta de comercio"], a: 1 },
   ],
   n9: [
-    { q: "¿Qué evento de 1773 enfureció a Gran Bretaña contra los colonos?", o: ["La Masacre de Boston","El Boston Tea Party","La Rebelión de Bacon","La batalla de Yorktown"
+    { q: "¿Qué evento de 1773 enfureció a Gran Bretaña contra los colonos?", o: ["La Masacre de Boston","El Boston Tea Party","La Rebelión de Bacon","La batalla de Yorktown"], a: 1 },
+    { q: "¿En qué año se firmó la Declaración de Independencia de EE.UU.?", o: ["1773","1775","1776","1783"], a: 2 },
+    { q: "¿Quién fue el principal autor de la Declaración de Independencia?", o: ["George Washington","Benjamin Franklin","Thomas Jefferson","John Adams"], a: 2 },
+    { q: "¿Cuál era el lema de los colonos contra los impuestos británicos?", o: ["No taxation without representation","Liberty or death","We the people","Give me liberty"], a: 0 },
+    { q: "¿Qué tratado reconoció la independencia de EE.UU.?", o: ["Tratado de París (1783)","Tratado de Versalles","Tratado de Utrecht","Tratado de Westfalia"], a: 0 },
   ],
   n10: [
-    { q: "¿Qué evento marcó el inicio simbólico de la Revolución Francesa el 14 de julio de 1789?", o: ["La ejecución de Luis XVI","La toma de la Bastilla","La coronación de Napoleón","La Declaración de Derechos"
+    { q: "¿Qué evento marcó el inicio simbólico de la Revolución Francesa el 14 de julio de 1789?", o: ["La ejecución de Luis XVI","La toma de la Bastilla","La coronación de Napoleón","La Declaración de Derechos"], a: 1 },
+    { q: "¿Cómo se llamaba el periodo de terror durante la Revolución Francesa?", o: ["El Directorio","La República","El Terror","La Convención"], a: 2 },
+    { q: "¿Qué era el Tercer Estado?", o: ["La nobleza","El clero","El resto de la población (burguesía, campesinos, trabajadores)","El ejército"], a: 2 },
+    { q: "¿Qué general tomó el poder tras la Tercera Etapa?", o: ["Robespierre","Danton","Marat","Napoleón Bonaparte"], a: 3 },
+    { q: "¿Cuáles eran los valores de la Revolución Francesa?", o: ["Fe, Esperanza y Caridad","Libertad, Igualdad y Fraternidad","Orden, Progreso y Justicia","Rey, Patria y Honor"], a: 1 },
   ],
   n11: [
-    { q: "¿Qué hicieron involuntariamente los reyes absolutos al organizar sus países?", o: ["Destruyeron las fronteras","Hicieron que la gente se sintiera parte de una misma nación","Eliminaron los impuestos","Crearon repúblicas"
+    { q: "¿Qué hicieron involuntariamente los reyes absolutos al organizar sus países?", o: ["Destruyeron las fronteras","Hicieron que la gente se sintiera parte de una misma nación","Eliminaron los impuestos","Crearon repúblicas"], a: 1 },
+    { q: "¿Cómo se llamó el movimiento del siglo XVIII que promovía la Razón, la Libertad y la Ciencia?", o: ["La Reforma","El Renacimiento","La Ilustración","El Absolutismo"], a: 2 },
+    { q: "¿Qué dijo Rousseau sobre el gobierno en su Contrato Social?", o: ["El rey gobierna por mandato divino","El gobierno es un contrato entre ciudadanos y puede cambiarse si falla","El gobierno debe ser hereditario siempre","Solo los nobles pueden gobernar"], a: 1 },
+    { q: "¿Qué es la División de Poderes según Montesquieu?", o: ["Dividir el país en regiones","Separar el poder en Ejecutivo, Legislativo y Judicial","Compartir el trono entre varios reyes","Dar poder a la Iglesia"], a: 1 },
+    { q: "¿Cuál fue la consecuencia más importante de las revoluciones liberales?", o: ["El regreso del feudalismo","El fortalecimiento de los reyes","La gente pasó de ser súbditos a ser ciudadanos con derechos","El fin del comercio"], a: 2 },
   ],
 }
 
