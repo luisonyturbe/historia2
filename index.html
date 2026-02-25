@@ -608,9 +608,29 @@ body {
       <div class="name">Independencia de las 13 Colonias</div>
       <div class="desc">Causas, batallas y la Declaración de Independencia</div>
     </div>
+    <div class="topic-card" onclick="showSection('s7')">
+      <div class="number">07</div>
+      <div class="name">Causas de la Reforma</div>
+      <div class="desc">Lutero, las 95 tesis y la ruptura con Roma</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s8')">
+      <div class="number">08</div>
+      <div class="name">La Contrarreforma Católica</div>
+      <div class="desc">Concilio de Trento, jesuitas y guerras de religión</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s9')">
+      <div class="number">09</div>
+      <div class="name">La Iglesia en Crisis: Santos Renovadores</div>
+      <div class="desc">San Ignacio, Santa Teresa, San Juan de la Cruz</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s10')">
+      <div class="number">10</div>
+      <div class="name">Revolución Francesa</div>
+      <div class="desc">Causas, etapas, el Terror y consecuencias</div>
+    </div>
   </div>
 
-  <button class="general-quiz-btn" onclick="startQuiz('general')">Realizar QUIZ General (18 Preguntas)</button>
+  <button class="general-quiz-btn" onclick="startQuiz('general')">Realizar QUIZ General (30 Preguntas)</button>
 </div>
 
 <!-- ==================== SECTION 1: CULTURAS MESOAMERICANAS ==================== -->
@@ -628,7 +648,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section1">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s1">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -726,7 +746,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section2">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s2">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -791,7 +811,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section3">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s3">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -877,7 +897,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section4">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s4">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -960,7 +980,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section5">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s5">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -1012,7 +1032,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="section6">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s6">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -1073,6 +1093,295 @@ body {
     </ul>
 
     <button class="quiz-trigger" onclick="startQuiz('s6')">Iniciar Quiz — Independencia (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 7: CAUSAS DE LA REFORMA ==================== -->
+<div class="section" id="s7">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>Causas de la Reforma</h2>
+    <p class="section-subtitle">Lutero, las 95 tesis y la ruptura con la Iglesia Católica</p>
+  </div>
+  <div class="section-content">
+
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s7">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
+    <h3>El Poder del Papa (Factor Político)</h3>
+    <p>El poder del Papa había sido desafiado. El <strong>Cisma de Occidente (1378-1417)</strong>, donde hubo dos y hasta tres Papas compitiendo por el poder, dejó una cicatriz profunda en la confianza de los fieles. Los reyes y príncipes (especialmente en Alemania e Inglaterra) resentían la interferencia política del Papa en sus reinos y la constante fuga de dinero (impuestos eclesiásticos) hacia Roma.</p>
+
+    <h3>Crisis Moral y Espiritual (Factor Religioso)</h3>
+    <p>La Iglesia se había alejado de sus ideales de pobreza y servicio.</p>
+
+    <div class="highlight-box">
+      <strong>El Alto Clero (Obispos, Cardenales):</strong> Muchos actuaban más como señores feudales o príncipes renacentistas. Acumulaban riqueza, vivían en el lujo y practicaban el nepotismo (favorecer a familiares con cargos).
+    </div>
+    <div class="highlight-box">
+      <strong>El Bajo Clero (Sacerdotes):</strong> A menudo carecían de formación teológica, no entendían el latín de la misa que celebraban y rompían el celibato.
+    </div>
+    <div class="highlight-box">
+      <strong>Corrupción Administrativa:</strong> La simonía (venta de cargos eclesiásticos) era común. Si comprabas el cargo de obispo, "invertías" para luego recuperar el dinero a través de los fieles.
+    </div>
+
+    <h3>El Detonante: Las Indulgencias (Factor Económico)</h3>
+    <p>La indulgencia era un documento que la Iglesia otorgaba y que (según la doctrina) reducía el tiempo que un alma pasaba en el purgatorio. Originalmente se obtenían por actos de piedad. Sin embargo, para financiar la construcción de la <strong>Basílica de San Pedro</strong> en Roma, el Papa <strong>León X</strong> autorizó una "venta" masiva de indulgencias.</p>
+    <p>En Alemania, el monje dominico <strong>Johann Tetzel</strong> las predicaba con un eslogan que indignaba: <em>"Tan pronto como la moneda en el cofre resuena, el alma al cielo vuela"</em>.</p>
+
+    <h3>El Catalizador (Factor Intelectual y Tecnológico)</h3>
+    <div class="highlight-box">
+      <strong>Humanismo:</strong> Movimientos como el de <strong>Erasmo de Róterdam</strong> ya criticaban la superstición y pedían un retorno a las fuentes originales del cristianismo (la Biblia), promoviendo la <em>devotio moderna</em> (una fe más personal e interna).
+    </div>
+    <div class="highlight-box">
+      <strong>La Imprenta:</strong> Inventada por <strong>Gutenberg</strong> alrededor de 1450, permitió que las ideas (críticas, panfletos, y luego la Biblia) se reprodujeran y difundieran a una velocidad nunca antes vista, escapando al control de la Iglesia.
+    </div>
+
+    <h3>Lutero y la Expansión</h3>
+    <p><strong>Martín Lutero (1483-1546)</strong> era un monje agustino y profesor de teología en Wittenberg (Alemania), profundamente atormentado por la idea de su propia salvación.</p>
+
+    <h4>El Descubrimiento de Lutero</h4>
+    <p>Estudiando la Biblia, especialmente la Epístola a los Romanos, Lutero llegó a una conclusión que cambiaría el mundo: <strong>"El justo vivirá por la fe"</strong>. Para él, la salvación no se ganaba mediante buenas obras, peregrinaciones, ayunos o comprando indulgencias. La salvación era un regalo gratuito de Dios (<em>Sola Gratia</em>), que se recibía únicamente a través de la fe (<em>Sola Fide</em>).</p>
+
+    <h4>Las 95 Tesis (1517)</h4>
+    <p>Indignado por la venta de indulgencias de Tetzel, Lutero escribió <strong>95 puntos de debate</strong> (en latín académico) cuestionando su validez teológica y las clavó en la puerta de la iglesia del castillo de Wittenberg. Su intención era iniciar un debate académico; sin embargo, gracias a la imprenta, las tesis fueron traducidas al alemán y distribuidas por toda Alemania en semanas. El escándalo se hizo viral.</p>
+
+    <h4>La Ruptura</h4>
+    <p>El Papa León X inicialmente desestimó a Lutero como una "pelea de monjes". Pero Lutero no se retractó. En la <strong>Dieta de Worms (1521)</strong>, frente al emperador Carlos V, Lutero pronunció su famosa frase: <strong>"Aquí estoy, no puedo hacer otra cosa. Que Dios me ayude"</strong>. Fue declarado hereje y prófugo.</p>
+
+    <h3>Pilares del Luteranismo</h3>
+    <ul>
+      <li><strong>Salvación solo por fe</strong></li>
+      <li><strong>La Biblia es la única fuente de autoridad</strong></li>
+      <li><strong>Todo creyente puede interpretar la Biblia</strong></li>
+      <li><strong>Dos Sacramentos:</strong> Solo reconoció el Bautismo y la Eucaristía (los únicos explícitos en la Biblia)</li>
+      <li><strong>Misa en lengua vernácula</strong> (nativa, no en latín)</li>
+    </ul>
+
+    <h3>La Diversificación de la Reforma</h3>
+    <p>El movimiento de Lutero abrió la puerta a otros reformadores:</p>
+
+    <div class="highlight-box">
+      <strong>Juan Calvino (Ginebra, Suiza):</strong> Le dio estructura y reglas claras a la Reforma. Escribió un libro que se convirtió en el manual del <strong>Calvinismo</strong>. Su idea más famosa es la <strong>Predestinación</strong>: Calvino creía que Dios ya había elegido desde el principio quién se iba a salvar y quién no.
+    </div>
+    <div class="highlight-box">
+      <strong>Enrique VIII (Inglaterra):</strong> Su reforma fue un acto político. Cuando el Papa se negó a anular su matrimonio con Catalina de Aragón (tía del Emperador Carlos V) para casarse con Ana Bolena, Enrique VIII rompió con Roma. Mediante el <strong>Acta de Supremacía (1534)</strong>, se declaró a sí mismo Cabeza de la Iglesia de Inglaterra (<strong>Anglicanismo</strong>). Fue una "reforma desde arriba", donde la estructura eclesiástica se mantuvo similar, pero la lealtad cambió del Papa al Rey.
+    </div>
+
+    <button class="quiz-trigger" onclick="startQuiz('s7')">Iniciar Quiz — Causas de la Reforma (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 8: CONTRARREFORMA CATÓLICA ==================== -->
+<div class="section" id="s8">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>La Contrarreforma Católica</h2>
+    <p class="section-subtitle">La reacción de la Iglesia Católica ante la Reforma Protestante</p>
+  </div>
+  <div class="section-content">
+
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s8">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
+    <p>La Iglesia Católica tardó en reaccionar, pero cuando lo hizo, lo hizo con dos estrategias: una <strong>reforma interna</strong> para corregir los abusos y una <strong>ofensiva</strong> para combatir el protestantismo.</p>
+
+    <h3>El Concilio de Trento (1545-1563)</h3>
+    <p>Fue la respuesta teológica y disciplinaria. Se reunieron en varias sesiones para definir el dogma católico frente a las ideas protestantes.</p>
+
+    <h4>En lo Dogmático (Rechazo al Protestantismo)</h4>
+    <ul>
+      <li>Reafirmó que la salvación se obtiene por la fe <strong>Y</strong> las buenas obras.</li>
+      <li>Mantuvo la validez de los <strong>siete sacramentos</strong>.</li>
+      <li>Declaró que la <strong>Vulgata</strong> (Biblia en latín) era la versión oficial y que solo la Iglesia podía interpretar las Escrituras (rechazo a la <em>Sola Scriptura</em>).</li>
+      <li>Mantuvo la supremacía del Papa y el culto a la Virgen y los santos.</li>
+    </ul>
+
+    <h4>En lo Disciplinario (Corrección de Abusos)</h4>
+    <ul>
+      <li>Prohibió la venta de indulgencias (la queja original de Lutero).</li>
+      <li>Creó los <strong>seminarios</strong> para garantizar la correcta formación de los sacerdotes.</li>
+      <li>Ordenó a los obispos residir en sus diócesis y visitar sus parroquias.</li>
+      <li>Publicó el <strong>Catecismo</strong> (para enseñar la doctrina) y el <strong>Índice de Libros Prohibidos</strong> (para frenar la herejía).</li>
+    </ul>
+
+    <h3>La Compañía de Jesús (Jesuitas)</h3>
+    <p>Fundada por <strong>San Ignacio de Loyola</strong> en 1540. Fueron el "brazo intelectual y misionero" de la Contrarreforma. Con una disciplina casi militar, se enfocaron en tres áreas:</p>
+
+    <table class="data-table">
+      <tr><th>Área</th><th>Descripción</th></tr>
+      <tr><td>Educación</td><td>Crearon los mejores colegios y universidades de Europa para formar a las nuevas élites católicas</td></tr>
+      <tr><td>Misiones</td><td>Llevaron el catolicismo a América, Asia y África</td></tr>
+      <tr><td>Defensa de la Fe</td><td>Actuaron como confesores y asesores de reyes católicos</td></tr>
+    </table>
+
+    <h3>La Inquisición</h3>
+    <p>Se reactivó el <strong>Tribunal del Santo Oficio</strong> (especialmente en España e Italia) para perseguir, juzgar y castigar a los protestantes y a cualquiera que se desviara de la ortodoxia católica.</p>
+
+    <h3>El Legado: Un Nuevo Mapa de Europa</h3>
+    <p>La Reforma rompió la unidad religiosa de Europa para siempre, dando lugar a un nuevo mapa político y a un siglo de conflictos.</p>
+
+    <div class="highlight-box">
+      <strong>Norte de Europa</strong> (Escandinavia, norte de Alemania, Inglaterra, Escocia, Holanda) → se volvió predominantemente <strong>Protestante</strong>.<br>
+      <strong>Sur de Europa</strong> (Italia, España, Portugal, Francia, sur de Alemania) → permaneció <strong>Católico</strong>.
+    </div>
+
+    <h3>Las Guerras de Religión</h3>
+    <p>La fe se convirtió en la principal causa de guerra durante más de 100 años.</p>
+
+    <table class="data-table">
+      <tr><th>Evento</th><th>Fecha</th><th>Descripción</th></tr>
+      <tr><td>Paz de Augsburgo</td><td>1555</td><td>Principio <em>Cuius regio, eius religio</em> ("De quien es la región, es la religión"). Los príncipes alemanes podían elegir entre luteranismo o catolicismo para su territorio, pero no los súbditos.</td></tr>
+      <tr><td>Guerra de los Treinta Años</td><td>1618-1648</td><td>Comenzó como un conflicto religioso en Bohemia pero arrastró a todas las potencias europeas. Devastó Alemania.</td></tr>
+      <tr><td>Paz de Westfalia</td><td>1648</td><td>Puso fin a la Guerra de los Treinta Años. Marcó el fin del poder político del Papa sobre Europa y el nacimiento del sistema moderno de estados-nación soberanos. La tolerancia religiosa comenzó lentamente a abrirse camino.</td></tr>
+    </table>
+
+    <button class="quiz-trigger" onclick="startQuiz('s8')">Iniciar Quiz — Contrarreforma (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 9: LA IGLESIA EN CRISIS - SANTOS RENOVADORES ==================== -->
+<div class="section" id="s9">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>La Iglesia en Crisis: Santos Renovadores</h2>
+    <p class="section-subtitle">La Reforma Protestante y los santos que renovaron la Iglesia</p>
+  </div>
+  <div class="section-content">
+
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s9">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
+    <h3>Introducción: ¿De qué se quejaba Lutero?</h3>
+    <p>Martín Lutero, un monje alemán, clavó en 1517 las "95 Tesis" en la puerta de una iglesia. Sus quejas principales eran:</p>
+    <ul>
+      <li><strong>La venta de indulgencias:</strong> La idea de que podías "pagar" para que se te perdonaran los pecados.</li>
+      <li><strong>La corrupción:</strong> Algunos líderes de la Iglesia vivían con mucho lujo, más como reyes que como guías espirituales.</li>
+      <li><strong>La autoridad:</strong> Lutero dijo que la única autoridad verdadera era la Biblia, no tanto el Papa o la tradición de la Iglesia.</li>
+      <li><strong>La salvación:</strong> Enseñó que la salvación se lograba solo por la fe, no por hacer buenas obras.</li>
+    </ul>
+    <p>Europa se dividió. Nació el <strong>Protestantismo</strong> (luteranos, calvinistas, anglicanos) y la Iglesia Católica entró en una de sus mayores crisis.</p>
+
+    <h3>La Respuesta Católica: La Contrarreforma</h3>
+    <p>La Iglesia Católica no se quedó de brazos cruzados. Se dio cuenta de que Lutero tenía razón en algunas de sus críticas. Así que inició un movimiento de renovación interna llamado la <strong>Contrarreforma</strong> (o Reforma Católica):</p>
+    <ul>
+      <li>Corregir los errores internos como la corrupción.</li>
+      <li>Prohibió la venta de indulgencias (la queja original de Lutero).</li>
+      <li>Reafirmar y fortalecer la fe católica.</li>
+      <li>Publicó el Catecismo y el Índice de Libros Prohibidos.</li>
+      <li>Reafirmó que la salvación se obtiene por la fe Y las buenas obras.</li>
+      <li>Mantuvo la validez de los siete sacramentos.</li>
+    </ul>
+
+    <h3>San Ignacio de Loyola — El Soldado de Dios (Acción y Educación)</h3>
+    <p>Ignacio fue un soldado español (Íñigo de Loyola) que fue gravemente herido en batalla. Mientras se recuperaba, leyó vidas de santos y decidió convertirse en un "soldado de Cristo".</p>
+    <div class="highlight-box">
+      <strong>Su Pensamiento Clave:</strong> "Encontrar a Dios en todas las cosas". Para Ignacio, no tenías que irte a un monasterio para ser santo. Podías encontrar a Dios en el estudio, en el trabajo, en la vida diaria.
+    </div>
+    <p><strong>Su Gran Obra:</strong> La <strong>Compañía de Jesús (Los Jesuitas)</strong> fue una nueva orden religiosa que funcionaba como un "ejército espiritual". Su lema era "Para la mayor gloria de Dios".</p>
+    <p>Los jesuitas se convirtieron en los grandes educadores de Europa. Crearon los mejores colegios y universidades para formar a los nuevos católicos con una fe sólida e inteligente, capaces de debatir con los protestantes. También fueron grandes misioneros, llevando el catolicismo a América y Asia.</p>
+
+    <h3>Santa Teresa de Jesús — La Mística Apasionada (Reforma Interior)</h3>
+    <p>Fue una monja carmelita en Ávila, España. Se dio cuenta de que la vida en muchos conventos se había vuelto muy relajada y superficial (se preocupaban más por las visitas sociales que por la oración).</p>
+    <div class="highlight-box">
+      <strong>Su Pensamiento Clave:</strong> La oración es una relación de amistad. "No es otra cosa oración mental, a mi parecer, sino tratar de amistad, estando muchas veces tratando a solas con quien sabemos nos ama".
+    </div>
+    <p><strong>Su Gran Obra:</strong> Teresa sintió que, si la Iglesia estaba en crisis por fuera, y <strong>fundó nuevos conventos</strong> que volvían a lo básico: pobreza, silencio y oración profunda. Las llamó <strong>"Descalzas"</strong> para mostrar su sencillez.</p>
+    <p>Escribió obras maestras de la espiritualidad como "El Castillo Interior", donde compara el alma con un castillo que hay que recorrer a través de la oración para encontrar a Dios en la habitación central.</p>
+
+    <h3>San Juan de la Cruz — El Poeta de la Noche Oscura</h3>
+    <p>Fue un fraile carmelita y un poeta increíble. Ayudó a Santa Teresa a reformar la rama masculina de los carmelitas (los <strong>Carmelitas Descalzos</strong>).</p>
+    <p>Escribió algunos de los poemas más bellos del idioma español, como "Noche Oscura del Alma" — un proceso de purificación, donde Dios nos quita nuestros apegos (al dinero, al orgullo, incluso a las ideas bonitas sobre Dios) para que solo nos quede Dios mismo.</p>
+
+    <h3>Un Ejército de Tres</h3>
+    <p>La Reforma Protestante fue un terremoto que sacudió a la Iglesia. Pero en lugar de derrumbarse, la Iglesia Católica encontró en España una fuerza renovadora increíble:</p>
+    <div class="highlight-box">
+      <strong>San Ignacio</strong> la reformó "hacia afuera": con educación, disciplina y acción en el mundo.
+    </div>
+    <div class="highlight-box">
+      <strong>Santa Teresa</strong> la reformó "hacia adentro": con oración, pasión y amistad con Dios.
+    </div>
+    <div class="highlight-box">
+      <strong>San Juan de la Cruz</strong> la reformó "hacia lo profundo": con poesía y una teología que abraza el misterio y la dificultad de la fe.
+    </div>
+
+    <button class="quiz-trigger" onclick="startQuiz('s9')">Iniciar Quiz — Santos Renovadores (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 10: REVOLUCIÓN FRANCESA ==================== -->
+<div class="section" id="s10">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>Revolución Francesa</h2>
+    <p class="section-subtitle">Causas, etapas, el Terror y sus consecuencias</p>
+  </div>
+  <div class="section-content">
+
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s10">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
+    <h3>Causas Sociales</h3>
+    <ul>
+      <li>Existía el <strong>absolutismo</strong> — el rey tenía poder total.</li>
+      <li>La clase alta (nobleza y clero) era la más beneficiada.</li>
+      <li>El <strong>Tercer Estado</strong> (el resto de la población: burguesía, campesinos, trabajadores) tenía la misión de procurar la subsistencia de la Nación.</li>
+      <li>La hambruna generada por la Guerra de los Siete Años agravó la situación.</li>
+    </ul>
+
+    <h3>Causas Culturales</h3>
+    <ul>
+      <li>La burguesía urbana educada se vio influida por la <strong>Ilustración</strong>, que promovía los conceptos de <strong>libertad, igualdad y fraternidad</strong>, socavando la legitimidad del Despotismo.</li>
+      <li>Surgió una incipiente opinión pública en las tertulias de los salones parisinos donde se discutían estos principios.</li>
+    </ul>
+
+    <h3>Causas Políticas y Económicas</h3>
+    <ul>
+      <li><strong>Quiebra financiera:</strong> El Tercer Estado había pagado altos impuestos para costear guerras como la Guerra de los Siete Años (1757-1763) y la independencia de las Trece Colonias (Francia apoyó a los colonos para debilitar a Inglaterra).</li>
+      <li>Malas cosechas llevaron a un alza desbocada de los precios y desataron el hambre.</li>
+      <li>La tierra era la fuente de poder de la aristocracia, mientras la burguesía adquiría riqueza gracias al comercio transoceánico y la revolución industrial en marcha.</li>
+    </ul>
+
+    <h3>Primera Etapa (1789-1791)</h3>
+    <p>En plena crisis, la inflación y las malas cosechas entre 1788-1789 provocaron que el costo de la harina aumentara. Se desatan disturbios: la gente toma por asalto panaderías.</p>
+    <p>En la primavera de 1789, <strong>Luis XVI</strong> nombra a <strong>Jacques Necker</strong> Ministro de Economía. Éste convence al rey de convocar a los <strong>Estados Generales</strong>, que no se habían reunido en más de siglo y medio.</p>
+    <p>El rey sintió esto como una amenaza, destituye a Necker y envía tropas. Las masas, ante las malas cosechas y el incremento del precio del trigo, tomaron las armas y <strong>la Bastilla, prisión símbolo del Absolutismo, el 14 de julio</strong>.</p>
+    <p>El Gran Pánico se apoderó de la nación. Se decreta la <strong>abolición de los privilegios</strong> y se proclama la <strong>Declaración de los Derechos del Hombre y del Ciudadano</strong>.</p>
+
+    <div class="highlight-box">
+      <strong>Declaración de los Derechos del Hombre y del Ciudadano (1789):</strong> Aprobada por la Asamblea Nacional Constituyente el 26 de agosto de 1789. Definía los derechos personales y universales: <strong>libertad, la propiedad, la seguridad y la resistencia a la opresión</strong>.
+    </div>
+
+    <h3>Segunda Etapa (1792-1794)</h3>
+    <ul>
+      <li>Austria y Prusia le declaran la guerra a Francia.</li>
+      <li>Francia derrotó a los extranjeros y se declara <strong>república el 21 de septiembre de 1792</strong>.</li>
+      <li>Los gastos militares llevaron a una crisis demoledora. Los campesinos de la región de la Vendée se levantaron en contrarrevolución.</li>
+      <li><strong>Luis XVI fue condenado a muerte y ejecutado en la guillotina.</strong> En octubre del mismo año siguió su esposa, la Reina <strong>María Antonieta</strong>.</li>
+      <li>Se instauró la política del <strong>Terror</strong>, encabezada por <strong>Robespierre, Danton y Marat</strong>, con ejecuciones constantes por la guillotina.</li>
+    </ul>
+
+    <h3>Tercera Etapa (1795-1799)</h3>
+    <ul>
+      <li>Tras la caída de Robespierre, la Convención Nacional elabora una nueva Constitución que estableció el nuevo gobierno: el <strong>Directorio</strong>, de cinco integrantes, con un legislativo bicameral y el poder en manos de los burgueses.</li>
+      <li>El nuevo gobierno fue depositando su confianza en el general <strong>Napoleón Bonaparte</strong>, quien lo protegió de varios golpes de las coaliciones monárquicas y dirigió las tropas de Francia en las campañas militares.</li>
+    </ul>
+
+    <h3>Consecuencias de la Revolución Francesa</h3>
+    <ul>
+      <li>Las ideas ilustradas de <strong>libertad, igualdad y fraternidad</strong> tomaron forma en las independencias hispanoamericanas y en los movimientos nacionalistas europeos.</li>
+      <li>La <strong>Declaración de los Derechos del Hombre y del Ciudadano</strong>.</li>
+      <li>Se establecieron las bases legales para el capitalismo contemporáneo: participación de la burguesía en el gobierno, defensa de la propiedad privada, libre comercio y liberación de los hombres de los lazos feudales.</li>
+    </ul>
+
+    <button class="quiz-trigger" onclick="startQuiz('s10')">Iniciar Quiz — Revolución Francesa (5 Preguntas)</button>
   </div>
 </div>
 
@@ -1152,6 +1461,34 @@ const quizzes = {
     { q: "¿Qué estableció la Constitución de 1787?", o: ["Una monarquía","Gobierno republicano con 3 poderes","Una dictadura militar","Un gobierno colonial"], a: 1 },
     { q: "¿Quién escribió 'Common Sense' (Sentido Común)?", o: ["Thomas Jefferson","Samuel Adams","Thomas Paine","Patrick Henry"], a: 2 },
     { q: "¿Cuál fue la batalla decisiva de la independencia?", o: ["Trenton","Saratoga","Long Island","Yorktown"], a: 3 },
+  ],
+  s7: [
+    { q: "¿Qué fue el Cisma de Occidente?", o: ["Una guerra entre España y Portugal","Un periodo donde hubo 2 o 3 Papas compitiendo por el poder","La separación entre católicos y ortodoxos","Un concilio religioso"], a: 1 },
+    { q: "¿Qué eran las indulgencias?", o: ["Impuestos del rey","Documentos que reducían el tiempo del alma en el purgatorio","Permisos para leer la Biblia","Títulos de nobleza"], a: 1 },
+    { q: "¿Qué clavó Lutero en la puerta de la iglesia de Wittenberg en 1517?", o: ["Una carta al Papa","Las 95 tesis cuestionando las indulgencias","La Biblia traducida al alemán","Un manifiesto político"], a: 1 },
+    { q: "¿Qué idea central defendía Lutero?", o: ["La salvación por buenas obras","La salvación solo por la fe (Sola Fide)","La autoridad absoluta del Papa","La necesidad de más sacramentos"], a: 1 },
+    { q: "¿Por qué Enrique VIII rompió con Roma?", o: ["Quería reformar la teología","El Papa no anuló su matrimonio con Catalina de Aragón","Quería eliminar los sacramentos","Apoyaba a Lutero"], a: 1 },
+  ],
+  s8: [
+    { q: "¿En qué años se realizó el Concilio de Trento?", o: ["1517-1521","1545-1563","1618-1648","1378-1417"], a: 1 },
+    { q: "¿Qué reafirmó el Concilio de Trento sobre la salvación?", o: ["Solo por fe","Solo por obras","Por fe Y buenas obras","No definió nada"], a: 2 },
+    { q: "¿Quién fundó la Compañía de Jesús (Jesuitas)?", o: ["Martín Lutero","Juan Calvino","San Ignacio de Loyola","Erasmo de Róterdam"], a: 2 },
+    { q: "¿Qué principio se estableció en la Paz de Augsburgo (1555)?", o: ["Libertad religiosa individual","Cuius regio, eius religio (la religión del príncipe es la del territorio)","Prohibición del protestantismo","Unión de todas las iglesias"], a: 1 },
+    { q: "¿Qué tratado de 1648 marcó el fin del poder político del Papa sobre Europa?", o: ["Paz de Augsburgo","Dieta de Worms","Paz de Westfalia","Concilio de Trento"], a: 2 },
+  ],
+  s9: [
+    { q: "¿Cuál era el lema de los Jesuitas?", o: ["Solo por la fe","Para la mayor gloria de Dios","La Biblia es la única autoridad","Paz y bien"], a: 1 },
+    { q: "¿Qué fundó Santa Teresa de Jesús para reformar la vida religiosa?", o: ["Universidades jesuitas","Los conventos de las Descalzas","Hospitales para pobres","Escuelas para niños"], a: 1 },
+    { q: "¿Cómo reformó San Ignacio la Iglesia?", o: ["Hacia adentro con oración","Hacia afuera con educación, disciplina y acción","Hacia lo profundo con poesía","Prohibiendo el protestantismo"], a: 1 },
+    { q: "¿Qué obra famosa escribió Santa Teresa?", o: ["Las 95 Tesis","Noche Oscura del Alma","El Castillo Interior","La Divina Comedia"], a: 2 },
+    { q: "¿Qué fue San Juan de la Cruz antes de ser religioso?", o: ["Un soldado","Un rey","Un fraile carmelita y poeta","Un obispo"], a: 2 },
+  ],
+  s10: [
+    { q: "¿Qué evento marcó el inicio simbólico de la Revolución Francesa el 14 de julio de 1789?", o: ["La ejecución de Luis XVI","La toma de la Bastilla","La coronación de Napoleón","La Declaración de Derechos"], a: 1 },
+    { q: "¿Cuáles eran los ideales de la Ilustración que influyeron en la Revolución?", o: ["Fe, esperanza y caridad","Libertad, igualdad y fraternidad","Orden, progreso y paz","Nobleza, clero y pueblo"], a: 1 },
+    { q: "¿Quién fue ejecutado en la guillotina durante la Segunda Etapa?", o: ["Napoleón Bonaparte","Robespierre","Luis XVI y María Antonieta","Jacques Necker"], a: 2 },
+    { q: "¿Qué era el Tercer Estado?", o: ["La nobleza","El clero","El resto de la población (burguesía, campesinos, trabajadores)","El ejército"], a: 2 },
+    { q: "¿Qué general tomó el poder tras la Tercera Etapa?", o: ["Robespierre","Danton","Marat","Napoleón Bonaparte"], a: 3 },
   ],
 };
 
