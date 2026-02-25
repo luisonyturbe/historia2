@@ -578,81 +578,416 @@ body {
   <p class="subtitle">De Mesoamérica a la Independencia de las 13 Colonias</p>
 
   <div class="topic-grid">
-    <div class="topic-card" onclick="showSection('s1')">
+    <div class="topic-card" onclick="showSection('n1')">
       <div class="number">01</div>
-      <div class="name">Las Culturas Mesoamericanas</div>
-      <div class="desc">Mayas y Aztecas — organización, religión y legado</div>
+      <div class="name">Primeros Exploradores</div>
+      <div class="desc">Magallanes, Vasco de Gama, Colón, Vespucio y Bartolomé Díaz</div>
     </div>
-    <div class="topic-card" onclick="showSection('s2')">
+    <div class="topic-card" onclick="showSection('n2')">
       <div class="number">02</div>
-      <div class="name">Diferencias entre Indígenas y Españoles</div>
-      <div class="desc">Política, religión, tecnología y urbanismo</div>
+      <div class="name">Instrumentos de navegación del siglo XV</div>
+      <div class="desc">Brújula, sextante, astrolabio y más herramientas de navegación</div>
     </div>
-    <div class="topic-card" onclick="showSection('s3')">
+    <div class="topic-card" onclick="showSection('n3')">
       <div class="number">03</div>
-      <div class="name">La Conquista de México</div>
-      <div class="desc">Expediciones, alianzas y la caída de Tenochtitlán</div>
+      <div class="name">La Reforma Protestante</div>
+      <div class="desc">Causas, cisma con Roma y la respuesta de la Iglesia Católica</div>
     </div>
-    <div class="topic-card" onclick="showSection('s4')">
+    <div class="topic-card" onclick="showSection('n4')">
       <div class="number">04</div>
-      <div class="name">La Conquista Espiritual</div>
-      <div class="desc">Evangelización, órdenes religiosas y sincretismo</div>
+      <div class="name">La Reforma Protestante y los Santos que la Renovaron</div>
+      <div class="desc">San Ignacio de Loyola, Santa Teresa de Jesús y San Juan de la Cruz</div>
     </div>
-    <div class="topic-card" onclick="showSection('s5')">
+    <div class="topic-card" onclick="showSection('n5')">
       <div class="number">05</div>
-      <div class="name">El Triángulo Comercial</div>
-      <div class="desc">Comercio triangular, esclavitud y mestizaje</div>
+      <div class="name">Mayas y Aztecas</div>
+      <div class="desc">Culturas mesoamericanas, dioses, clases sociales y conquista</div>
     </div>
-    <div class="topic-card" onclick="showSection('s6')">
+    <div class="topic-card" onclick="showSection('n6')">
       <div class="number">06</div>
-      <div class="name">Independencia de las 13 Colonias</div>
-      <div class="desc">Causas, batallas y la Declaración de Independencia</div>
+      <div class="name">La Conquista de México</div>
+      <div class="desc">Expediciones, Cortés, la Malinche y la caída de Tenochtitlán</div>
     </div>
-    <div class="topic-card" onclick="showSection('s7')">
+    <div class="topic-card" onclick="showSection('n7')">
       <div class="number">07</div>
-      <div class="name">Causas de la Reforma</div>
-      <div class="desc">Lutero, las 95 tesis y la ruptura con Roma</div>
+      <div class="name">La Conquista Espiritual</div>
+      <div class="desc">Evangelización, órdenes religiosas y sincretismo cultural</div>
     </div>
-    <div class="topic-card" onclick="showSection('s8')">
+    <div class="topic-card" onclick="showSection('n8')">
       <div class="number">08</div>
-      <div class="name">La Contrarreforma Católica</div>
-      <div class="desc">Concilio de Trento, jesuitas y guerras de religión</div>
+      <div class="name">Triángulo Comercial</div>
+      <div class="desc">Rutas de esclavos, manufacturas y materias primas</div>
     </div>
-    <div class="topic-card" onclick="showSection('s9')">
+    <div class="topic-card" onclick="showSection('n9')">
       <div class="number">09</div>
-      <div class="name">La Iglesia en Crisis: Santos Renovadores</div>
-      <div class="desc">San Ignacio, Santa Teresa, San Juan de la Cruz</div>
+      <div class="name">Independencia de las 13 Colonias</div>
+      <div class="desc">Causas, Declaración de Independencia y consecuencias</div>
     </div>
-    <div class="topic-card" onclick="showSection('s10')">
+    <div class="topic-card" onclick="showSection('n10')">
       <div class="number">10</div>
       <div class="name">Revolución Francesa</div>
       <div class="desc">Causas, etapas, el Terror y consecuencias</div>
     </div>
-    <div class="topic-card" onclick="showSection('s11')">
+    <div class="topic-card" onclick="showSection('n11')">
       <div class="number">11</div>
-      <div class="name">Consolidación de los Estados Modernos</div>
+      <div class="name">La Consolidación de los Estados Modernos</div>
       <div class="desc">Reyes absolutos, La Ilustración, Rousseau y Liberalismo</div>
-    </div>
-    <div class="topic-card" onclick="showSection('s12')">
-      <div class="number">12</div>
-      <div class="name">Instrumentos Marítimos</div>
-      <div class="desc">Brújula, sextante, astrolabio y más herramientas de navegación</div>
-    </div>
-    <div class="topic-card" onclick="showSection('s13')">
-      <div class="number">13</div>
-      <div class="name">Primeros Exploradores</div>
-      <div class="desc">Magallanes, Vasco de Gama, Colón, Vespucio y Bartolomé Díaz</div>
     </div>
   </div>
 
-  <button class="general-quiz-btn" onclick="startQuiz('general')">Realizar QUIZ General (39 Preguntas)</button>
+
+  <button class="general-quiz-btn" onclick="startQuiz('general')">Realizar QUIZ General (33 Preguntas)</button>
 </div>
 
-<!-- ==================== SECTION 1: CULTURAS MESOAMERICANAS ==================== -->
-<div class="section" id="s1">
+<!-- ==================== SECTION 1: PRIMEROS EXPLORADORES ==================== -->
+<div class="section" id="n1">
+  <button class="back-btn" onclick="goHome()">← Volver</button>
+  <div class="section-content">
+  <div class="section-hero">
+    <h2>Primeros Exploradores</h2>
+    <p>Los navegantes que cambiaron el mapa del mundo</p>
+    <button class="tts-btn" onclick="toggleTTS(this)" data-section="n1">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+  </div>
+
+  <div class="content-block">
+    <h3>Fernando de Magallanes (1480–1521)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primera expedición en circunnavegar el globo (1519–1522)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Encontrar una ruta hacia las Islas de las Especias navegando hacia el oeste</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">España — Rey Carlos I (Carlos V del Sacro Imperio)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primero en cruzar el Estrecho de Magallanes; su expedición completó la primera vuelta al mundo (aunque él murió en Filipinas en 1521)</td></tr>
+    </table>
+  </div>
+
+  <div class="content-block">
+    <h3>Vasco de Gama (¿1460?–1524)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primer europeo en llegar a la India por mar (1497–1499)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portugal — Rey Manuel I "el Afortunado"</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Llegó a Calicut (India) en 1498, abriendo la primera ruta marítima europea directa hacia el este. Fortaleció a Portugal como potencia del comercio de especias.</td></tr>
+    </table>
+  </div>
+
+  <div class="content-block">
+    <h3>Cristóbal Colón (1451–1506)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Genovés (italiano), al servicio de los Reyes Católicos de España</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primer viaje al "Nuevo Mundo" (1492)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Encontrar una ruta hacia Asia navegando hacia el oeste</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logros</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">En 1492 llegó al Caribe (San Salvador, Cuba, La Española), creyendo que había llegado a Asia. Abrió el camino para la colonización europea de las Américas. Realizó cuatro viajes en total (1492–1504).</td></tr>
+    </table>
+  </div>
+
+  <div class="content-block">
+    <h3>Américo Vespucio (1454–1512)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Florentino (italiano)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Exploraciones del continente sudamericano (1499–1502)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinadores</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">España (1499–1500) y Portugal (1501–1502)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Fue uno de los primeros en sugerir que las tierras de Colón no eran Asia sino un nuevo continente. Por eso el continente americano lleva su nombre.</td></tr>
+    </table>
+  </div>
+
+  <div class="content-block">
+    <h3>Bartolomé Díaz (1450–1500)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portugal — Rey Juan II</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Buscar una ruta marítima hacia la India navegando alrededor de África</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">En 1488, fue el primer europeo en rodear el extremo sur de África. Lo llamó "Cabo de las Tormentas"; el rey lo rebautizó "Cabo de Buena Esperanza". Su descubrimiento demostró que el Atlántico y el Índico estaban conectados.</td></tr>
+    </table>
+  </div>
+
+  </div>
+  <button class="quiz-trigger" onclick="startQuiz('n1')">Iniciar Quiz — Primeros Exploradores (5 Preguntas)</button>
+</div>
+<!-- ==================== SECTION 2: INSTRUMENTOS MARITIMOS ==================== -->
+<div class="section" id="n2">
+  <button class="back-btn" onclick="goHome()">← Volver</button>
+  <div class="section-content">
+  <div class="section-hero">
+    <h2>Instrumentos de navegación del siglo XV</h2>
+    <p>Las herramientas que hicieron posible la exploración de los océanos</p>
+    <button class="tts-btn" onclick="toggleTTS(this)" data-section="n2">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+  </div>
+
+  <div class="content-block">
+    <h3>Instrumentos de Navegación</h3>
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:16px; margin-top:16px;">
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Compass_of_a_ship.jpg/320px-Compass_of_a_ship.jpg" alt="Brújula" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🧭 Brújula</strong><p style="margin:5px 0 0;font-size:0.9em;">Permite al navegante determinar el <strong>rumbo</strong> de la embarcación.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sextant_and_telescope.jpg/320px-Sextant_and_telescope.jpg" alt="Sextante" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">📐 Sextante</strong><p style="margin:5px 0 0;font-size:0.9em;">Permite determinar la <strong>posición (latitud)</strong> del barco.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Astrolabe_of_Jean_Fusoris.jpg/320px-Astrolabe_of_Jean_Fusoris.jpg" alt="Astrolabio" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">⚙️ Astrolabio</strong><p style="margin:5px 0 0;font-size:0.9em;">Determinaba la <strong>latitud</strong> del lugar donde se encontraba la nave.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cantino_planisphere_%281502%29.jpg/320px-Cantino_planisphere_%281502%29.jpg" alt="Cartas Portulanas" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🗺️ Cartas Portulanas</strong><p style="margin:5px 0 0;font-size:0.9em;">Mapas gráficos de las costas para <strong>planificar rutas</strong> entre puertos.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ptolemy_world_map.jpg/320px-Ptolemy_world_map.jpg" alt="Imago Mundi" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🌍 Imago Mundi</strong><p style="margin:5px 0 0;font-size:0.9em;">Representa la <strong>visión del mundo</strong> en la época medieval.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Armillary_sphere_in_Shugborough.jpg/320px-Armillary_sphere_in_Shugborough.jpg" alt="Esfera Armilar" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🌐 Esfera Armilar</strong><p style="margin:5px 0 0;font-size:0.9em;">Representaba los círculos celestes para calcular el <strong>movimiento de los astros</strong>.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cross-staff.jpg/320px-Cross-staff.jpg" alt="Ballestilla" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">➕ Ballestilla</strong><p style="margin:5px 0 0;font-size:0.9em;">Se utilizaba para medir el <strong>ángulo</strong> entre dos puntos.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nocturnal_Inv._1985.3.jpg/320px-Nocturnal_Inv._1985.3.jpg" alt="Noctrulabio" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🌙 Noctrulabio</strong><p style="margin:5px 0 0;font-size:0.9em;">Diseñado para determinar la <strong>hora durante la noche</strong>.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Wooden_hourglass_3.jpg/200px-Wooden_hourglass_3.jpg" alt="Reloj de Arena" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">⏳ Reloj de Arena</strong><p style="margin:5px 0 0;font-size:0.9em;">Estima la <strong>velocidad y distancia</strong> recorrida por la nave.</p></div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Lead_line_1.jpg/320px-Lead_line_1.jpg" alt="Sonda Marítima" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🪢 Sonda Marítima</strong><p style="margin:5px 0 0;font-size:0.9em;">Se lanza al mar para medir la <strong>profundidad del agua</strong>.</p></div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+  <button class="quiz-trigger" onclick="startQuiz('n2')">Iniciar Quiz — Instrumentos de Navegación (5 Preguntas)</button>
+</div>
+
+<!-- ==================== SECTION 3: LA REFORMA PROTESTANTE ==================== -->
+<div class="section" id="n3">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+  <div class="section-content">
+    <div class="section-hero">
+      <h2>La Reforma Protestante</h2>
+      <p>Causas, cisma con Roma y la respuesta de la Iglesia Católica</p>
+      
+    </div>
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      
+    </div>
+
+    <h3>El Poder del Papa (Factor Político)</h3>
+    <p>El poder del Papa había sido desafiado. El <strong>Cisma de Occidente (1378-1417)</strong>, donde hubo dos y hasta tres Papas compitiendo por el poder, dejó una cicatriz profunda en la confianza de los fieles. Los reyes y príncipes (especialmente en Alemania e Inglaterra) resentían la interferencia política del Papa en sus reinos y la constante fuga de dinero (impuestos eclesiásticos) hacia Roma.</p>
+
+    <h3>Crisis Moral y Espiritual (Factor Religioso)</h3>
+    <p>La Iglesia se había alejado de sus ideales de pobreza y servicio.</p>
+
+    <div class="highlight-box">
+      <strong>El Alto Clero (Obispos, Cardenales):</strong> Muchos actuaban más como señores feudales o príncipes renacentistas. Acumulaban riqueza, vivían en el lujo y practicaban el nepotismo (favorecer a familiares con cargos).
+    </div>
+    <div class="highlight-box">
+      <strong>El Bajo Clero (Sacerdotes):</strong> A menudo carecían de formación teológica, no entendían el latín de la misa que celebraban y rompían el celibato.
+    </div>
+    <div class="highlight-box">
+      <strong>Corrupción Administrativa:</strong> La simonía (venta de cargos eclesiásticos) era común. Si comprabas el cargo de obispo, "invertías" para luego recuperar el dinero a través de los fieles.
+    </div>
+
+    <h3>El Detonante: Las Indulgencias (Factor Económico)</h3>
+    <p>La indulgencia era un documento que la Iglesia otorgaba y que (según la doctrina) reducía el tiempo que un alma pasaba en el purgatorio. Originalmente se obtenían por actos de piedad. Sin embargo, para financiar la construcción de la <strong>Basílica de San Pedro</strong> en Roma, el Papa <strong>León X</strong> autorizó una "venta" masiva de indulgencias.</p>
+    <p>En Alemania, el monje dominico <strong>Johann Tetzel</strong> las predicaba con un eslogan que indignaba: <em>"Tan pronto como la moneda en el cofre resuena, el alma al cielo vuela"</em>.</p>
+
+    <h3>El Catalizador (Factor Intelectual y Tecnológico)</h3>
+    <div class="highlight-box">
+      <strong>Humanismo:</strong> Movimientos como el de <strong>Erasmo de Róterdam</strong> ya criticaban la superstición y pedían un retorno a las fuentes originales del cristianismo (la Biblia), promoviendo la <em>devotio moderna</em> (una fe más personal e interna).
+    </div>
+    <div class="highlight-box">
+      <strong>La Imprenta:</strong> Inventada por <strong>Gutenberg</strong> alrededor de 1450, permitió que las ideas (críticas, panfletos, y luego la Biblia) se reprodujeran y difundieran a una velocidad nunca antes vista, escapando al control de la Iglesia.
+    </div>
+
+    <h3>Lutero y la Expansión</h3>
+    <p><strong>Martín Lutero (1483-1546)</strong> era un monje agustino y profesor de teología en Wittenberg (Alemania), profundamente atormentado por la idea de su propia salvación.</p>
+
+    <h4>El Descubrimiento de Lutero</h4>
+    <p>Estudiando la Biblia, especialmente la Epístola a los Romanos, Lutero llegó a una conclusión que cambiaría el mundo: <strong>"El justo vivirá por la fe"</strong>. Para él, la salvación no se ganaba mediante buenas obras, peregrinaciones, ayunos o comprando indulgencias. La salvación era un regalo gratuito de Dios (<em>Sola Gratia</em>), que se recibía únicamente a través de la fe (<em>Sola Fide</em>).</p>
+
+    <h4>Las 95 Tesis (1517)</h4>
+    <p>Indignado por la venta de indulgencias de Tetzel, Lutero escribió <strong>95 puntos de debate</strong> (en latín académico) cuestionando su validez teológica y las clavó en la puerta de la iglesia del castillo de Wittenberg. Su intención era iniciar un debate académico; sin embargo, gracias a la imprenta, las tesis fueron traducidas al alemán y distribuidas por toda Alemania en semanas. El escándalo se hizo viral.</p>
+
+    <h4>La Ruptura</h4>
+    <p>El Papa León X inicialmente desestimó a Lutero como una "pelea de monjes". Pero Lutero no se retractó. En la <strong>Dieta de Worms (1521)</strong>, frente al emperador Carlos V, Lutero pronunció su famosa frase: <strong>"Aquí estoy, no puedo hacer otra cosa. Que Dios me ayude"</strong>. Fue declarado hereje y prófugo.</p>
+
+    <h3>Pilares del Luteranismo</h3>
+    <ul>
+      <li><strong>Salvación solo por fe</strong></li>
+      <li><strong>La Biblia es la única fuente de autoridad</strong></li>
+      <li><strong>Todo creyente puede interpretar la Biblia</strong></li>
+      <li><strong>Dos Sacramentos:</strong> Solo reconoció el Bautismo y la Eucaristía (los únicos explícitos en la Biblia)</li>
+      <li><strong>Misa en lengua vernácula</strong> (nativa, no en latín)</li>
+    </ul>
+
+    <h3>La Diversificación de la Reforma</h3>
+    <p>El movimiento de Lutero abrió la puerta a otros reformadores:</p>
+
+    <div class="highlight-box">
+      <strong>Juan Calvino (Ginebra, Suiza):</strong> Le dio estructura y reglas claras a la Reforma. Escribió un libro que se convirtió en el manual del <strong>Calvinismo</strong>. Su idea más famosa es la <strong>Predestinación</strong>: Calvino creía que Dios ya había elegido desde el principio quién se iba a salvar y quién no.
+    </div>
+    <div class="highlight-box">
+      <strong>Enrique VIII (Inglaterra):</strong> Su reforma fue un acto político. Cuando el Papa se negó a anular su matrimonio con Catalina de Aragón (tía del Emperador Carlos V) para casarse con Ana Bolena, Enrique VIII rompió con Roma. Mediante el <strong>Acta de Supremacía (1534)</strong>, se declaró a sí mismo Cabeza de la Iglesia de Inglaterra (<strong>Anglicanismo</strong>). Fue una "reforma desde arriba", donde la estructura eclesiástica se mantuvo similar, pero la lealtad cambió del Papa al Rey.
+    </div>
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="n3">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
+    <p>La Iglesia Católica tardó en reaccionar, pero cuando lo hizo, lo hizo con dos estrategias: una <strong>reforma interna</strong> para corregir los abusos y una <strong>ofensiva</strong> para combatir el protestantismo.</p>
+
+    <h3>El Concilio de Trento (1545-1563)</h3>
+    <p>Fue la respuesta teológica y disciplinaria. Se reunieron en varias sesiones para definir el dogma católico frente a las ideas protestantes.</p>
+
+    <h4>En lo Dogmático (Rechazo al Protestantismo)</h4>
+    <ul>
+      <li>Reafirmó que la salvación se obtiene por la fe <strong>Y</strong> las buenas obras.</li>
+      <li>Mantuvo la validez de los <strong>siete sacramentos</strong>.</li>
+      <li>Declaró que la <strong>Vulgata</strong> (Biblia en latín) era la versión oficial y que solo la Iglesia podía interpretar las Escrituras (rechazo a la <em>Sola Scriptura</em>).</li>
+      <li>Mantuvo la supremacía del Papa y el culto a la Virgen y los santos.</li>
+    </ul>
+
+    <h4>En lo Disciplinario (Corrección de Abusos)</h4>
+    <ul>
+      <li>Prohibió la venta de indulgencias (la queja original de Lutero).</li>
+      <li>Creó los <strong>seminarios</strong> para garantizar la correcta formación de los sacerdotes.</li>
+      <li>Ordenó a los obispos residir en sus diócesis y visitar sus parroquias.</li>
+      <li>Publicó el <strong>Catecismo</strong> (para enseñar la doctrina) y el <strong>Índice de Libros Prohibidos</strong> (para frenar la herejía).</li>
+    </ul>
+
+    <h3>La Compañía de Jesús (Jesuitas)</h3>
+    <p>Fundada por <strong>San Ignacio de Loyola</strong> en 1540. Fueron el "brazo intelectual y misionero" de la Contrarreforma. Con una disciplina casi militar, se enfocaron en tres áreas:</p>
+
+    <table class="data-table">
+      <tr><th>Área</th><th>Descripción</th></tr>
+      <tr><td>Educación</td><td>Crearon los mejores colegios y universidades de Europa para formar a las nuevas élites católicas</td></tr>
+      <tr><td>Misiones</td><td>Llevaron el catolicismo a América, Asia y África</td></tr>
+      <tr><td>Defensa de la Fe</td><td>Actuaron como confesores y asesores de reyes católicos</td></tr>
+    </table>
+
+    <h3>La Inquisición</h3>
+    <p>Se reactivó el <strong>Tribunal del Santo Oficio</strong> (especialmente en España e Italia) para perseguir, juzgar y castigar a los protestantes y a cualquiera que se desviara de la ortodoxia católica.</p>
+
+    <h3>El Legado: Un Nuevo Mapa de Europa</h3>
+    <p>La Reforma rompió la unidad religiosa de Europa para siempre, dando lugar a un nuevo mapa político y a un siglo de conflictos.</p>
+
+    <div class="highlight-box">
+      <strong>Norte de Europa</strong> (Escandinavia, norte de Alemania, Inglaterra, Escocia, Holanda) → se volvió predominantemente <strong>Protestante</strong>.<br>
+      <strong>Sur de Europa</strong> (Italia, España, Portugal, Francia, sur de Alemania) → permaneció <strong>Católico</strong>.
+    </div>
+
+    <h3>Las Guerras de Religión</h3>
+    <p>La fe se convirtió en la principal causa de guerra durante más de 100 años.</p>
+
+    <table class="data-table">
+      <tr><th>Evento</th><th>Fecha</th><th>Descripción</th></tr>
+      <tr><td>Paz de Augsburgo</td><td>1555</td><td>Principio <em>Cuius regio, eius religio</em> ("De quien es la región, es la religión"). Los príncipes alemanes podían elegir entre luteranismo o catolicismo para su territorio, pero no los súbditos.</td></tr>
+      <tr><td>Guerra de los Treinta Años</td><td>1618-1648</td><td>Comenzó como un conflicto religioso en Bohemia pero arrastró a todas las potencias europeas. Devastó Alemania.</td></tr>
+      <tr><td>Paz de Westfalia</td><td>1648</td><td>Puso fin a la Guerra de los Treinta Años. Marcó el fin del poder político del Papa sobre Europa y el nacimiento del sistema moderno de estados-nación soberanos. La tolerancia religiosa comenzó lentamente a abrirse camino.</td></tr>
+    </table>
+  </div>
+  <button class="quiz-trigger" onclick="startQuiz('n3')">Iniciar Quiz — La Reforma Protestante (5 Preguntas)</button>
+</div>
+
+<!-- ==================== SECTION 4: SANTOS RENOVADORES ==================== -->
+<div class="section" id="n4">
   <div class="section-hero">
     <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
-    <h2>Las Culturas Mesoamericanas</h2>
+    <h2>La Reforma Protestante y los Santos que la Renovaron</h2>
+    <p class="section-subtitle">La Reforma Protestante y los santos que renovaron la Iglesia</p>
+  </div>
+  <div class="section-content">
+
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="n4">🔊 Escuchar</button>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
+    </div>
+
+    <h3>Introducción: ¿De qué se quejaba Lutero?</h3>
+    <p>Martín Lutero, un monje alemán, clavó en 1517 las "95 Tesis" en la puerta de una iglesia. Sus quejas principales eran:</p>
+    <ul>
+      <li><strong>La venta de indulgencias:</strong> La idea de que podías "pagar" para que se te perdonaran los pecados.</li>
+      <li><strong>La corrupción:</strong> Algunos líderes de la Iglesia vivían con mucho lujo, más como reyes que como guías espirituales.</li>
+      <li><strong>La autoridad:</strong> Lutero dijo que la única autoridad verdadera era la Biblia, no tanto el Papa o la tradición de la Iglesia.</li>
+      <li><strong>La salvación:</strong> Enseñó que la salvación se lograba solo por la fe, no por hacer buenas obras.</li>
+    </ul>
+    <p>Europa se dividió. Nació el <strong>Protestantismo</strong> (luteranos, calvinistas, anglicanos) y la Iglesia Católica entró en una de sus mayores crisis.</p>
+
+    <h3>La Respuesta Católica: La Contrarreforma</h3>
+    <p>La Iglesia Católica no se quedó de brazos cruzados. Se dio cuenta de que Lutero tenía razón en algunas de sus críticas. Así que inició un movimiento de renovación interna llamado la <strong>Contrarreforma</strong> (o Reforma Católica):</p>
+    <ul>
+      <li>Corregir los errores internos como la corrupción.</li>
+      <li>Prohibió la venta de indulgencias (la queja original de Lutero).</li>
+      <li>Reafirmar y fortalecer la fe católica.</li>
+      <li>Publicó el Catecismo y el Índice de Libros Prohibidos.</li>
+      <li>Reafirmó que la salvación se obtiene por la fe Y las buenas obras.</li>
+      <li>Mantuvo la validez de los siete sacramentos.</li>
+    </ul>
+
+    <h3>San Ignacio de Loyola — El Soldado de Dios (Acción y Educación)</h3>
+    <p>Ignacio fue un soldado español (Íñigo de Loyola) que fue gravemente herido en batalla. Mientras se recuperaba, leyó vidas de santos y decidió convertirse en un "soldado de Cristo".</p>
+    <div class="highlight-box">
+      <strong>Su Pensamiento Clave:</strong> "Encontrar a Dios en todas las cosas". Para Ignacio, no tenías que irte a un monasterio para ser santo. Podías encontrar a Dios en el estudio, en el trabajo, en la vida diaria.
+    </div>
+    <p><strong>Su Gran Obra:</strong> La <strong>Compañía de Jesús (Los Jesuitas)</strong> fue una nueva orden religiosa que funcionaba como un "ejército espiritual". Su lema era "Para la mayor gloria de Dios".</p>
+    <p>Los jesuitas se convirtieron en los grandes educadores de Europa. Crearon los mejores colegios y universidades para formar a los nuevos católicos con una fe sólida e inteligente, capaces de debatir con los protestantes. También fueron grandes misioneros, llevando el catolicismo a América y Asia.</p>
+
+    <h3>Santa Teresa de Jesús — La Mística Apasionada (Reforma Interior)</h3>
+    <p>Fue una monja carmelita en Ávila, España. Se dio cuenta de que la vida en muchos conventos se había vuelto muy relajada y superficial (se preocupaban más por las visitas sociales que por la oración).</p>
+    <div class="highlight-box">
+      <strong>Su Pensamiento Clave:</strong> La oración es una relación de amistad. "No es otra cosa oración mental, a mi parecer, sino tratar de amistad, estando muchas veces tratando a solas con quien sabemos nos ama".
+    </div>
+    <p><strong>Su Gran Obra:</strong> Teresa sintió que, si la Iglesia estaba en crisis por fuera, y <strong>fundó nuevos conventos</strong> que volvían a lo básico: pobreza, silencio y oración profunda. Las llamó <strong>"Descalzas"</strong> para mostrar su sencillez.</p>
+    <p>Escribió obras maestras de la espiritualidad como "El Castillo Interior", donde compara el alma con un castillo que hay que recorrer a través de la oración para encontrar a Dios en la habitación central.</p>
+
+    <h3>San Juan de la Cruz — El Poeta de la Noche Oscura</h3>
+    <p>Fue un fraile carmelita y un poeta increíble. Ayudó a Santa Teresa a reformar la rama masculina de los carmelitas (los <strong>Carmelitas Descalzos</strong>).</p>
+    <p>Escribió algunos de los poemas más bellos del idioma español, como "Noche Oscura del Alma" — un proceso de purificación, donde Dios nos quita nuestros apegos (al dinero, al orgullo, incluso a las ideas bonitas sobre Dios) para que solo nos quede Dios mismo.</p>
+
+    <h3>Un Ejército de Tres</h3>
+    <p>La Reforma Protestante fue un terremoto que sacudió a la Iglesia. Pero en lugar de derrumbarse, la Iglesia Católica encontró en España una fuerza renovadora increíble:</p>
+    <div class="highlight-box">
+      <strong>San Ignacio</strong> la reformó "hacia afuera": con educación, disciplina y acción en el mundo.
+    </div>
+    <div class="highlight-box">
+      <strong>Santa Teresa</strong> la reformó "hacia adentro": con oración, pasión y amistad con Dios.
+    </div>
+    <div class="highlight-box">
+      <strong>San Juan de la Cruz</strong> la reformó "hacia lo profundo": con poesía y una teología que abraza el misterio y la dificultad de la fe.
+    </div>
+
+    <button class="quiz-trigger" onclick="startQuiz('n4')">Iniciar Quiz — Santos Renovadores (5 Preguntas)</button>
+  </div>
+</div>
+
+<!-- ==================== SECTION 5: MAYAS Y AZTECAS ==================== -->
+<div class="section" id="n5">
+  <div class="section-hero">
+    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
+    <h2>Mayas y Aztecas</h2>
     <p class="section-desc">Mayas y Aztecas: dos civilizaciones que marcaron la historia de América.</p>
   </div>
   <div class="section-content">
@@ -663,7 +998,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s1">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="n5">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -742,77 +1077,12 @@ body {
       <li><strong>Telpochcalli:</strong> Escuela para la gente común. Había una en cada barrio. Se enseñaban técnicas agrícolas, uso de armas y oficios.</li>
     </ul>
 
-    <button class="quiz-trigger" onclick="startQuiz('s1')">Iniciar Quiz — Culturas Mesoamericanas (5 Preguntas)</button>
+    <button class="quiz-trigger" onclick="startQuiz('n5')">Iniciar Quiz — Mayas y Aztecas (5 Preguntas)</button>
   </div>
 </div>
 
-<!-- ==================== SECTION 2: DIFERENCIAS ==================== -->
-<div class="section" id="s2">
-  <div class="section-hero">
-    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
-    <h2>Diferencias entre Indígenas y Españoles</h2>
-    <p class="section-desc">Política, religión, tecnología y visión del mundo.</p>
-  </div>
-  <div class="section-content">
-
-    <div class="video-label">▶ Video del tema</div>
-    <div class="video-container">
-      <iframe src="https://drive.google.com/file/d/1qqWHcSlFXZnevnYlHqvE_fsw2MqSXIHp/preview" allow="autoplay" allowfullscreen></iframe>
-    </div>
-
-    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s2">🔊 Escuchar</button>
-      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
-    </div>
-
-    <h3>Contexto Político y Económico Español</h3>
-
-    <p>España buscaba expandir su imperio, compitiendo con Portugal, Inglaterra y Francia. Los expedicionarios querían enriquecerse y ganar prestigio social (mercantilismo). En Yucatán, descubrieron sociedades con alto desarrollo cultural y grandes riquezas.</p>
-
-    <h3>Organización Social Mesoamericana</h3>
-    <p>La base social mexica era el <strong>calpulli</strong>, la unidad territorial donde residía la mayoría de la población, organizada por familias o parentesco.</p>
-    <ul>
-      <li><strong>Gobierno:</strong> El tlatoani, el tlatocan y funcionarios ejercían estricto control.</li>
-      <li><strong>Registro Poblacional:</strong> Cada calpulli llevaba registro del número de habitantes y tareas por familia.</li>
-      <li><strong>Movilidad Social:</strong> Se ascendía por desempeño en milicia, comercio y sacerdocio, no por riqueza personal.</li>
-    </ul>
-
-    <h3>Diferencias Ideológicas y Religiosas</h3>
-    <h4>Presagios y Creencias Indígenas</h4>
-    <p>Algunas sociedades prehispánicas interpretaron fenómenos naturales (terremotos, cometas) como presagios de que algo terrible vendría. Moctezuma estaba imbuido de pesimismo.</p>
-
-    <h4>El Retorno de Quetzalcóatl</h4>
-    <p>Existía la creencia de que el dios Quetzalcóatl regresaría un día desde el mar. Los indígenas inicialmente confundieron a los españoles con dioses, creyendo incluso que caballo y jinete eran un solo ser.</p>
-
-    <h4>La Perspectiva Católica</h4>
-    <p>Los españoles se horrorizaron ante rituales indígenas y justificaron el sometimiento con la idea de enseñar la "verdadera fe". Carlos V ordenó a Cortés la evangelización.</p>
-
-    <h3>La Polémica sobre la Humanidad de los Indígenas</h3>
-    <ul>
-      <li><strong>Defensores:</strong> Frailes evangelizadores y filósofos que defendían a los indígenas.</li>
-      <li><strong>Justificadores del dominio:</strong> Buscaban un trato discriminatorio basado en la supuesta superioridad europea.</li>
-    </ul>
-
-    <h3>Superioridad Tecnológica y Militar</h3>
-    <p>Los europeos usaban tecnología más avanzada: la rueda, brújula, cuadrante, sextante, pólvora (arcabuces, cañones), armaduras de hierro, caballos y perros de guerra.</p>
-
-    <h4>Armas Nativas vs. Españolas</h4>
-    <table class="data-table">
-      <tr><th>Armas Nativas</th><th>Armas Españolas</th></tr>
-      <tr><td>Arcos, flechas, escudos, lanzas, hondas</td><td>Arcabuces, cañones, ballestas, espadas, lanzas</td></tr>
-      <tr><td>Objetivo: capturar vivos para sacrificio</td><td>Objetivo: matar al mayor número posible</td></tr>
-      <tr><td>Escudos de madera y cuero, ichcahuipil (algodón acolchado)</td><td>Armaduras y escudos de hierro</td></tr>
-    </table>
-
-    <h3>Diferencias Urbanas</h3>
-    <p>Las ciudades europeas medievales eran espontáneas y amuralladas. Las ciudades mesoamericanas como Tenochtitlán tenían planificación simétrica y ordenada que asombró a los españoles.</p>
-
-    <button class="quiz-trigger" onclick="startQuiz('s2')">Iniciar Quiz — Diferencias (5 Preguntas)</button>
-  </div>
-</div>
-
-<!-- ==================== SECTION 3: CONQUISTA DE MEXICO ==================== -->
-<div class="section" id="s3">
+<!-- ==================== SECTION 6: CONQUISTA DE MEXICO ==================== -->
+<div class="section" id="n6">
   <div class="section-hero">
     <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
     <h2>La Conquista de México</h2>
@@ -826,7 +1096,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s3">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="n6">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -893,12 +1163,12 @@ body {
       <li><strong>Tenochtitlán cae el 13 de agosto de 1521.</strong></li>
     </ul>
 
-    <button class="quiz-trigger" onclick="startQuiz('s3')">Iniciar Quiz — La Conquista (5 Preguntas)</button>
+    <button class="quiz-trigger" onclick="startQuiz('n6')">Iniciar Quiz — La Conquista (5 Preguntas)</button>
   </div>
 </div>
 
-<!-- ==================== SECTION 4: CONQUISTA ESPIRITUAL ==================== -->
-<div class="section" id="s4">
+<!-- ==================== SECTION 7: CONQUISTA ESPIRITUAL ==================== -->
+<div class="section" id="n7">
   <div class="section-hero">
     <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
     <h2>La Conquista Espiritual</h2>
@@ -912,7 +1182,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s4">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="n7">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -976,12 +1246,12 @@ body {
       <li>Construyeron iglesias justo encima de los templos antiguos (como en Cholula).</li>
     </ul>
 
-    <button class="quiz-trigger" onclick="startQuiz('s4')">Iniciar Quiz — Conquista Espiritual (5 Preguntas)</button>
+    <button class="quiz-trigger" onclick="startQuiz('n7')">Iniciar Quiz — Conquista Espiritual (5 Preguntas)</button>
   </div>
 </div>
 
-<!-- ==================== SECTION 5: TRIANGULO COMERCIAL ==================== -->
-<div class="section" id="s5">
+<!-- ==================== SECTION 8: TRIANGULO COMERCIAL ==================== -->
+<div class="section" id="n8">
   <div class="section-hero">
     <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
     <h2>El Triángulo Comercial</h2>
@@ -995,7 +1265,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s5">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="n8">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -1028,12 +1298,12 @@ body {
       <p>El sistema de castas buscaba dividir, pero el contacto diario entre europeos, africanos e indígenas estaba creando algo que las leyes no podían contener por completo: <strong>una cultura compartida</strong>.</p>
     </div>
 
-    <button class="quiz-trigger" onclick="startQuiz('s5')">Iniciar Quiz — Triángulo Comercial (3 Preguntas)</button>
+    <button class="quiz-trigger" onclick="startQuiz('n8')">Iniciar Quiz — Triángulo Comercial (3 Preguntas)</button>
   </div>
 </div>
 
-<!-- ==================== SECTION 6: INDEPENDENCIA 13 COLONIAS ==================== -->
-<div class="section" id="s6">
+<!-- ==================== SECTION 9: INDEPENDENCIA 13 COLONIAS ==================== -->
+<div class="section" id="n9">
   <div class="section-hero">
     <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
     <h2>Independencia de las 13 Colonias</h2>
@@ -1047,7 +1317,7 @@ body {
     </div>
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s6">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="n9">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -1107,230 +1377,12 @@ body {
       <li>Derechos elementales inspirados en la Ilustración: libertad de expresión, de prensa, de reunión, derecho a posesión de armas. <strong>Pero ninguno de estos derechos regía para los esclavos.</strong></li>
     </ul>
 
-    <button class="quiz-trigger" onclick="startQuiz('s6')">Iniciar Quiz — Independencia (5 Preguntas)</button>
+    <button class="quiz-trigger" onclick="startQuiz('n9')">Iniciar Quiz — Independencia (5 Preguntas)</button>
   </div>
 </div>
 
-<!-- ==================== SECTION 7: CAUSAS DE LA REFORMA ==================== -->
-<div class="section" id="s7">
-  <div class="section-hero">
-    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
-    <h2>Causas de la Reforma</h2>
-    <p class="section-subtitle">Lutero, las 95 tesis y la ruptura con la Iglesia Católica</p>
-  </div>
-  <div class="section-content">
-
-    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s7">🔊 Escuchar</button>
-      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
-    </div>
-
-    <h3>El Poder del Papa (Factor Político)</h3>
-    <p>El poder del Papa había sido desafiado. El <strong>Cisma de Occidente (1378-1417)</strong>, donde hubo dos y hasta tres Papas compitiendo por el poder, dejó una cicatriz profunda en la confianza de los fieles. Los reyes y príncipes (especialmente en Alemania e Inglaterra) resentían la interferencia política del Papa en sus reinos y la constante fuga de dinero (impuestos eclesiásticos) hacia Roma.</p>
-
-    <h3>Crisis Moral y Espiritual (Factor Religioso)</h3>
-    <p>La Iglesia se había alejado de sus ideales de pobreza y servicio.</p>
-
-    <div class="highlight-box">
-      <strong>El Alto Clero (Obispos, Cardenales):</strong> Muchos actuaban más como señores feudales o príncipes renacentistas. Acumulaban riqueza, vivían en el lujo y practicaban el nepotismo (favorecer a familiares con cargos).
-    </div>
-    <div class="highlight-box">
-      <strong>El Bajo Clero (Sacerdotes):</strong> A menudo carecían de formación teológica, no entendían el latín de la misa que celebraban y rompían el celibato.
-    </div>
-    <div class="highlight-box">
-      <strong>Corrupción Administrativa:</strong> La simonía (venta de cargos eclesiásticos) era común. Si comprabas el cargo de obispo, "invertías" para luego recuperar el dinero a través de los fieles.
-    </div>
-
-    <h3>El Detonante: Las Indulgencias (Factor Económico)</h3>
-    <p>La indulgencia era un documento que la Iglesia otorgaba y que (según la doctrina) reducía el tiempo que un alma pasaba en el purgatorio. Originalmente se obtenían por actos de piedad. Sin embargo, para financiar la construcción de la <strong>Basílica de San Pedro</strong> en Roma, el Papa <strong>León X</strong> autorizó una "venta" masiva de indulgencias.</p>
-    <p>En Alemania, el monje dominico <strong>Johann Tetzel</strong> las predicaba con un eslogan que indignaba: <em>"Tan pronto como la moneda en el cofre resuena, el alma al cielo vuela"</em>.</p>
-
-    <h3>El Catalizador (Factor Intelectual y Tecnológico)</h3>
-    <div class="highlight-box">
-      <strong>Humanismo:</strong> Movimientos como el de <strong>Erasmo de Róterdam</strong> ya criticaban la superstición y pedían un retorno a las fuentes originales del cristianismo (la Biblia), promoviendo la <em>devotio moderna</em> (una fe más personal e interna).
-    </div>
-    <div class="highlight-box">
-      <strong>La Imprenta:</strong> Inventada por <strong>Gutenberg</strong> alrededor de 1450, permitió que las ideas (críticas, panfletos, y luego la Biblia) se reprodujeran y difundieran a una velocidad nunca antes vista, escapando al control de la Iglesia.
-    </div>
-
-    <h3>Lutero y la Expansión</h3>
-    <p><strong>Martín Lutero (1483-1546)</strong> era un monje agustino y profesor de teología en Wittenberg (Alemania), profundamente atormentado por la idea de su propia salvación.</p>
-
-    <h4>El Descubrimiento de Lutero</h4>
-    <p>Estudiando la Biblia, especialmente la Epístola a los Romanos, Lutero llegó a una conclusión que cambiaría el mundo: <strong>"El justo vivirá por la fe"</strong>. Para él, la salvación no se ganaba mediante buenas obras, peregrinaciones, ayunos o comprando indulgencias. La salvación era un regalo gratuito de Dios (<em>Sola Gratia</em>), que se recibía únicamente a través de la fe (<em>Sola Fide</em>).</p>
-
-    <h4>Las 95 Tesis (1517)</h4>
-    <p>Indignado por la venta de indulgencias de Tetzel, Lutero escribió <strong>95 puntos de debate</strong> (en latín académico) cuestionando su validez teológica y las clavó en la puerta de la iglesia del castillo de Wittenberg. Su intención era iniciar un debate académico; sin embargo, gracias a la imprenta, las tesis fueron traducidas al alemán y distribuidas por toda Alemania en semanas. El escándalo se hizo viral.</p>
-
-    <h4>La Ruptura</h4>
-    <p>El Papa León X inicialmente desestimó a Lutero como una "pelea de monjes". Pero Lutero no se retractó. En la <strong>Dieta de Worms (1521)</strong>, frente al emperador Carlos V, Lutero pronunció su famosa frase: <strong>"Aquí estoy, no puedo hacer otra cosa. Que Dios me ayude"</strong>. Fue declarado hereje y prófugo.</p>
-
-    <h3>Pilares del Luteranismo</h3>
-    <ul>
-      <li><strong>Salvación solo por fe</strong></li>
-      <li><strong>La Biblia es la única fuente de autoridad</strong></li>
-      <li><strong>Todo creyente puede interpretar la Biblia</strong></li>
-      <li><strong>Dos Sacramentos:</strong> Solo reconoció el Bautismo y la Eucaristía (los únicos explícitos en la Biblia)</li>
-      <li><strong>Misa en lengua vernácula</strong> (nativa, no en latín)</li>
-    </ul>
-
-    <h3>La Diversificación de la Reforma</h3>
-    <p>El movimiento de Lutero abrió la puerta a otros reformadores:</p>
-
-    <div class="highlight-box">
-      <strong>Juan Calvino (Ginebra, Suiza):</strong> Le dio estructura y reglas claras a la Reforma. Escribió un libro que se convirtió en el manual del <strong>Calvinismo</strong>. Su idea más famosa es la <strong>Predestinación</strong>: Calvino creía que Dios ya había elegido desde el principio quién se iba a salvar y quién no.
-    </div>
-    <div class="highlight-box">
-      <strong>Enrique VIII (Inglaterra):</strong> Su reforma fue un acto político. Cuando el Papa se negó a anular su matrimonio con Catalina de Aragón (tía del Emperador Carlos V) para casarse con Ana Bolena, Enrique VIII rompió con Roma. Mediante el <strong>Acta de Supremacía (1534)</strong>, se declaró a sí mismo Cabeza de la Iglesia de Inglaterra (<strong>Anglicanismo</strong>). Fue una "reforma desde arriba", donde la estructura eclesiástica se mantuvo similar, pero la lealtad cambió del Papa al Rey.
-    </div>
-
-    <button class="quiz-trigger" onclick="startQuiz('s7')">Iniciar Quiz — Causas de la Reforma (5 Preguntas)</button>
-  </div>
-</div>
-
-<!-- ==================== SECTION 8: CONTRARREFORMA CATÓLICA ==================== -->
-<div class="section" id="s8">
-  <div class="section-hero">
-    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
-    <h2>La Contrarreforma Católica</h2>
-    <p class="section-subtitle">La reacción de la Iglesia Católica ante la Reforma Protestante</p>
-  </div>
-  <div class="section-content">
-
-    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s8">🔊 Escuchar</button>
-      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
-    </div>
-
-    <p>La Iglesia Católica tardó en reaccionar, pero cuando lo hizo, lo hizo con dos estrategias: una <strong>reforma interna</strong> para corregir los abusos y una <strong>ofensiva</strong> para combatir el protestantismo.</p>
-
-    <h3>El Concilio de Trento (1545-1563)</h3>
-    <p>Fue la respuesta teológica y disciplinaria. Se reunieron en varias sesiones para definir el dogma católico frente a las ideas protestantes.</p>
-
-    <h4>En lo Dogmático (Rechazo al Protestantismo)</h4>
-    <ul>
-      <li>Reafirmó que la salvación se obtiene por la fe <strong>Y</strong> las buenas obras.</li>
-      <li>Mantuvo la validez de los <strong>siete sacramentos</strong>.</li>
-      <li>Declaró que la <strong>Vulgata</strong> (Biblia en latín) era la versión oficial y que solo la Iglesia podía interpretar las Escrituras (rechazo a la <em>Sola Scriptura</em>).</li>
-      <li>Mantuvo la supremacía del Papa y el culto a la Virgen y los santos.</li>
-    </ul>
-
-    <h4>En lo Disciplinario (Corrección de Abusos)</h4>
-    <ul>
-      <li>Prohibió la venta de indulgencias (la queja original de Lutero).</li>
-      <li>Creó los <strong>seminarios</strong> para garantizar la correcta formación de los sacerdotes.</li>
-      <li>Ordenó a los obispos residir en sus diócesis y visitar sus parroquias.</li>
-      <li>Publicó el <strong>Catecismo</strong> (para enseñar la doctrina) y el <strong>Índice de Libros Prohibidos</strong> (para frenar la herejía).</li>
-    </ul>
-
-    <h3>La Compañía de Jesús (Jesuitas)</h3>
-    <p>Fundada por <strong>San Ignacio de Loyola</strong> en 1540. Fueron el "brazo intelectual y misionero" de la Contrarreforma. Con una disciplina casi militar, se enfocaron en tres áreas:</p>
-
-    <table class="data-table">
-      <tr><th>Área</th><th>Descripción</th></tr>
-      <tr><td>Educación</td><td>Crearon los mejores colegios y universidades de Europa para formar a las nuevas élites católicas</td></tr>
-      <tr><td>Misiones</td><td>Llevaron el catolicismo a América, Asia y África</td></tr>
-      <tr><td>Defensa de la Fe</td><td>Actuaron como confesores y asesores de reyes católicos</td></tr>
-    </table>
-
-    <h3>La Inquisición</h3>
-    <p>Se reactivó el <strong>Tribunal del Santo Oficio</strong> (especialmente en España e Italia) para perseguir, juzgar y castigar a los protestantes y a cualquiera que se desviara de la ortodoxia católica.</p>
-
-    <h3>El Legado: Un Nuevo Mapa de Europa</h3>
-    <p>La Reforma rompió la unidad religiosa de Europa para siempre, dando lugar a un nuevo mapa político y a un siglo de conflictos.</p>
-
-    <div class="highlight-box">
-      <strong>Norte de Europa</strong> (Escandinavia, norte de Alemania, Inglaterra, Escocia, Holanda) → se volvió predominantemente <strong>Protestante</strong>.<br>
-      <strong>Sur de Europa</strong> (Italia, España, Portugal, Francia, sur de Alemania) → permaneció <strong>Católico</strong>.
-    </div>
-
-    <h3>Las Guerras de Religión</h3>
-    <p>La fe se convirtió en la principal causa de guerra durante más de 100 años.</p>
-
-    <table class="data-table">
-      <tr><th>Evento</th><th>Fecha</th><th>Descripción</th></tr>
-      <tr><td>Paz de Augsburgo</td><td>1555</td><td>Principio <em>Cuius regio, eius religio</em> ("De quien es la región, es la religión"). Los príncipes alemanes podían elegir entre luteranismo o catolicismo para su territorio, pero no los súbditos.</td></tr>
-      <tr><td>Guerra de los Treinta Años</td><td>1618-1648</td><td>Comenzó como un conflicto religioso en Bohemia pero arrastró a todas las potencias europeas. Devastó Alemania.</td></tr>
-      <tr><td>Paz de Westfalia</td><td>1648</td><td>Puso fin a la Guerra de los Treinta Años. Marcó el fin del poder político del Papa sobre Europa y el nacimiento del sistema moderno de estados-nación soberanos. La tolerancia religiosa comenzó lentamente a abrirse camino.</td></tr>
-    </table>
-
-    <button class="quiz-trigger" onclick="startQuiz('s8')">Iniciar Quiz — Contrarreforma (5 Preguntas)</button>
-  </div>
-</div>
-
-<!-- ==================== SECTION 9: LA IGLESIA EN CRISIS - SANTOS RENOVADORES ==================== -->
-<div class="section" id="s9">
-  <div class="section-hero">
-    <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
-    <h2>La Iglesia en Crisis: Santos Renovadores</h2>
-    <p class="section-subtitle">La Reforma Protestante y los santos que renovaron la Iglesia</p>
-  </div>
-  <div class="section-content">
-
-    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s9">🔊 Escuchar</button>
-      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
-    </div>
-
-    <h3>Introducción: ¿De qué se quejaba Lutero?</h3>
-    <p>Martín Lutero, un monje alemán, clavó en 1517 las "95 Tesis" en la puerta de una iglesia. Sus quejas principales eran:</p>
-    <ul>
-      <li><strong>La venta de indulgencias:</strong> La idea de que podías "pagar" para que se te perdonaran los pecados.</li>
-      <li><strong>La corrupción:</strong> Algunos líderes de la Iglesia vivían con mucho lujo, más como reyes que como guías espirituales.</li>
-      <li><strong>La autoridad:</strong> Lutero dijo que la única autoridad verdadera era la Biblia, no tanto el Papa o la tradición de la Iglesia.</li>
-      <li><strong>La salvación:</strong> Enseñó que la salvación se lograba solo por la fe, no por hacer buenas obras.</li>
-    </ul>
-    <p>Europa se dividió. Nació el <strong>Protestantismo</strong> (luteranos, calvinistas, anglicanos) y la Iglesia Católica entró en una de sus mayores crisis.</p>
-
-    <h3>La Respuesta Católica: La Contrarreforma</h3>
-    <p>La Iglesia Católica no se quedó de brazos cruzados. Se dio cuenta de que Lutero tenía razón en algunas de sus críticas. Así que inició un movimiento de renovación interna llamado la <strong>Contrarreforma</strong> (o Reforma Católica):</p>
-    <ul>
-      <li>Corregir los errores internos como la corrupción.</li>
-      <li>Prohibió la venta de indulgencias (la queja original de Lutero).</li>
-      <li>Reafirmar y fortalecer la fe católica.</li>
-      <li>Publicó el Catecismo y el Índice de Libros Prohibidos.</li>
-      <li>Reafirmó que la salvación se obtiene por la fe Y las buenas obras.</li>
-      <li>Mantuvo la validez de los siete sacramentos.</li>
-    </ul>
-
-    <h3>San Ignacio de Loyola — El Soldado de Dios (Acción y Educación)</h3>
-    <p>Ignacio fue un soldado español (Íñigo de Loyola) que fue gravemente herido en batalla. Mientras se recuperaba, leyó vidas de santos y decidió convertirse en un "soldado de Cristo".</p>
-    <div class="highlight-box">
-      <strong>Su Pensamiento Clave:</strong> "Encontrar a Dios en todas las cosas". Para Ignacio, no tenías que irte a un monasterio para ser santo. Podías encontrar a Dios en el estudio, en el trabajo, en la vida diaria.
-    </div>
-    <p><strong>Su Gran Obra:</strong> La <strong>Compañía de Jesús (Los Jesuitas)</strong> fue una nueva orden religiosa que funcionaba como un "ejército espiritual". Su lema era "Para la mayor gloria de Dios".</p>
-    <p>Los jesuitas se convirtieron en los grandes educadores de Europa. Crearon los mejores colegios y universidades para formar a los nuevos católicos con una fe sólida e inteligente, capaces de debatir con los protestantes. También fueron grandes misioneros, llevando el catolicismo a América y Asia.</p>
-
-    <h3>Santa Teresa de Jesús — La Mística Apasionada (Reforma Interior)</h3>
-    <p>Fue una monja carmelita en Ávila, España. Se dio cuenta de que la vida en muchos conventos se había vuelto muy relajada y superficial (se preocupaban más por las visitas sociales que por la oración).</p>
-    <div class="highlight-box">
-      <strong>Su Pensamiento Clave:</strong> La oración es una relación de amistad. "No es otra cosa oración mental, a mi parecer, sino tratar de amistad, estando muchas veces tratando a solas con quien sabemos nos ama".
-    </div>
-    <p><strong>Su Gran Obra:</strong> Teresa sintió que, si la Iglesia estaba en crisis por fuera, y <strong>fundó nuevos conventos</strong> que volvían a lo básico: pobreza, silencio y oración profunda. Las llamó <strong>"Descalzas"</strong> para mostrar su sencillez.</p>
-    <p>Escribió obras maestras de la espiritualidad como "El Castillo Interior", donde compara el alma con un castillo que hay que recorrer a través de la oración para encontrar a Dios en la habitación central.</p>
-
-    <h3>San Juan de la Cruz — El Poeta de la Noche Oscura</h3>
-    <p>Fue un fraile carmelita y un poeta increíble. Ayudó a Santa Teresa a reformar la rama masculina de los carmelitas (los <strong>Carmelitas Descalzos</strong>).</p>
-    <p>Escribió algunos de los poemas más bellos del idioma español, como "Noche Oscura del Alma" — un proceso de purificación, donde Dios nos quita nuestros apegos (al dinero, al orgullo, incluso a las ideas bonitas sobre Dios) para que solo nos quede Dios mismo.</p>
-
-    <h3>Un Ejército de Tres</h3>
-    <p>La Reforma Protestante fue un terremoto que sacudió a la Iglesia. Pero en lugar de derrumbarse, la Iglesia Católica encontró en España una fuerza renovadora increíble:</p>
-    <div class="highlight-box">
-      <strong>San Ignacio</strong> la reformó "hacia afuera": con educación, disciplina y acción en el mundo.
-    </div>
-    <div class="highlight-box">
-      <strong>Santa Teresa</strong> la reformó "hacia adentro": con oración, pasión y amistad con Dios.
-    </div>
-    <div class="highlight-box">
-      <strong>San Juan de la Cruz</strong> la reformó "hacia lo profundo": con poesía y una teología que abraza el misterio y la dificultad de la fe.
-    </div>
-
-    <button class="quiz-trigger" onclick="startQuiz('s9')">Iniciar Quiz — Santos Renovadores (5 Preguntas)</button>
-  </div>
-</div>
-
-<!-- ==================== SECTION 10: REVOLUCIÓN FRANCESA ==================== -->
-<div class="section" id="s10">
+<!-- ==================== SECTION 10: REVOLUCION FRANCESA ==================== -->
+<div class="section" id="n10">
   <div class="section-hero">
     <button class="back-btn" onclick="goHome()">← Volver a Temas</button>
     <h2>Revolución Francesa</h2>
@@ -1339,7 +1391,7 @@ body {
   <div class="section-content">
 
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <button class="tts-btn" onclick="toggleTTS(this)" data-section="s10">🔊 Escuchar</button>
+      <button class="tts-btn" onclick="toggleTTS(this)" data-section="n10">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
     </div>
 
@@ -1396,18 +1448,18 @@ body {
       <li>Se establecieron las bases legales para el capitalismo contemporáneo: participación de la burguesía en el gobierno, defensa de la propiedad privada, libre comercio y liberación de los hombres de los lazos feudales.</li>
     </ul>
 
-    <button class="quiz-trigger" onclick="startQuiz('s10')">Iniciar Quiz — Revolución Francesa (5 Preguntas)</button>
+    <button class="quiz-trigger" onclick="startQuiz('n10')">Iniciar Quiz — Revolución Francesa (5 Preguntas)</button>
   </div>
 </div>
 
 <!-- ==================== SECTION 11: ESTADOS MODERNOS ==================== -->
-<div class="section" id="s11">
+<div class="section" id="n11">
   <button class="back-btn" onclick="goHome()">← Volver</button>
   <div class="section-content">
   <div class="section-hero">
     <h2>La Consolidación de los Estados Modernos</h2>
     <p>El aporte (involuntario) de los Reyes Absolutos y las ideas que cambiaron el mundo</p>
-    <button class="tts-btn" onclick="toggleTTS(this)" data-section="s11">🔊 Escuchar</button>
+    <button class="tts-btn" onclick="toggleTTS(this)" data-section="n11">🔊 Escuchar</button>
       <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
   </div>
 
@@ -1465,151 +1517,9 @@ body {
   </div>
 
   </div>
-  <button class="quiz-trigger" onclick="startQuiz('s11')">Iniciar Quiz — Estados Modernos (5 Preguntas)</button>
+  <button class="quiz-trigger" onclick="startQuiz('n11')">Iniciar Quiz — Estados Modernos (5 Preguntas)</button>
 </div>
 
-<!-- ==================== SECTION 12: INSTRUMENTOS MARÍTIMOS ==================== -->
-<div class="section" id="s12">
-  <button class="back-btn" onclick="goHome()">← Volver</button>
-  <div class="section-content">
-  <div class="section-hero">
-    <h2>Instrumentos Marítimos</h2>
-    <p>Las herramientas que hicieron posible la exploración de los océanos</p>
-    <button class="tts-btn" onclick="toggleTTS(this)" data-section="s12">🔊 Escuchar</button>
-      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
-  </div>
-
-  <div class="content-block">
-    <h3>Instrumentos de Navegación</h3>
-    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:16px; margin-top:16px;">
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Compass_of_a_ship.jpg/320px-Compass_of_a_ship.jpg" alt="Brújula" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">🧭 Brújula</strong><p style="margin:5px 0 0;font-size:0.9em;">Permite al navegante determinar el <strong>rumbo</strong> de la embarcación.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sextant_and_telescope.jpg/320px-Sextant_and_telescope.jpg" alt="Sextante" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">📐 Sextante</strong><p style="margin:5px 0 0;font-size:0.9em;">Permite determinar la <strong>posición (latitud)</strong> del barco.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Astrolabe_of_Jean_Fusoris.jpg/320px-Astrolabe_of_Jean_Fusoris.jpg" alt="Astrolabio" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">⚙️ Astrolabio</strong><p style="margin:5px 0 0;font-size:0.9em;">Determinaba la <strong>latitud</strong> del lugar donde se encontraba la nave.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cantino_planisphere_%281502%29.jpg/320px-Cantino_planisphere_%281502%29.jpg" alt="Cartas Portulanas" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">🗺️ Cartas Portulanas</strong><p style="margin:5px 0 0;font-size:0.9em;">Mapas gráficos de las costas para <strong>planificar rutas</strong> entre puertos.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ptolemy_world_map.jpg/320px-Ptolemy_world_map.jpg" alt="Imago Mundi" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">🌍 Imago Mundi</strong><p style="margin:5px 0 0;font-size:0.9em;">Representa la <strong>visión del mundo</strong> en la época medieval.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Armillary_sphere_in_Shugborough.jpg/320px-Armillary_sphere_in_Shugborough.jpg" alt="Esfera Armilar" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">🌐 Esfera Armilar</strong><p style="margin:5px 0 0;font-size:0.9em;">Representaba los círculos celestes para calcular el <strong>movimiento de los astros</strong>.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cross-staff.jpg/320px-Cross-staff.jpg" alt="Ballestilla" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">➕ Ballestilla</strong><p style="margin:5px 0 0;font-size:0.9em;">Se utilizaba para medir el <strong>ángulo</strong> entre dos puntos.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nocturnal_Inv._1985.3.jpg/320px-Nocturnal_Inv._1985.3.jpg" alt="Noctrulabio" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">🌙 Noctrulabio</strong><p style="margin:5px 0 0;font-size:0.9em;">Diseñado para determinar la <strong>hora durante la noche</strong>.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Wooden_hourglass_3.jpg/200px-Wooden_hourglass_3.jpg" alt="Reloj de Arena" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">⏳ Reloj de Arena</strong><p style="margin:5px 0 0;font-size:0.9em;">Estima la <strong>velocidad y distancia</strong> recorrida por la nave.</p></div>
-      </div>
-
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
-        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Lead_line_1.jpg/320px-Lead_line_1.jpg" alt="Sonda Marítima" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
-        <div style="padding:12px;"><strong style="color:#d4af37;">🪢 Sonda Marítima</strong><p style="margin:5px 0 0;font-size:0.9em;">Se lanza al mar para medir la <strong>profundidad del agua</strong>.</p></div>
-      </div>
-
-    </div>
-  </div>
-
-  </div>
-  <button class="quiz-trigger" onclick="startQuiz('s12')">Iniciar Quiz — Instrumentos Marítimos (5 Preguntas)</button>
-</div>
-
-<!-- ==================== SECTION 13: PRIMEROS EXPLORADORES ==================== -->
-<div class="section" id="s13">
-  <button class="back-btn" onclick="goHome()">← Volver</button>
-  <div class="section-content">
-  <div class="section-hero">
-    <h2>Primeros Exploradores</h2>
-    <p>Los navegantes que cambiaron el mapa del mundo</p>
-    <button class="tts-btn" onclick="toggleTTS(this)" data-section="s13">🔊 Escuchar</button>
-      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
-  </div>
-
-  <div class="content-block">
-    <h3>Fernando de Magallanes (1480–1521)</h3>
-    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
-      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primera expedición en circunnavegar el globo (1519–1522)</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Encontrar una ruta hacia las Islas de las Especias navegando hacia el oeste</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">España — Rey Carlos I (Carlos V del Sacro Imperio)</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primero en cruzar el Estrecho de Magallanes; su expedición completó la primera vuelta al mundo (aunque él murió en Filipinas en 1521)</td></tr>
-    </table>
-  </div>
-
-  <div class="content-block">
-    <h3>Vasco de Gama (¿1460?–1524)</h3>
-    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
-      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primer europeo en llegar a la India por mar (1497–1499)</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portugal — Rey Manuel I "el Afortunado"</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Llegó a Calicut (India) en 1498, abriendo la primera ruta marítima europea directa hacia el este. Fortaleció a Portugal como potencia del comercio de especias.</td></tr>
-    </table>
-  </div>
-
-  <div class="content-block">
-    <h3>Cristóbal Colón (1451–1506)</h3>
-    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
-      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Genovés (italiano), al servicio de los Reyes Católicos de España</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primer viaje al "Nuevo Mundo" (1492)</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Encontrar una ruta hacia Asia navegando hacia el oeste</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logros</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">En 1492 llegó al Caribe (San Salvador, Cuba, La Española), creyendo que había llegado a Asia. Abrió el camino para la colonización europea de las Américas. Realizó cuatro viajes en total (1492–1504).</td></tr>
-    </table>
-  </div>
-
-  <div class="content-block">
-    <h3>Américo Vespucio (1454–1512)</h3>
-    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
-      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Florentino (italiano)</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Exploraciones del continente sudamericano (1499–1502)</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinadores</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">España (1499–1500) y Portugal (1501–1502)</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Fue uno de los primeros en sugerir que las tierras de Colón no eran Asia sino un nuevo continente. Por eso el continente americano lleva su nombre.</td></tr>
-    </table>
-  </div>
-
-  <div class="content-block">
-    <h3>Bartolomé Díaz (1450–1500)</h3>
-    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
-      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portugal — Rey Juan II</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Buscar una ruta marítima hacia la India navegando alrededor de África</td></tr>
-      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">En 1488, fue el primer europeo en rodear el extremo sur de África. Lo llamó "Cabo de las Tormentas"; el rey lo rebautizó "Cabo de Buena Esperanza". Su descubrimiento demostró que el Atlántico y el Índico estaban conectados.</td></tr>
-    </table>
-  </div>
-
-  </div>
-  <button class="quiz-trigger" onclick="startQuiz('s13')">Iniciar Quiz — Primeros Exploradores (5 Preguntas)</button>
-</div>
 <div class="quiz-overlay" id="quizOverlay">
   <div class="quiz-box">
     <h3 id="quizTitle">Quiz</h3>
@@ -1646,96 +1556,40 @@ function goHome() {
 
 /* ========== QUIZ DATA ========== */
 const quizzes = {
-  s1: [
-    { q: "¿Cuál era la forma de gobierno de los Mayas?", o: ["Democrática","Teocrática","Monárquica","República"], a: 1 },
-    { q: "¿Qué era la Triple Alianza?", o: ["Alianza entre Mayas, Aztecas y Olmecas","Alianza entre Tenochtitlán, Tlacopan y Texcoco","Alianza entre España, Portugal y Francia","Alianza entre 3 dioses"], a: 1 },
-    { q: "¿Qué era el Calmécac?", o: ["Un templo maya","La escuela para gente común","La escuela de nobles aztecas","Un centro ceremonial"], a: 2 },
-    { q: "¿Cuál era el dios maya de la lluvia?", o: ["Kukulcán","Hunab Ku","Chaac","Ah Puch"], a: 2 },
-    { q: "¿Qué eran las chinampas?", o: ["Armas aztecas","Tierras de cultivo flotantes en lagos","Templos ceremoniales","Escuelas para nobles"], a: 1 },
+  n1: [
+    { q: "¿Cuál fue el logro más importante de Fernando de Magallanes?", o: ["Llegar a la India por mar","Descubrir América","Su expedición fue la primera en circunnavegar el globo","Rodear el extremo sur de África"
   ],
-  s2: [
-    { q: "¿Qué era el calpulli?", o: ["Un arma azteca","La unidad territorial base de la sociedad mexica","Un dios maya","Una escuela"], a: 1 },
-    { q: "¿A qué dios confundieron los indígenas con los españoles?", o: ["Huitzilopochtli","Tláloc","Quetzalcóatl","Chaac"], a: 2 },
-    { q: "¿Cuál era el principal objetivo de guerra de los mesoamericanos?", o: ["Matar al enemigo","Capturar vivos para sacrificio","Conquistar tierras","Robar oro"], a: 1 },
-    { q: "¿Qué impresionó a los españoles de las ciudades mesoamericanas?", o: ["Su desorden","Su planificación simétrica y ordenada","Que eran muy pequeñas","Sus murallas"], a: 1 },
-    { q: "¿Qué buscaban los soldados españoles al venir a América?", o: ["Aventura","Enriquecerse y ganar prestigio social","Conocer nuevas culturas","Escapar de Europa"], a: 1 },
+  n2: [
+    { q: "¿Para qué servía la Brújula en navegación?", o: ["Medir la profundidad del mar","Determinar el rumbo de la embarcación","Calcular la velocidad del barco","Medir el tiempo de viaje"
   ],
-  s3: [
-    { q: "¿Quién lideró la primera expedición a México en 1517?", o: ["Hernán Cortés","Juan de Grijalva","Francisco Hernández de Córdoba","Pedro de Alvarado"], a: 2 },
-    { q: "¿Quién era la Malinche?", o: ["La esposa de Moctezuma","Una esclava que hablaba maya y náhuatl","La primera monja de México","Una diosa azteca"], a: 1 },
-    { q: "¿Qué fue la Noche Triste?", o: ["La muerte de Moctezuma","La noche que los españoles huyeron de Tenochtitlán y fueron atacados","La caída de Tenochtitlán","La matanza de Cholula"], a: 1 },
-    { q: "¿Quién fue el último Tlatoani azteca?", o: ["Moctezuma","Cuitláhuac","Cuauhtémoc","Cortés"], a: 2 },
-    { q: "¿En qué fecha cayó Tenochtitlán?", o: ["13 de agosto de 1521","12 de octubre de 1492","4 de julio de 1776","15 de septiembre de 1810"], a: 0 },
+  n3: [
+    { q: "¿Qué fue el Cisma de Occidente?", o: ["Una guerra entre España y Portugal","Un periodo donde hubo 2 o 3 Papas compitiendo por el poder","La separación entre católicos y ortodoxos","Un concilio religioso"
   ],
-  s4: [
-    { q: "¿Cuál fue la primera orden religiosa en llegar a México?", o: ["Dominicos","Jesuitas","Agustinos","Franciscanos"], a: 3 },
-    { q: "¿Qué significa 'Motolinía' en náhuatl?", o: ["Sabio","Pobre","Valiente","Santo"], a: 1 },
-    { q: "¿Qué es el sincretismo religioso?", o: ["Destruir todas las religiones","La mezcla de tradiciones indígenas con la religión católica","Solo rezar en latín","Prohibir todas las fiestas"], a: 1 },
-    { q: "¿Quién fue el gran defensor de los derechos indígenas?", o: ["Hernán Cortés","Fray Bartolomé de las Casas","Pedro de Alvarado","Diego de Velázquez"], a: 1 },
-    { q: "¿Qué hicieron los frailes con los templos prehispánicos?", o: ["Los conservaron como museos","Construyeron iglesias encima de ellos","Los destruyeron sin reemplazarlos","Los convirtieron en mercados"], a: 1 },
+  n4: [
+    { q: "¿Cuál era el lema de los Jesuitas?", o: ["Solo por la fe","Para la mayor gloria de Dios","La Biblia es la única autoridad","Paz y bien"
   ],
-  s5: [
-    { q: "¿Cuáles eran los 3 continentes del comercio triangular?", o: ["Asia, África, América","Europa, África, América","Europa, Asia, África","América, Europa, Asia"], a: 1 },
-    { q: "¿Qué era el 'Pasaje Medio'?", o: ["La ruta de Europa a África","El viaje de personas esclavizadas de África a América","La ruta comercial de América a Europa","Un camino terrestre en México"], a: 1 },
-    { q: "¿Qué determinaba los derechos de una persona en el sistema de castas?", o: ["Su educación","Su riqueza","Su linaje / color de piel","Su trabajo"], a: 2 },
+  n5: [
+    { q: "¿Cuál era la forma de gobierno de los Mayas?", o: ["Democrática","Teocrática","Monárquica","República"
   ],
-  s6: [
-    { q: "¿Qué evento de 1773 enfureció a Gran Bretaña contra los colonos?", o: ["La Masacre de Boston","El Boston Tea Party","La Rebelión de Bacon","La batalla de Yorktown"], a: 1 },
-    { q: "¿Quién escribió la Declaración de Independencia?", o: ["George Washington","Benjamin Franklin","Thomas Jefferson","Samuel Adams"], a: 2 },
-    { q: "¿Qué estableció la Constitución de 1787?", o: ["Una monarquía","Gobierno republicano con 3 poderes","Una dictadura militar","Un gobierno colonial"], a: 1 },
-    { q: "¿Quién escribió 'Common Sense' (Sentido Común)?", o: ["Thomas Jefferson","Samuel Adams","Thomas Paine","Patrick Henry"], a: 2 },
-    { q: "¿Cuál fue la batalla decisiva de la independencia?", o: ["Trenton","Saratoga","Long Island","Yorktown"], a: 3 },
+  n6: [
+    { q: "¿Quién lideró la primera expedición a México en 1517?", o: ["Hernán Cortés","Juan de Grijalva","Francisco Hernández de Córdoba","Pedro de Alvarado"
   ],
-  s7: [
-    { q: "¿Qué fue el Cisma de Occidente?", o: ["Una guerra entre España y Portugal","Un periodo donde hubo 2 o 3 Papas compitiendo por el poder","La separación entre católicos y ortodoxos","Un concilio religioso"], a: 1 },
-    { q: "¿Qué eran las indulgencias?", o: ["Impuestos del rey","Documentos que reducían el tiempo del alma en el purgatorio","Permisos para leer la Biblia","Títulos de nobleza"], a: 1 },
-    { q: "¿Qué clavó Lutero en la puerta de la iglesia de Wittenberg en 1517?", o: ["Una carta al Papa","Las 95 tesis cuestionando las indulgencias","La Biblia traducida al alemán","Un manifiesto político"], a: 1 },
-    { q: "¿Qué idea central defendía Lutero?", o: ["La salvación por buenas obras","La salvación solo por la fe (Sola Fide)","La autoridad absoluta del Papa","La necesidad de más sacramentos"], a: 1 },
-    { q: "¿Por qué Enrique VIII rompió con Roma?", o: ["Quería reformar la teología","El Papa no anuló su matrimonio con Catalina de Aragón","Quería eliminar los sacramentos","Apoyaba a Lutero"], a: 1 },
+  n7: [
+    { q: "¿Cuál fue la primera orden religiosa en llegar a México?", o: ["Dominicos","Jesuitas","Agustinos","Franciscanos"
   ],
-  s8: [
-    { q: "¿En qué años se realizó el Concilio de Trento?", o: ["1517-1521","1545-1563","1618-1648","1378-1417"], a: 1 },
-    { q: "¿Qué reafirmó el Concilio de Trento sobre la salvación?", o: ["Solo por fe","Solo por obras","Por fe Y buenas obras","No definió nada"], a: 2 },
-    { q: "¿Quién fundó la Compañía de Jesús (Jesuitas)?", o: ["Martín Lutero","Juan Calvino","San Ignacio de Loyola","Erasmo de Róterdam"], a: 2 },
-    { q: "¿Qué principio se estableció en la Paz de Augsburgo (1555)?", o: ["Libertad religiosa individual","Cuius regio, eius religio (la religión del príncipe es la del territorio)","Prohibición del protestantismo","Unión de todas las iglesias"], a: 1 },
-    { q: "¿Qué tratado de 1648 marcó el fin del poder político del Papa sobre Europa?", o: ["Paz de Augsburgo","Dieta de Worms","Paz de Westfalia","Concilio de Trento"], a: 2 },
+  n8: [
+    { q: "¿Cuáles eran los 3 continentes del comercio triangular?", o: ["Asia, África, América","Europa, África, América","Europa, Asia, África","América, Europa, Asia"
   ],
-  s9: [
-    { q: "¿Cuál era el lema de los Jesuitas?", o: ["Solo por la fe","Para la mayor gloria de Dios","La Biblia es la única autoridad","Paz y bien"], a: 1 },
-    { q: "¿Qué fundó Santa Teresa de Jesús para reformar la vida religiosa?", o: ["Universidades jesuitas","Los conventos de las Descalzas","Hospitales para pobres","Escuelas para niños"], a: 1 },
-    { q: "¿Cómo reformó San Ignacio la Iglesia?", o: ["Hacia adentro con oración","Hacia afuera con educación, disciplina y acción","Hacia lo profundo con poesía","Prohibiendo el protestantismo"], a: 1 },
-    { q: "¿Qué obra famosa escribió Santa Teresa?", o: ["Las 95 Tesis","Noche Oscura del Alma","El Castillo Interior","La Divina Comedia"], a: 2 },
-    { q: "¿Qué fue San Juan de la Cruz antes de ser religioso?", o: ["Un soldado","Un rey","Un fraile carmelita y poeta","Un obispo"], a: 2 },
+  n9: [
+    { q: "¿Qué evento de 1773 enfureció a Gran Bretaña contra los colonos?", o: ["La Masacre de Boston","El Boston Tea Party","La Rebelión de Bacon","La batalla de Yorktown"
   ],
-  s10: [
-    { q: "¿Qué evento marcó el inicio simbólico de la Revolución Francesa el 14 de julio de 1789?", o: ["La ejecución de Luis XVI","La toma de la Bastilla","La coronación de Napoleón","La Declaración de Derechos"], a: 1 },
-    { q: "¿Cuáles eran los ideales de la Ilustración que influyeron en la Revolución?", o: ["Fe, esperanza y caridad","Libertad, igualdad y fraternidad","Orden, progreso y paz","Nobleza, clero y pueblo"], a: 1 },
-    { q: "¿Quién fue ejecutado en la guillotina durante la Segunda Etapa?", o: ["Napoleón Bonaparte","Robespierre","Luis XVI y María Antonieta","Jacques Necker"], a: 2 },
-    { q: "¿Qué era el Tercer Estado?", o: ["La nobleza","El clero","El resto de la población (burguesía, campesinos, trabajadores)","El ejército"], a: 2 },
-    { q: "¿Qué general tomó el poder tras la Tercera Etapa?", o: ["Robespierre","Danton","Marat","Napoleón Bonaparte"], a: 3 },
+  n10: [
+    { q: "¿Qué evento marcó el inicio simbólico de la Revolución Francesa el 14 de julio de 1789?", o: ["La ejecución de Luis XVI","La toma de la Bastilla","La coronación de Napoleón","La Declaración de Derechos"
   ],
-  s11: [
-    { q: "¿Qué hicieron involuntariamente los reyes absolutos al organizar sus países?", o: ["Destruyeron las fronteras","Hicieron que la gente se sintiera parte de una misma nación","Eliminaron los impuestos","Crearon repúblicas"], a: 1 },
-    { q: "¿Cómo se llamó el movimiento del siglo XVIII que promovía la Razón, la Libertad y la Ciencia?", o: ["La Reforma","El Renacimiento","La Ilustración","El Absolutismo"], a: 2 },
-    { q: "¿Qué dijo Rousseau sobre el gobierno en su 'Contrato Social'?", o: ["El rey gobierna por mandato divino","El gobierno es un contrato entre ciudadanos y puede cambiarse si falla","El gobierno debe ser hereditario siempre","Solo los nobles pueden gobernar"], a: 1 },
-    { q: "¿Qué es la 'División de Poderes' según Montesquieu?", o: ["Dividir el país en regiones","Separar el poder en Ejecutivo, Legislativo y Judicial","Compartir el trono entre varios reyes","Dar poder a la Iglesia"], a: 1 },
-    { q: "¿Cuál fue la consecuencia más importante de las revoluciones liberales?", o: ["El regreso del feudalismo","El fortalecimiento de los reyes","La gente pasó de ser 'súbditos' a ser 'ciudadanos' con derechos","El fin del comercio"], a: 2 },
+  n11: [
+    { q: "¿Qué hicieron involuntariamente los reyes absolutos al organizar sus países?", o: ["Destruyeron las fronteras","Hicieron que la gente se sintiera parte de una misma nación","Eliminaron los impuestos","Crearon repúblicas"
   ],
-  s12: [
-    { q: "¿Para qué servía la Brújula en navegación?", o: ["Medir la profundidad del mar","Determinar el rumbo de la embarcación","Calcular la velocidad del barco","Medir el tiempo de viaje"], a: 1 },
-    { q: "¿Qué instrumento permitía determinar la latitud (posición) del barco?", o: ["Reloj de arena","Cartas Portulanas","Sextante","Esfera Armilar"], a: 2 },
-    { q: "¿Cuál era la función de la Sonda Marítima?", o: ["Medir la hora nocturna","Calcular la velocidad","Medir la profundidad del agua","Determinar el rumbo"], a: 2 },
-    { q: "¿Qué son las Cartas Portulanas?", o: ["Instrumentos para medir ángulos","Mapas gráficos de las costas para planificar rutas entre puertos","Relojes usados de noche","Esferas que muestran el movimiento de los astros"], a: 1 },
-    { q: "¿Para qué servía el Noctrulabio?", o: ["Medir la latitud durante el día","Calcular la profundidad del mar","Determinar la hora durante la noche","Medir la velocidad del barco"], a: 2 },
-  ],
-  s13: [
-    { q: "¿Cuál fue el logro más importante de Fernando de Magallanes?", o: ["Llegar a la India por mar","Descubrir América","Su expedición fue la primera en circunnavegar el globo","Rodear el extremo sur de África"], a: 2 },
-    { q: "¿Qué logró Vasco de Gama en 1498?", o: ["Circunnavegar el globo","Llegar a Calicut (India) abriendo la primera ruta marítima europea directa a Asia","Descubrir el continente americano","Cruzar el Estrecho de Magallanes"], a: 1 },
-    { q: "¿Por qué el continente americano lleva el nombre de Américo Vespucio?", o: ["Fue el primero en llegar a América","Descubrió Brasil","Fue uno de los primeros en sugerir que las tierras de Colón eran un nuevo continente, no Asia","Financió el viaje de Colón"], a: 2 },
-    { q: "¿Cómo rebautizó el rey portugués el 'Cabo de las Tormentas' que descubrió Bartolomé Díaz?", o: ["Cabo de Hornos","Cabo Verde","Cabo de Buena Esperanza","Cabo Magallanes"], a: 2 },
-    { q: "¿Qué país patrocinó el viaje de Cristóbal Colón en 1492?", o: ["Portugal","Italia","Francia","España (Reyes Católicos)"], a: 3 },
-  ],
-};
+}
 
 // General quiz = 3 random from each section
 quizzes.general = [];
