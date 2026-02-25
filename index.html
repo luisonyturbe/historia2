@@ -628,9 +628,24 @@ body {
       <div class="name">Revolución Francesa</div>
       <div class="desc">Causas, etapas, el Terror y consecuencias</div>
     </div>
+    <div class="topic-card" onclick="showSection('s11')">
+      <div class="number">11</div>
+      <div class="name">Consolidación de los Estados Modernos</div>
+      <div class="desc">Reyes absolutos, La Ilustración, Rousseau y Liberalismo</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s12')">
+      <div class="number">12</div>
+      <div class="name">Instrumentos Marítimos</div>
+      <div class="desc">Brújula, sextante, astrolabio y más herramientas de navegación</div>
+    </div>
+    <div class="topic-card" onclick="showSection('s13')">
+      <div class="number">13</div>
+      <div class="name">Primeros Exploradores</div>
+      <div class="desc">Magallanes, Vasco de Gama, Colón, Vespucio y Bartolomé Díaz</div>
+    </div>
   </div>
 
-  <button class="general-quiz-btn" onclick="startQuiz('general')">Realizar QUIZ General (30 Preguntas)</button>
+  <button class="general-quiz-btn" onclick="startQuiz('general')">Realizar QUIZ General (39 Preguntas)</button>
 </div>
 
 <!-- ==================== SECTION 1: CULTURAS MESOAMERICANAS ==================== -->
@@ -1385,7 +1400,255 @@ body {
   </div>
 </div>
 
-<!-- ==================== QUIZ OVERLAY ==================== -->
+<!-- ==================== SECTION 11: ESTADOS MODERNOS ==================== -->
+<div class="section" id="s11">
+  <button class="back-btn" onclick="showLanding()">← Volver</button>
+  <div class="section-hero">
+    <h2>La Consolidación de los Estados Modernos</h2>
+    <p>El aporte (involuntario) de los Reyes Absolutos y las ideas que cambiaron el mundo</p>
+    <button class="tts-btn" onclick="toggleTTS(this)" data-section="s11">🔊 Escuchar</button>
+    <select class="tts-speed" id="speed-s11">
+      <option value="0.8">0.8x</option>
+      <option value="1" selected>1x</option>
+      <option value="1.2">1.2x</option>
+      <option value="1.5">1.5x</option>
+    </select>
+  </div>
+
+  <div class="content-block">
+    <h3>El Aporte (Involuntario) de los Reyes Absolutos</h3>
+    <p>Los reyes absolutos querían controlar todo. Pero para hacerlo, tuvieron que organizar sus países. Fijaron fronteras, crearon ejércitos propios y organizaron las leyes. Sin querer, al organizar tan bien el país, hicieron que la gente se diera cuenta de que pertenecían a una misma nación. Luego, esa misma gente diría: <em>"Este país no es del rey, ¡es nuestro!"</em></p>
+  </div>
+
+  <div class="content-block">
+    <h3>La Ilustración — "La Chispa Mental" (Siglo XVIII)</h3>
+    <p>La Ilustración fue el "Siglo de las Luces". Sus ideas principales eran:</p>
+    <ul>
+      <li><strong>La Razón</strong> es la luz que ilumina la oscuridad de la ignorancia.</li>
+      <li><strong>Nuevas ideas:</strong> Progreso, Libertad, Igualdad y Ciencia.</li>
+      <li><strong>Rechazo</strong> al derecho divino de los reyes.</li>
+    </ul>
+    <p>Los pensadores de la Ilustración dijeron: <em>"Basta de creer que el rey gobierna porque Dios lo puso ahí. El ser humano debe usar su razón y su inteligencia para mejorar la sociedad. Cuestionaron todo, desde la religión hasta cómo se manejaba la economía."</em></p>
+  </div>
+
+  <div class="content-block">
+    <h3>Juan Jacobo Rousseau y el "Contrato Social"</h3>
+    <p>Rousseau fue un filósofo clave. Afirmó que <em>"El hombre nace libre, pero en todos lados está encadenado."</em></p>
+    <p>Creó el concepto del <strong>Contrato Social</strong>: un pacto entre los ciudadanos y el gobierno. Si el gobierno no cumple, el pueblo puede cambiarlo. Rousseau decía: <em>"El gobierno no es un regalo del cielo, es un 'contrato', un acuerdo entre la gente para vivir en paz. El trato es que la gente obedece las leyes, y el gobierno protege a la gente. ¿Qué pasa si el rey rompe el contrato y abusa de su poder? El pueblo tiene todo el derecho de despedirlo y poner a otro."</em></p>
+  </div>
+
+  <div class="content-block">
+    <h3>¿Por Qué Estallaron las Revoluciones Liberales?</h3>
+    <ul>
+      <li><strong>Desigualdad extrema:</strong> pocos ricos, muchos pobres.</li>
+      <li><strong>Falta de libertad:</strong> no podías opinar ni participar en el gobierno.</li>
+      <li><strong>Crisis económicas:</strong> los reyes gastaban el dinero del pueblo en lujos y guerras.</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h3>Las Reglas del Nuevo Juego — Liberalismo Político</h3>
+    <ul>
+      <li><strong>Soberanía Popular:</strong> el poder lo tiene el pueblo, no el rey.</li>
+      <li><strong>División de Poderes (Montesquieu):</strong> Ejecutivo, Legislativo y Judicial.</li>
+      <li><strong>Constitución:</strong> la ley máxima que todos deben respetar.</li>
+      <li><strong>Derechos individuales:</strong> Libertad, igualdad ante la ley y propiedad.</li>
+    </ul>
+    <p><em>"El poder es del pueblo (soberanía popular); para que nadie abuse, partamos el poder en tres (división de poderes); y escribamos todas las reglas en un libro que ni el presidente pueda romper (la Constitución)."</em></p>
+  </div>
+
+  <div class="content-block">
+    <h3>Consecuencias — Un Nuevo Orden Social</h3>
+    <ul>
+      <li>Fin del Absolutismo.</li>
+      <li>De Súbditos (obedecen) a Ciudadanos (participan y tienen derechos).</li>
+      <li>Nacimiento de las democracias modernas.</li>
+      <li>Inspiración para las Independencias en América Latina.</li>
+    </ul>
+    <p><strong>Conclusión:</strong> El cambio más importante fue mental y legal: la gente dejó de ser considerada 'súbditos' que solo existían para servir al monarca, y se convirtieron en 'ciudadanos' con derechos garantizados desde el día en que nacen.</p>
+  </div>
+
+  <button class="quiz-trigger" onclick="startQuiz('s11')">Iniciar Quiz — Estados Modernos (5 Preguntas)</button>
+</div>
+
+<!-- ==================== SECTION 12: INSTRUMENTOS MARÍTIMOS ==================== -->
+<div class="section" id="s12">
+  <button class="back-btn" onclick="showLanding()">← Volver</button>
+  <div class="section-hero">
+    <h2>Instrumentos Marítimos</h2>
+    <p>Las herramientas que hicieron posible la exploración de los océanos</p>
+    <button class="tts-btn" onclick="toggleTTS(this)" data-section="s12">🔊 Escuchar</button>
+    <select class="tts-speed" id="speed-s12">
+      <option value="0.8">0.8x</option>
+      <option value="1" selected>1x</option>
+      <option value="1.2">1.2x</option>
+      <option value="1.5">1.5x</option>
+    </select>
+  </div>
+
+  <div class="content-block">
+    <h3>Instrumentos de Navegación</h3>
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:16px; margin-top:16px;">
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Compass_aligned.jpg/320px-Compass_aligned.jpg" alt="Brújula" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">🧭 Brújula</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Permite al navegante determinar el <strong>rumbo</strong> de la embarcación.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sextant_and_telescope.jpg/320px-Sextant_and_telescope.jpg" alt="Sextante" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">📐 Sextante</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Permite determinar la <strong>posición (latitud)</strong> del barco.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Scandinavian_Astrolabe.jpg/320px-Scandinavian_Astrolabe.jpg" alt="Astrolabio" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">⭕ Astrolabio</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Se usaba para determinar la <strong>latitud</strong> del lugar donde se encontraba la nave.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cantino_planisphere_%281502%29.jpg/320px-Cantino_planisphere_%281502%29.jpg" alt="Cartas Portulanas" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">🗺️ Cartas Portulanas</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Representación gráfica de las costas para <strong>planificar rutas</strong> entre puertos.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ptolemy_world_map.jpg/320px-Ptolemy_world_map.jpg" alt="Imago Mundi" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">🌍 Imago Mundi</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Representa la <strong>visión del mundo</strong> en la época medieval.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Armillary_sphere.jpg/320px-Armillary_sphere.jpg" alt="Esfera Armilar" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">🌐 Esfera Armilar</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Representa los círculos de la esfera celeste para calcular el <strong>movimiento de los astros</strong>.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cross-staff.jpg/320px-Cross-staff.jpg" alt="Ballestilla" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">✝️ Ballestilla</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Se utiliza para medir el <strong>ángulo</strong> entre dos puntos.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hourglass.svg/160px-Hourglass.svg.png" alt="Reloj de Arena" style="width:100%; height:160px; object-fit:contain; background:#1a1a1a; padding:10px;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">⏳ Reloj de Arena</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Estima la <strong>velocidad y distancia</strong> recorrida por la nave.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Lead_line.jpg/320px-Lead_line.jpg" alt="Sonda Marítima" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">🪢 Sonda Marítima</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Se lanza al mar para medir la <strong>profundidad del agua</strong>.</p>
+        </div>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.35); border:1px solid rgba(212,175,55,0.35); border-radius:12px; overflow:hidden;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nocturnal_Inv._1985.3.jpg/320px-Nocturnal_Inv._1985.3.jpg" alt="Noctrulabio" style="width:100%; height:160px; object-fit:cover;">
+        <div style="padding:12px;">
+          <strong style="color:#d4af37; font-size:1.1em;">🌙 Noctrulabio</strong>
+          <p style="margin:6px 0 0; font-size:0.9em;">Diseñado para determinar la <strong>hora durante la noche</strong>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="quiz-trigger" onclick="startQuiz('s12')">Iniciar Quiz — Instrumentos Marítimos (5 Preguntas)</button>
+</div>
+
+<!-- ==================== SECTION 13: PRIMEROS EXPLORADORES ==================== -->
+<div class="section" id="s13">
+  <button class="back-btn" onclick="showLanding()">← Volver</button>
+  <div class="section-hero">
+    <h2>Primeros Exploradores</h2>
+    <p>Los navegantes que cambiaron el mapa del mundo</p>
+    <button class="tts-btn" onclick="toggleTTS(this)" data-section="s13">🔊 Escuchar</button>
+    <select class="tts-speed" id="speed-s13">
+      <option value="0.8">0.8x</option>
+      <option value="1" selected>1x</option>
+      <option value="1.2">1.2x</option>
+      <option value="1.5">1.5x</option>
+    </select>
+  </div>
+
+  <div class="content-block">
+    <h3>Fernando de Magallanes (1480–1521)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primera expedición en circunnavegar el globo (1519–1522)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Encontrar una ruta hacia las Islas de las Especias navegando hacia el oeste</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">España — Rey Carlos I (Carlos V del Sacro Imperio)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primero en cruzar el Estrecho de Magallanes; su expedición completó la primera vuelta al mundo (aunque él murió en Filipinas en 1521)</td></tr>
+    </table>
+  </div>
+
+  <div class="content-block">
+    <h3>Vasco de Gama (¿1460?–1524)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primer europeo en llegar a la India por mar (1497–1499)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portugal — Rey Manuel I "el Afortunado"</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Llegó a Calicut (India) en 1498, abriendo la primera ruta marítima europea directa hacia el este. Fortaleció a Portugal como potencia del comercio de especias.</td></tr>
+    </table>
+  </div>
+
+  <div class="content-block">
+    <h3>Cristóbal Colón (1451–1506)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Genovés (italiano), al servicio de los Reyes Católicos de España</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Primer viaje al "Nuevo Mundo" (1492)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Encontrar una ruta hacia Asia navegando hacia el oeste</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logros</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">En 1492 llegó al Caribe (San Salvador, Cuba, La Española), creyendo que había llegado a Asia. Abrió el camino para la colonización europea de las Américas. Realizó cuatro viajes en total (1492–1504).</td></tr>
+    </table>
+  </div>
+
+  <div class="content-block">
+    <h3>Américo Vespucio (1454–1512)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Florentino (italiano)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Viaje importante</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Exploraciones del continente sudamericano (1499–1502)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinadores</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">España (1499–1500) y Portugal (1501–1502)</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Fue uno de los primeros en sugerir que las tierras de Colón no eran Asia sino un nuevo continente. Por eso el continente americano lleva su nombre.</td></tr>
+    </table>
+  </div>
+
+  <div class="content-block">
+    <h3>Bartolomé Díaz (1450–1500)</h3>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+      <tr style="background:rgba(212,175,55,0.3);"><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Dato</th><th style="padding:8px; border:1px solid rgba(212,175,55,0.4);">Detalle</th></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Nacionalidad</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portuguesa</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Patrocinador</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Portugal — Rey Juan II</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Objetivo</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">Buscar una ruta marítima hacia la India navegando alrededor de África</td></tr>
+      <tr><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);"><strong>Logro</strong></td><td style="padding:8px; border:1px solid rgba(212,175,55,0.2);">En 1488, fue el primer europeo en rodear el extremo sur de África. Lo llamó "Cabo de las Tormentas"; el rey lo rebautizó "Cabo de Buena Esperanza". Su descubrimiento demostró que el Atlántico y el Índico estaban conectados.</td></tr>
+    </table>
+  </div>
+
+  <button class="quiz-trigger" onclick="startQuiz('s13')">Iniciar Quiz — Primeros Exploradores (5 Preguntas)</button>
+</div>
 <div class="quiz-overlay" id="quizOverlay">
   <div class="quiz-box">
     <h3 id="quizTitle">Quiz</h3>
@@ -1489,6 +1752,27 @@ const quizzes = {
     { q: "¿Quién fue ejecutado en la guillotina durante la Segunda Etapa?", o: ["Napoleón Bonaparte","Robespierre","Luis XVI y María Antonieta","Jacques Necker"], a: 2 },
     { q: "¿Qué era el Tercer Estado?", o: ["La nobleza","El clero","El resto de la población (burguesía, campesinos, trabajadores)","El ejército"], a: 2 },
     { q: "¿Qué general tomó el poder tras la Tercera Etapa?", o: ["Robespierre","Danton","Marat","Napoleón Bonaparte"], a: 3 },
+  ],
+  s11: [
+    { q: "¿Qué hicieron involuntariamente los reyes absolutos al organizar sus países?", o: ["Destruyeron las fronteras","Hicieron que la gente se sintiera parte de una misma nación","Eliminaron los impuestos","Crearon repúblicas"], a: 1 },
+    { q: "¿Cómo se llamó el movimiento del siglo XVIII que promovía la Razón, la Libertad y la Ciencia?", o: ["La Reforma","El Renacimiento","La Ilustración","El Absolutismo"], a: 2 },
+    { q: "¿Qué dijo Rousseau sobre el gobierno en su 'Contrato Social'?", o: ["El rey gobierna por mandato divino","El gobierno es un contrato entre ciudadanos y puede cambiarse si falla","El gobierno debe ser hereditario siempre","Solo los nobles pueden gobernar"], a: 1 },
+    { q: "¿Qué es la 'División de Poderes' según Montesquieu?", o: ["Dividir el país en regiones","Separar el poder en Ejecutivo, Legislativo y Judicial","Compartir el trono entre varios reyes","Dar poder a la Iglesia"], a: 1 },
+    { q: "¿Cuál fue la consecuencia más importante de las revoluciones liberales?", o: ["El regreso del feudalismo","El fortalecimiento de los reyes","La gente pasó de ser 'súbditos' a ser 'ciudadanos' con derechos","El fin del comercio"], a: 2 },
+  ],
+  s12: [
+    { q: "¿Para qué servía la Brújula en navegación?", o: ["Medir la profundidad del mar","Determinar el rumbo de la embarcación","Calcular la velocidad del barco","Medir el tiempo de viaje"], a: 1 },
+    { q: "¿Qué instrumento permitía determinar la latitud (posición) del barco?", o: ["Reloj de arena","Cartas Portulanas","Sextante","Esfera Armilar"], a: 2 },
+    { q: "¿Cuál era la función de la Sonda Marítima?", o: ["Medir la hora nocturna","Calcular la velocidad","Medir la profundidad del agua","Determinar el rumbo"], a: 2 },
+    { q: "¿Qué son las Cartas Portulanas?", o: ["Instrumentos para medir ángulos","Mapas gráficos de las costas para planificar rutas entre puertos","Relojes usados de noche","Esferas que muestran el movimiento de los astros"], a: 1 },
+    { q: "¿Para qué servía el Noctrulabio?", o: ["Medir la latitud durante el día","Calcular la profundidad del mar","Determinar la hora durante la noche","Medir la velocidad del barco"], a: 2 },
+  ],
+  s13: [
+    { q: "¿Cuál fue el logro más importante de Fernando de Magallanes?", o: ["Llegar a la India por mar","Descubrir América","Su expedición fue la primera en circunnavegar el globo","Rodear el extremo sur de África"], a: 2 },
+    { q: "¿Qué logró Vasco de Gama en 1498?", o: ["Circunnavegar el globo","Llegar a Calicut (India) abriendo la primera ruta marítima europea directa a Asia","Descubrir el continente americano","Cruzar el Estrecho de Magallanes"], a: 1 },
+    { q: "¿Por qué el continente americano lleva el nombre de Américo Vespucio?", o: ["Fue el primero en llegar a América","Descubrió Brasil","Fue uno de los primeros en sugerir que las tierras de Colón eran un nuevo continente, no Asia","Financió el viaje de Colón"], a: 2 },
+    { q: "¿Cómo rebautizó el rey portugués el 'Cabo de las Tormentas' que descubrió Bartolomé Díaz?", o: ["Cabo de Hornos","Cabo Verde","Cabo de Buena Esperanza","Cabo Magallanes"], a: 2 },
+    { q: "¿Qué país patrocinó el viaje de Cristóbal Colón en 1492?", o: ["Portugal","Italia","Francia","España (Reyes Católicos)"], a: 3 },
   ],
 };
 
