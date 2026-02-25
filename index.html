@@ -1402,17 +1402,13 @@ body {
 
 <!-- ==================== SECTION 11: ESTADOS MODERNOS ==================== -->
 <div class="section" id="s11">
-  <button class="back-btn" onclick="showLanding()">← Volver</button>
+  <button class="back-btn" onclick="goHome()">← Volver</button>
+  <div class="section-content">
   <div class="section-hero">
     <h2>La Consolidación de los Estados Modernos</h2>
     <p>El aporte (involuntario) de los Reyes Absolutos y las ideas que cambiaron el mundo</p>
     <button class="tts-btn" onclick="toggleTTS(this)" data-section="s11">🔊 Escuchar</button>
-    <select class="tts-speed" id="speed-s11">
-      <option value="0.8">0.8x</option>
-      <option value="1" selected>1x</option>
-      <option value="1.2">1.2x</option>
-      <option value="1.5">1.5x</option>
-    </select>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
   </div>
 
   <div class="content-block">
@@ -1468,97 +1464,91 @@ body {
     <p><strong>Conclusión:</strong> El cambio más importante fue mental y legal: la gente dejó de ser considerada 'súbditos' que solo existían para servir al monarca, y se convirtieron en 'ciudadanos' con derechos garantizados desde el día en que nacen.</p>
   </div>
 
+  </div>
   <button class="quiz-trigger" onclick="startQuiz('s11')">Iniciar Quiz — Estados Modernos (5 Preguntas)</button>
 </div>
 
 <!-- ==================== SECTION 12: INSTRUMENTOS MARÍTIMOS ==================== -->
 <div class="section" id="s12">
-  <button class="back-btn" onclick="showLanding()">← Volver</button>
+  <button class="back-btn" onclick="goHome()">← Volver</button>
+  <div class="section-content">
   <div class="section-hero">
     <h2>Instrumentos Marítimos</h2>
     <p>Las herramientas que hicieron posible la exploración de los océanos</p>
     <button class="tts-btn" onclick="toggleTTS(this)" data-section="s12">🔊 Escuchar</button>
-    <select class="tts-speed" id="speed-s12">
-      <option value="0.8">0.8x</option>
-      <option value="1" selected>1x</option>
-      <option value="1.2">1.2x</option>
-      <option value="1.5">1.5x</option>
-    </select>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
   </div>
 
   <div class="content-block">
     <h3>Instrumentos de Navegación</h3>
-    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:14px; margin-top:16px;">
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:16px; margin-top:16px;">
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">🧭</div>
-        <div><strong style="color:#d4af37;">Brújula</strong><p style="margin:5px 0 0; font-size:0.9em;">Permite al navegante determinar el <strong>rumbo</strong> de la embarcación.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Compass_of_a_ship.jpg/320px-Compass_of_a_ship.jpg" alt="Brújula" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🧭 Brújula</strong><p style="margin:5px 0 0;font-size:0.9em;">Permite al navegante determinar el <strong>rumbo</strong> de la embarcación.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">📐</div>
-        <div><strong style="color:#d4af37;">Sextante</strong><p style="margin:5px 0 0; font-size:0.9em;">Permite determinar la <strong>posición (latitud)</strong> del barco.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sextant_and_telescope.jpg/320px-Sextant_and_telescope.jpg" alt="Sextante" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">📐 Sextante</strong><p style="margin:5px 0 0;font-size:0.9em;">Permite determinar la <strong>posición (latitud)</strong> del barco.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">⚙️</div>
-        <div><strong style="color:#d4af37;">Astrolabio</strong><p style="margin:5px 0 0; font-size:0.9em;">Determinaba la <strong>latitud</strong> del lugar donde se encontraba la nave.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Astrolabe_of_Jean_Fusoris.jpg/320px-Astrolabe_of_Jean_Fusoris.jpg" alt="Astrolabio" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">⚙️ Astrolabio</strong><p style="margin:5px 0 0;font-size:0.9em;">Determinaba la <strong>latitud</strong> del lugar donde se encontraba la nave.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">🗺️</div>
-        <div><strong style="color:#d4af37;">Cartas Portulanas</strong><p style="margin:5px 0 0; font-size:0.9em;">Mapas gráficos de las costas para <strong>planificar rutas</strong> entre puertos.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cantino_planisphere_%281502%29.jpg/320px-Cantino_planisphere_%281502%29.jpg" alt="Cartas Portulanas" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🗺️ Cartas Portulanas</strong><p style="margin:5px 0 0;font-size:0.9em;">Mapas gráficos de las costas para <strong>planificar rutas</strong> entre puertos.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">🌍</div>
-        <div><strong style="color:#d4af37;">Imago Mundi</strong><p style="margin:5px 0 0; font-size:0.9em;">Representa la <strong>visión del mundo</strong> en la época medieval.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ptolemy_world_map.jpg/320px-Ptolemy_world_map.jpg" alt="Imago Mundi" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🌍 Imago Mundi</strong><p style="margin:5px 0 0;font-size:0.9em;">Representa la <strong>visión del mundo</strong> en la época medieval.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">🌐</div>
-        <div><strong style="color:#d4af37;">Esfera Armilar</strong><p style="margin:5px 0 0; font-size:0.9em;">Representaba los círculos celestes para calcular el <strong>movimiento de los astros</strong>.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Armillary_sphere_in_Shugborough.jpg/320px-Armillary_sphere_in_Shugborough.jpg" alt="Esfera Armilar" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🌐 Esfera Armilar</strong><p style="margin:5px 0 0;font-size:0.9em;">Representaba los círculos celestes para calcular el <strong>movimiento de los astros</strong>.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">➕</div>
-        <div><strong style="color:#d4af37;">Ballestilla</strong><p style="margin:5px 0 0; font-size:0.9em;">Se utilizaba para medir el <strong>ángulo</strong> entre dos puntos.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cross-staff.jpg/320px-Cross-staff.jpg" alt="Ballestilla" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">➕ Ballestilla</strong><p style="margin:5px 0 0;font-size:0.9em;">Se utilizaba para medir el <strong>ángulo</strong> entre dos puntos.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">🌙</div>
-        <div><strong style="color:#d4af37;">Noctrulabio</strong><p style="margin:5px 0 0; font-size:0.9em;">Diseñado para determinar la <strong>hora durante la noche</strong>.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nocturnal_Inv._1985.3.jpg/320px-Nocturnal_Inv._1985.3.jpg" alt="Noctrulabio" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🌙 Noctrulabio</strong><p style="margin:5px 0 0;font-size:0.9em;">Diseñado para determinar la <strong>hora durante la noche</strong>.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">⏳</div>
-        <div><strong style="color:#d4af37;">Reloj de Arena</strong><p style="margin:5px 0 0; font-size:0.9em;">Estima la <strong>velocidad y distancia</strong> recorrida por la nave.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Wooden_hourglass_3.jpg/200px-Wooden_hourglass_3.jpg" alt="Reloj de Arena" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">⏳ Reloj de Arena</strong><p style="margin:5px 0 0;font-size:0.9em;">Estima la <strong>velocidad y distancia</strong> recorrida por la nave.</p></div>
       </div>
 
-      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; padding:16px; display:flex; gap:14px; align-items:flex-start;">
-        <div style="font-size:2.8em; line-height:1;">🪢</div>
-        <div><strong style="color:#d4af37;">Sonda Marítima</strong><p style="margin:5px 0 0; font-size:0.9em;">Se lanza al mar para medir la <strong>profundidad del agua</strong>.</p></div>
+      <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(212,175,55,0.4); border-radius:12px; overflow:hidden;">
+        <img referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Lead_line_1.jpg/320px-Lead_line_1.jpg" alt="Sonda Marítima" style="width:100%;height:160px;object-fit:cover;" onerror="this.style.display='none'">
+        <div style="padding:12px;"><strong style="color:#d4af37;">🪢 Sonda Marítima</strong><p style="margin:5px 0 0;font-size:0.9em;">Se lanza al mar para medir la <strong>profundidad del agua</strong>.</p></div>
       </div>
 
     </div>
   </div>
 
+  </div>
   <button class="quiz-trigger" onclick="startQuiz('s12')">Iniciar Quiz — Instrumentos Marítimos (5 Preguntas)</button>
 </div>
 
 <!-- ==================== SECTION 13: PRIMEROS EXPLORADORES ==================== -->
 <div class="section" id="s13">
-  <button class="back-btn" onclick="showLanding()">← Volver</button>
+  <button class="back-btn" onclick="goHome()">← Volver</button>
+  <div class="section-content">
   <div class="section-hero">
     <h2>Primeros Exploradores</h2>
     <p>Los navegantes que cambiaron el mapa del mundo</p>
     <button class="tts-btn" onclick="toggleTTS(this)" data-section="s13">🔊 Escuchar</button>
-    <select class="tts-speed" id="speed-s13">
-      <option value="0.8">0.8x</option>
-      <option value="1" selected>1x</option>
-      <option value="1.2">1.2x</option>
-      <option value="1.5">1.5x</option>
-    </select>
+      <span class="tts-speed">Vel: <select onchange="setSpeed(this.value)"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select></span>
   </div>
 
   <div class="content-block">
@@ -1617,6 +1607,7 @@ body {
     </table>
   </div>
 
+  </div>
   <button class="quiz-trigger" onclick="startQuiz('s13')">Iniciar Quiz — Primeros Exploradores (5 Preguntas)</button>
 </div>
 <div class="quiz-overlay" id="quizOverlay">
